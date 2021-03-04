@@ -1,0 +1,284 @@
+
+@import "options";
+
+
+@font-face {
+    font-family: "Overpass";
+    src: url("./fonts/Overpass/Overpass-Regular.ttf");
+}
+@font-face {
+    font-family: "Overpass";
+    src: url("./fonts/Overpass/Overpass-Bold.ttf");
+		font-weight: bold;
+}
+@font-face {
+    font-family: "Overpass";
+    src: url("./fonts/Overpass/Overpass-Italic.ttf");
+		font-style: italic;
+}
+@font-face {
+    font-family: "Arvo";
+    src: url("./fonts/Arvo/Arvo-Regular.ttf");
+}
+@font-face {
+    font-family: "Arvo";
+    src: url("./fonts/Arvo/Arvo-Bold.ttf");
+		font-weight: bold;
+}
+@font-face {
+    font-family: "Arvo";
+    src: url("./fonts/Arvo/Arvo-Italic.ttf");
+		font-style: italic;
+}
+
+
+
+body {
+	// height:100%;
+	font-family:'Overpass';
+	overflow-y: auto;
+
+
+}
+h1,h2,h3 {
+	font-family:'Arvo';
+}
+h2 {
+	letter-spacing:0px;
+}
+h3 {
+	font-weight:normal;
+	letter-spacing:0px;
+}
+li {
+	line-height:1.5rem;
+}
+main {
+	max-width: 90rem;
+}
+body {
+	color:#333;
+}
+header {
+	padding:3rem;
+	height:10rem;
+	z-index:90;
+
+}
+.navli {
+	letter-spacing:0!important;
+	color:$color-Primary;
+	border-radius:30px;
+	padding:1rem 1.8rem!important;
+	margin-right:0.5rem!important;
+	transition: all 0.3s;
+	&:hover {
+		background-color:$color-Primary;
+		color:white;
+		background-image:none;
+	}
+}
+#MainLogo {
+	display:block;
+}
+#LandingSpace {
+	width:100%;
+	height:90vh;
+	background-color:transparent;
+	position:relative;
+	top:-10rem;
+	display:block;
+	z-index:10;
+
+}
+#LandingSpaceContainer {
+width:100%;
+height:100%;
+max-width:90rem;
+display:block;
+}
+#LandingSpaceImage {
+// width:80%;
+position:absolute;
+bottom:0;
+right:0;
+max-width:58rem;
+}
+#LandingSpaceText{
+	position:relative;
+	left:3rem;
+	top: 14rem;
+	display:inline-block;
+	background-color:#f9f9f9;
+	box-shadow:-2px 6px 4px -1px #bbb;
+	border-radius:20px;
+	padding:3.5rem;
+	width:70vw;
+	max-width:38rem;
+	text-align:center;
+	color:$color-Primary;
+	z-index:20;
+
+	& h1 {
+		font-size:2.6rem;
+		padding-bottom:1rem;
+		border-bottom: 1px solid $color-Primary;
+	}
+	& p {
+	font-size:1.2rem;
+	line-height:2.4rem;
+	padding-left:1rem;
+	padding-top:1.6rem;
+	padding-right:1rem;
+	text-align:center;
+		color:#666;
+	}
+}
+.LandingSpaceShapes{
+	position:absolute;
+	bottom:0;
+	z-index:8;
+	&:nth-of-type(1) {
+		animation-name:layershapes1;
+		animation-duration:8s;
+		animation-timing-function:linear;
+		animation-direction: normal;
+		animation-iteration-count: infinite;
+	}
+	&:nth-of-type(2) {
+		animation-name:layershapes2;
+		animation-duration:10s;
+		animation-timing-function:linear;
+		animation-direction: normal;
+		animation-iteration-count: infinite;
+		animation-delay:4s;
+	}
+}
+
+
+@keyframes layershapes1 {
+	0% {
+		left:-15%;
+		bottom:20%;
+		opacity:0;
+		transform:scale(0.8);
+	}
+	10% {
+		opacity:1;
+	}
+	90%{
+		opacity:1;
+	}
+	100%{
+		left:-30%;
+		bottom:30%;
+		opacity:0;
+		transform:scale(1.2);
+	}
+}
+@keyframes layershapes2 {
+	0% {
+		right:-20%;
+		bottom:-40%;
+		opacity:0;
+		transform:scale(0.2);
+	}
+	10% {
+		opacity:1;
+	}
+	90%{
+		opacity:1;
+	}
+	100%{
+		right:-45%;
+		bottom:20%;
+		opacity:0;
+		transform:scale(0.8);
+	}
+}
+.navli {
+	display:inline-block;
+	padding:1rem;
+	margin: auto;
+}
+footer {
+	position:relative;
+	width:100%;
+	height:4rem;
+	background-color:$color-Primary;
+	margin:0;
+	font-size:1rem;
+}
+.container > h2 {
+	color:$color-Primary;
+	text-align:center;
+	font-weight:bold;
+}
+.padded {
+	padding:2rem;
+}
+.ta-left {
+	text-align:left;
+}
+.ta-center {
+	text-align:center;
+}
+.cascadeBlock {
+	& li {
+		color:#666;
+	}
+	& ul {
+		color:#666;
+	}
+	& .row {
+		display:flex;
+		align-items:center;
+		flex-direction:column;
+	}
+	& h2,& h3 {
+		text-align:center;
+		margin-bottom:2rem;
+		border-bottom:2px solid $color-Primary;
+		color:$color-Primary;
+	}
+	& .column {
+		margin-bottom:2rem;
+	}
+	& .cascadeBlock__text {
+		width:100%;
+		box-shadow:-2px 15px 30px -20px #333;
+		border-radius:20px;
+		padding:2rem;
+		z-index:10;
+		max-width:48rem;
+	}
+	& .cascadeBlock__img {
+		width:100%;
+		z-index:8;
+	}
+}
+@media (max-width: 60rem) {
+	.cascadeBlock {
+		& .cascadeBlock__text {
+			width:80%;
+			order:2;
+		}
+		& .cascadeBlock__img {
+			order:1;
+		}
+	}
+}
+@media (min-width: 60rem) {
+  .row {
+    flex-direction:row!important;
+    flex-wrap:nowrap;
+  }
+}
+	.cascadeBlock {
+		& .cascadeBlock__text {
+			width:70%;
+		}
+		& .cascadeBlock__img {
+			// width:90%;
+		}
+	}
