@@ -12,9 +12,11 @@ const Header = (props) => {
 					alt="ReviewMate's logo of a magnifying glass with the written name."
 					placeholder="tracedSVG"
 					formats={["auto", "webp"]}
-					layout="fixed"
-					height={75}
+					transformOptions={{fit:"cover"}}
 					id="MainLogo"
+					style={{
+						maxWidth:'15rem'
+					}}
 					/>
 				<nav>
 					  <ul>

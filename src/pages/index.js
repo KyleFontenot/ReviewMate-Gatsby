@@ -14,7 +14,7 @@ const Index = () => {
       <LandingSpace  />
 
       <Block row="row--row" h2="Our Core Features">
-        <div className="column padded ta-center">
+        <div className="column padded ta-center" style={{flex:'1 1 30%'}}>
         <StaticImage
           src={`${imagesURL}/corefeature1.png`}
           placeholder="tracedSVG"
@@ -26,7 +26,7 @@ const Index = () => {
         <h3>Centralized Platform</h3>
         <p className="ta-left">ReviewMate provides a robust and innovative one-stop-shop where coding audits are performed and stored in a transparent manner. Because ReviewMate is web-based, it can be accessed 24/7 year-round.</p>
       </div>
-      <div className="column padded ta-center">
+      <div className="column padded ta-center" style={{flex:'1 1 30%'}}>
         <StaticImage
           src={`${imagesURL}/corefeature2.png`}
           placeholder="tracedSVG"
@@ -38,7 +38,7 @@ const Index = () => {
         <h3>Powerful tools</h3>
         <p className="ta-left">Features include integration of data, sample selection, randomization, scheduling, audit management, communication options, and multiple robust reporting tools. ReviewMate was created by auditors for auditors.</p>
       </div>
-      <div className="column padded ta-center" >
+      <div className="column padded ta-center" style={{flex:'1 1 30%'}}>
         <StaticImage
           src={`${imagesURL}/corefeature3.png`}
           placeholder="tracedSVG"

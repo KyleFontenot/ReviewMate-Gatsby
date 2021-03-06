@@ -4,19 +4,25 @@ import {StaticImage} from "gatsby-plugin-image"
 const LandingSpace = () => {
 	return (
 		<div id="LandingSpace">
-
-
 			<div id="LandingSpaceContainer">
 				<StaticImage
 					src="../images/layershapes.png"
 					transformOptions={{fit:"cover"}}
 					className="LandingSpaceShapes"
+					alt="#"
 					 />
-					 <StaticImage
-	 					src="../images/layershapes2.png"
-	 					transformOptions={{fit:"cover"}}
-	 					className="LandingSpaceShapes"
-	 					 />
+			 <StaticImage
+					src="../images/layershapes2.png"
+					transformOptions={{fit:"cover"}}
+					className="LandingSpaceShapes"
+					alt="#"
+					 />
+			 <StaticImage
+					src="../images/layershapes3.png"
+					transformOptions={{fit:"cover"}}
+					className="LandingSpaceShapes"
+					alt="#"
+					 />
 
 				<div id="LandingSpaceImage"
 					  style={{
@@ -28,6 +34,7 @@ const LandingSpace = () => {
 					<StaticImage
 						src="../images/TopView.png"
 						transformOptions={{fit:"cover"}}
+						alt="Scene of a man with binoculars and a women analyzing data"
 						 />
 				</div>
 			<div id="LandingSpaceText">

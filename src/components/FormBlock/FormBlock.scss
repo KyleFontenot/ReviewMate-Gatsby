@@ -1,0 +1,34 @@
+.formBlock {
+	min-height:30rem;
+	height:20rem;
+	background-color:white;
+	display:block;
+	border-radius:20px;
+}
+.formColumn{
+	background-color:#fff;
+	padding:1.5rem;
+	border-radius:12px;
+	width:90%;
+	max-width:50rem;
+	margin: 0 auto;
+	& h2 {
+		text-align:center;
+	}
+}
+form {
+	& input {
+		margin:1rem auto 1.5rem auto;
+	}
+	& label {
+		margin:0.5rem auto 0 auto;
+	}
+	& input[type='text'],input[type='email'] {
+		width:100%;
+	}
+}
+input[type='submit']{
+	margin:1rem auto 1.5rem auto!important;
+	display:block;
+	position:relative;
+}
