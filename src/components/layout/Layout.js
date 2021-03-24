@@ -1,21 +1,20 @@
 import * as React from "react"
 // import { Link } from "gatsby"
 import Header from "./Header"
+import Footer from "./Footer"
+import BackToTop from "./BackToTop"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, slug, children }) => {
 
   return (
     <div className="global-wrapper" >
-      <Header />
+      <Header slug={slug}/>
       <main>
         {children}
       </main>
 
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <BackToTop/>
+      <Footer/>
     </div>
   )
 }

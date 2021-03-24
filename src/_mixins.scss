@@ -43,9 +43,9 @@
   }
 }
 
-$color-Primary-Dark: adjust-color($color-Primary, $saturation: -10%, $lightness: -25%);
-$color-Secondary-Dark: adjust-color($color-Secondary, $saturation: -10%, $lightness: -25%);
-$color-Tertiary-Dark: adjust-color($color-Tertiary, $saturation: -10%, $lightness: -25%);
+$color-Primary-Dark: adjust-color($color-Primary, $saturation: -10%, $lightness: -15%);
+$color-Secondary-Dark: adjust-color($color-Secondary, $saturation: -10%, $lightness: -15%);
+$color-Tertiary-Dark: adjust-color($color-Tertiary, $saturation: -10%, $lightness: -15%);
 
 $color-Primary-Light: adjust-color($color-Primary, $saturation: -5%, $lightness: 20%);
 $color-Secondary-Light: adjust-color($color-Secondary, $saturation: -5%, $lightness: 20%);

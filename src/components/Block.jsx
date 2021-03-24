@@ -6,7 +6,7 @@ const Block = ({children, row, h2}) => {
 			{h2 ? <h2 style={{
 			}}>
 		{h2} </h2> : null}
-			<div className={`row ${row}`}>
+			<div className={`row row--${row}`}>
 				{children}
 			</div>
 		</div>

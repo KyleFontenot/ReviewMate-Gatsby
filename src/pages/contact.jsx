@@ -8,11 +8,9 @@ import "../components/FormBlock/FormBlock.scss"
 
 const ContactPage = () => {
 	return (
-		<Layout>
-			<div className="" >
+		<Layout slug="Contact Us">
 
 				<FormBlock className="formBlock"/>
-			</div>
 			<p>hi</p>
 		</Layout>
 	)
