@@ -11,8 +11,6 @@ const Header = ({slug}) => {
   return (
     <header>
       <SEO slug={slug}/>
-
-
       <nav>
 				<Link to="/" style={{
 						alignSelf: 'flex-start'
@@ -46,13 +44,13 @@ const Header = ({slug}) => {
 						  ref={dropdownProductsRef}
 							>
               <li>
-                <Link to="#">Auditing Tools</Link>
+                <Link to="/products/auditingtools">Auditing Tools</Link>
               </li>
               <li>
-                <Link to="#">Auditing Solutions</Link>
+                <Link to="/products/auditingsolutions">Auditing Solutions</Link>
               </li>
               <li >
-                <Link to="#">Auditing Management</Link>
+                <Link to="/products/auditingmanagement">Auditing Management</Link>
               </li>
             </ul>
           </li>

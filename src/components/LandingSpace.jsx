@@ -9,44 +9,43 @@ const LandingSpace = () => {
 					src="../images/layershapes.png"
 					transformOptions={{fit:"cover"}}
 					className="LandingSpaceShapes"
-					alt="#"
+					alt=""
+					loading="eager"
+					placeholder="tracedSVG"
 					style={{position:'absolute'}}
 					 />
 			 <StaticImage
 					src="../images/layershapes2.png"
 					transformOptions={{fit:"cover"}}
 					className="LandingSpaceShapes"
-					alt="#"
+					alt=""
+					loading="eager"
+					placeholder="tracedSVG"
 					style={{position:'absolute'}}
 					 />
 			 <StaticImage
 					src="../images/layershapes3.png"
 					transformOptions={{fit:"cover"}}
 					className="LandingSpaceShapes"
-					alt="#"
+					alt=""
+					loading="eager"
+					placeholder="tracedSVG"
+
 					style={{position:'absolute'}}
 					 />
 
-				<div id="LandingSpaceImage"
-					  style={{
-						position:'absolute',
-						bottom:0,
-						right:0,
-						marginBottom:'1rem',
-						maxWidth:'70rem'
-
-					}}>
-					<StaticImage
+				 <div id="LandingSpaceImage">
+					 <StaticImage
 						src="../images/TopView.png"
 						transformOptions={{fit:"cover"}}
 						formats={["auto","webp"]}
+						id="LandingSpaceImage"
 						placeholder="tracedSVG"
+						layout="constrained"
+						style={{minHeight:'100%',objectFit:'cover',position:'relative',right:'0',overflow:'visible'}}
 						alt="Scene of a man with binoculars and a women analyzing data"
-						style={{
-							maxWidth:'40rem'
-						}}
 						 />
-				</div>
+				 </div>
 			<div id="LandingSpaceText">
 				<h1>The Quintessential Auditing Tool</h1>
 				<p>The complete suite to inspect, organize, and manage medical coding audits, with efficiency. </p>
@@ -57,3 +56,13 @@ const LandingSpace = () => {
 }
 
 export default LandingSpace
+
+// style={{
+// 	position:'absolute',
+// 	top:'25vh',
+// 	right:'0%',
+// 	marginBottom:'1rem',
+// 	width:'clamp(30rem, 80%, 100rem)',
+// 	maxWidth:"90rem"
+//
+// }}

@@ -7,18 +7,20 @@ import FAQBlock from "../components/FAQBlock.jsx"
 // import CascadeBlock from "../components/CascadeBlock"
 
 const Index = () => {
-  const data = useStaticQuery(
+  const datafaq = useStaticQuery(
     graphql`
-      query MyQuery {
+      query MyFAQQuery {
         allContentfulFaq {
           edges {
             node {
+
               question
               answer {
                 answer
                 id
               }
               id
+              order
             }
           }
         }
@@ -30,7 +32,7 @@ const Index = () => {
     <Layout slug="FAQs">
       <h1>FAQs</h1>
       <Block row="column" className="faqsDiv">
-        {data.allContentfulFaq.edges.map(edge => {
+        {datafaq.allContentfulFaq.edges.sort((a, b) => a.node.order - b.node.order).map(edge => {
           return (
 
             <FAQBlock key={edge.node.id} questionData={edge.node.question} answerData={edge.node.answer.answer} />

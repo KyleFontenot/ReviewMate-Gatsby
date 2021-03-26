@@ -1,5 +1,6 @@
 import React from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
+import {Link} from 'gatsby'
 // import LinkedInIcon from '../images/linkedin-brans.svg'
 
 const Footer = () => {
@@ -12,24 +13,20 @@ const Footer = () => {
 						<tr>
 						  <th>Product Features</th>
 							<th>Info</th>
-							<th>Contact</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-						  <td>Auditing Tools</td>
+						  <td><Link to="#">Auditing Tools</Link></td>
 							<td>Events</td>
-							<td>Contact Form</td>
 						</tr>
 						<tr>
-						  <td>Auditing Solutions</td>
-							<td> </td>
-							<td>FAQs</td>
+						  <td><Link to="#">Auditing Solutions</Link></td>
+							<td><Link to="/faqs">FAQs</Link></td>
 						</tr>
 						<tr>
-						  <td>Auditing Management</td>
-							<td> </td>
-							<td> </td>
+						  <td><Link to="#">Auditing Management</Link></td>
+							<td><Link to="/about">About Us</Link></td>
 						</tr>
 					</tbody>
 			</table>
@@ -62,7 +59,7 @@ const Footer = () => {
 	</div>
 </div>
 		<div id="FooterToes">
-			<p>&copy;ReviewMate {new Date().getFullYear()}</p>
+			<p style={{marginTop:'0.75rem'}}>&copy;ReviewMate {new Date().getFullYear()}</p>
 		</div>
 		</footer>
 	)

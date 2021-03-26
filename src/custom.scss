@@ -48,6 +48,9 @@ body {
 h1,h2,h3 {
 	font-family:'Arvo';
 }
+h1 {
+  letter-spacing:0.5px;
+}
 h2 {
 	letter-spacing:0px;
 }
@@ -69,7 +72,7 @@ body {
 	color:#333;
 }
 header {
-	padding:3rem;
+	padding:3rem 3rem 0;
 	// height:10rem;
   overflow:visible;
 	z-index:820;
@@ -104,7 +107,7 @@ nav {
     display:inline-block;
   	padding:1rem;
   	margin: auto;
-    font-size:1.1rem;
+    font-size:1rem;
     &:hover, &:focus, &:focus-within {
       background-color:$color-Primary;
       color:white;
@@ -171,14 +174,14 @@ nav {
 
 #LandingSpace {
 	width:100%;
-	height:90vh;
-  max-height:100rem;
+	height:clamp(30rem, 50%, 220rem);
+  // max-height:70rem;
 	background-color:transparent;
 	position:relative;
 	top:-10rem;
 	display:block;
 	z-index:10;
-
+  overflow-y:visible;
 }
 #LandingSpaceContainer {
 width:100%;
@@ -192,29 +195,35 @@ top:0;
 }
 #LandingSpaceImage {
 // width:80%;
+overflow:visible;
 position:absolute;
 bottom:0;
 right:0;
-max-width:78rem;
+// width:clamp(20rem,100%,80rem);
+width:100%;
+max-height:80rem;
+max-width:40rem;
 z-index:80;
 }
 #LandingSpaceText{
-	position:absolute;
+	position:relative;
 	left:4rem;
-	top: 14rem;
+	top: 12rem;
 	display:inline-block;
 	background-color:#f9f9f9;
 	box-shadow:-2px 16px 18px -3px rgba(10,10,10,0.4);
 	border-radius:20px;
 	padding:2rem;
-	// width:70vw;
+	// width:30vw;
 	max-width:38rem;
 	text-align:center;
 	color:$color-Primary;
 	z-index:120;
+  transform:scale(0.9);
 	& h1 {
 		font-size:2.6rem;
 		padding-bottom:1rem;
+    margin-left:0;
 		border-bottom: 1px solid $color-Primary;
 	}
 	& p {
@@ -331,7 +340,13 @@ input[type='textarea'] {
   border-radius:6px;
   width:100%;
 }
-
+footer a {
+  text-decoration:none;
+  color:white;
+  &:hover {
+    text-decoration:underline;
+  }
+}
 #FooterToes {
   display:flex;
   width:100%;
@@ -350,7 +365,7 @@ input[type='textarea'] {
 	font-size:0.8rem;
   padding:2.5rem 1rem 3rem;
   display:flex;
-  justify-content:space-around;
+  justify-content:center;
   flex-direction:row;
   align-items:flex-start;
   box-shadow:0px 10px 22px -6px $color-Primary-Dark inset;
@@ -423,6 +438,7 @@ input[type='textarea'] {
 .ta-center {
 	text-align:center;
 }
+
 .cascadeBlock {
 	& li {
 		color:#666;
@@ -433,7 +449,8 @@ input[type='textarea'] {
 	& .row {
 		display:flex;
 		align-items:center;
-		flex-direction:column;
+		flex-flow:column wrap;
+    justify-content:space-around;
 	}
 	& h2,& h3 {
 		text-align:center;
@@ -451,11 +468,21 @@ input[type='textarea'] {
 		padding:2rem;
 		z-index:10;
 		max-width:48rem;
+    order:2;
 	}
+  &.cascadeBlock--plain .cascadeBlock__text {
+    box-shadow:none;
+  }
 	& .cascadeBlock__img {
 		width:100%;
 		z-index:8;
 	}
+}
+.uheader {
+  border-bottom: 2px solid $color-Primary;
+  width:80%;
+  margin: 0 auto;
+  padding-bottom:2rem;
 }
 #backToTop {
   width:40px;
@@ -468,7 +495,9 @@ input[type='textarea'] {
   border:2px solid $color-Primary;
   border-radius:3rem;
   background-color:white;
+  opacity:0;
   visibility:hidden;
+  transition:opacity 0.5s, visibility 0.5s;
   &::after {
     content:"";
     border-top:2px solid $color-Primary;
@@ -481,6 +510,11 @@ input[type='textarea'] {
     width:10px;
     transform:rotate(45deg);
   }
+
+}
+.showbtt {
+  opacity:1!important;
+  visibility:visible!important;
 }
 .faqsDiv{
   display:flex;
@@ -507,7 +541,7 @@ input[type='textarea'] {
     border-top-right-radius:20px;
     position:relative;
     font-size:1.3rem;
-    background: linear-gradient(to bottom right, #ffffff, #efefef);
+    background: linear-gradient(175deg, #fcfcfc 40%, #e5e5e5);
     // border-left:4px solid $color-Primary;
     &::after {
       content: "";
@@ -522,19 +556,20 @@ input[type='textarea'] {
   }
   & p {
     padding:0;
+    padding-left:3rem;
+    padding-right:3rem;
     visibility:hidden;
     position:relative;
-
+font-size:1rem;
     opacity:0;
     // margin-top:2rem;
     display:block;
-    border-top:2px solid $color-Secondary;
+    border-top:4px solid $color-Secondary;
     transition:max-height 0.3s, visibility 0.3s, opacity 0.3s;
     color:$color-Primary;
     max-height:0;
-    background-color:#f6f6f6;
-    // border-bottom-right-radius:40px;
-     background: linear-gradient(to bottom left, #efefef, #fff);
+    background-color:#fff;
+    background: linear-gradient(to right, #ffffff 60%, #f1f1f1);
     &::after {
       content: "";
       position:absolute;
@@ -553,9 +588,125 @@ input[type='textarea'] {
   // height:auto!important;
   max-height:100rem!important;
   opacity:1!important;
-  padding:2rem!important;
+  padding:2rem 4rem!important;
 }
 
+.hero{
+  width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ // height: 100px;
+ // margin-top: 100px;
+ left: 50%;
+ padding:0;
+
+}
+.hero__text {
+  background-color:white;
+  color:$color-Primary;
+  border-radius:20px;
+  padding:1.75rem;
+  display:block;
+  max-width:50rem;
+  h2 {
+  text-align:center;
+  padding:1rem 1rem 2rem;
+  margin-left:3rem;
+  margin-right:3rem;
+  border-bottom: 2px solid $color-Secondary;
+  margin-bottom:2rem;
+  }
+  p{
+padding:0.5rem 2rem 0.5rem;
+margin-bottom:0;
+max-width:30rem;
+  }
+}
+
+.card {
+  padding:1rem;
+  margin:0.2rem auto;
+  min-width:12rem;
+  width:clamp(12rem, 30%, 40rem);
+  // box-shadow: -1px 8px 15px -10px #555;
+  border-radius:28px;
+display:flex;
+flex-flow:column wrap;
+max-width:40rem;
+  h2 {
+    font-size:1.4rem;
+    padding-bottom:0.75rem;
+    border-bottom:2px solid $color-Secondary;
+    color:$color-Primary
+  }
+  h3 {
+    font-size:1.2rem;
+    color:#777;
+    margin-left:1rem;
+
+  }
+  .card__image {
+    border-radius:140px;
+    margin:0 auto 2rem;
+    width:8rem;
+    height:8rem;
+    position:relative;
+    // left:calc(50% - 4rem);
+    box-shadow:-3px 5px 20px -2px #333;
+  }
+  p, ul {
+    padding:1.2rem 1.2rem;
+  }
+  p {
+    text-indent:2rem;
+  }
+  li {
+    margin-bottom:0.2rem;
+  }
+}
+
+@media(max-width:768px){
+  .navli {
+    display:none;
+  }
+  #LandingSpaceText{
+    width:calc(100vw - 2rem);
+    max-width:100vw;
+    left:1rem;
+    // left:1rem;
+    margin:0 auto;
+    // transform:scale(0.7);
+  }
+  #LandingSpace {
+    height:100%;
+  }
+  #LandingSpaceImage {
+  width:100%;
+  max-width:100%;
+  position:absolute;
+  // bottom:0;
+  right:0%;
+  top:30%;
+  // margin-top:30vh;
+  // width:60%;
+  // max-width:82rem;
+  z-index:80;
+  & * {
+    max-width:100vw;
+  }
+  }
+
+}
+@media(max-width:426px){
+  #LandingSpaceText{
+    width:100vw;
+    // max-width:100vw;
+    left:0;
+    // left:1rem;
+    margin:0 auto;
+    // transform:scale(0.7);
+  }
+}
 @media (max-width: 60rem) {
 	.cascadeBlock {
 		& .cascadeBlock__text {
@@ -566,18 +717,34 @@ input[type='textarea'] {
 			order:1;
 		}
 	}
+  .card{
+  width:clamp(12rem, 100%, 40rem);
+}
 }
 @media (min-width: 60rem) {
   .row {
     flex-direction:row!important;
     flex-wrap:nowrap;
+
   }
-}
-	.cascadeBlock {
+  .cascadeBlock {
+    & .row {
+      flex-direction:row;
+    }
 		& .cascadeBlock__text {
-			width:70%;
+			// width:70%;
+      flex:1 1 48%;
+      max-width:48%;
 		}
 		& .cascadeBlock__img {
 			// width:90%;
+      flex:1 1 48%;
+      // max-width:48%;
+      height:100%;
 		}
+
 	}
+  .cascadeBlock:nth-of-type(even) .cascadeBlock__img {
+    order: 3!important;
+  }
+}
