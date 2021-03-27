@@ -20,6 +20,7 @@ const Hero = ({ children, bgimgUniqueName, maxHeight }) => {
 	`
 );
 const match = data.allImageSharp.edges.find(edge => edge.node.fluid.originalName === bgimgUniqueName);
+
 	return (
 	<div style={{ display: "grid" }} className="hero">
 		<GatsbyImage
@@ -34,9 +35,6 @@ const match = data.allImageSharp.edges.find(edge => edge.node.fluid.originalName
 				loading="eager"
 				placeholder="tracedSVG"
 				 />
-
-
-
 
     <div
       style={{

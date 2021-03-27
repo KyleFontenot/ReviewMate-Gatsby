@@ -4,7 +4,6 @@ import Layout from "../components/layout/Layout"
 // import Block from "../components/Block"
 import FormBlock from "../components/FormBlock/FormBlock"
 import Hero from "../components/Hero"
-import "../components/FormBlock/FormBlock.scss"
 
 
 const ContactPage = () => {
@@ -14,7 +13,6 @@ const ContactPage = () => {
 				<FormBlock className="formBlock"/>
 
 			</Hero>
-			<p>hi</p>
 		</Layout>
 	)
 }

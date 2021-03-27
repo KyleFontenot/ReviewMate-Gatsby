@@ -18,7 +18,8 @@
     justify-content:center;
   }
   &.row--column {
-    flex-flow:column wrap;
+    flex-wrap:wrap;
+    flex-direction:column;
   }
 	& .col {
 	  display: block;
@@ -175,13 +176,13 @@
 
 }
 .row--row {
-  flex-direction:row !important;
+  flex-direction:row ;
   flex-wrap:nowrap!important;
 }
 // Larger than L (laptop ~1024px)
 @media (min-width: 55rem) {
   .row {
     flex-direction:row;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
   }
 }

@@ -43,11 +43,11 @@ const Index = () => {
       }
     }
   `)
-	
+
   return (
     <Layout slug="About">
       <h1>About Us</h1>
-      <Hero bgimgUniqueName="analyzing-graph-growth.jpg" maxHeight="30rem">
+      <Hero bgimgUniqueName="analyzing-graph-growth.jpg" >
         <div className="hero__text" style={{ backgroundColor: "white" }}>
           <h2>Background</h2>
           <p>{data.pageInfo.backgroundParagraph.backgroundParagraph}</p>

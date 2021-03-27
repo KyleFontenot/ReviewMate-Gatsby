@@ -34,8 +34,8 @@ const Index = () => {
   `)
 
   return (
-    <Layout slug="About">
-      <h1>About Us</h1>
+    <Layout slug="Auditing Tools">
+      <h1>Auditing Tools</h1>
       <Hero bgimgUniqueName="medical-personnel-meeting.jpeg" maxHeight="30rem">
         <div className="hero__text" style={{
 						backgroundColor: "#9a2a24",
@@ -61,7 +61,7 @@ const Index = () => {
 					  <div className="column cascadeBlock__text">
 							<h2>{item.node.toolTitle}</h2>
 							<p>{item.node.paragraph.paragraph}</p>
-								{(!item.node.bulletPoints === null) ? (
+								{!(item.node.bulletPoints === null) ? (
 	                <ul>
 	                  {item.node.bulletPoints.map(point => {
 	                    return <li key={Math.random() * 50000}>{point}</li>

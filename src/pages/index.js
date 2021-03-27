@@ -1,4 +1,5 @@
 import * as React from "react"
+import {Link} from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
@@ -200,6 +201,25 @@ const Index = () => {
             </ul>
           </div>
       </CascadeBlock>
+      <Block row="column" style={{
+          textAlign:'center',
+          flexDirection:'column'
+        }}>
+
+
+          <p style={{
+              margin: '0 auto 2rem',
+              maxWidth:'40rem',
+              backgroundColor:'#f3f3f3',
+              borderRadius:'20px',
+              padding:'1.5rem 2.5rem',
+              color:'#444'
+
+            }}>Our services are manicured for your use, so connect with us for   questions or applications. We're excited to hear from you!</p>
+          <Link to="/contact" style={{
+              margin: '0 auto'
+            }}><button className="button button--pert" >Contact us</button></Link>
+      </Block>
     </Layout>
   )
 }

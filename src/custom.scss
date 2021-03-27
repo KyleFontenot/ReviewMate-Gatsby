@@ -82,6 +82,11 @@ header {
   visibility:visible!important;
   opacity:1!important;
 }
+
+.button {
+
+}
+
 nav {
   display:flex;
   flex-direction:row;
@@ -366,14 +371,13 @@ footer a {
   padding:2.5rem 1rem 3rem;
   display:flex;
   justify-content:center;
-  flex-direction:row;
+  flex-direction:column;
   align-items:flex-start;
   box-shadow:0px 10px 22px -6px $color-Primary-Dark inset;
-  .footerDiv {
-    min-width:20rem;
-    max-width:30rem;
-  }
-
+.footerDiv {
+  width:100%;
+  margin-bottom:1rem;
+}
   table {
     font-size:0.8rem;
     width:100%;
@@ -622,7 +626,10 @@ margin-bottom:0;
 max-width:30rem;
   }
 }
-
+#formbotfield {
+  visibility:hidden;
+  display:none;
+}
 .card {
   padding:1rem;
   margin:0.2rem auto;
@@ -662,6 +669,20 @@ max-width:40rem;
   }
   li {
     margin-bottom:0.2rem;
+  }
+}
+
+.button--pert{
+  background:none;
+  background-color:$color-Secondary;
+  border-radius:100px;
+  color:$color-Primary;
+  transform:scale(1.2);
+  padding:1.2rem 3.8rem;
+  &:hover {
+    background-color:$color-Secondary-Dark;
+    color:white;
+    box-shadow:-1px 3px 12px -3px #333;
   }
 }
 
@@ -723,9 +744,16 @@ max-width:40rem;
 }
 @media (min-width: 60rem) {
   .row {
-    flex-direction:row!important;
+    flex-direction:row;
     flex-wrap:nowrap;
 
+  }
+  .footerRow {
+    flex-direction:row;
+    .footerDiv {
+      min-width:20rem;
+      max-width:30rem;
+    }
   }
   .cascadeBlock {
     & .row {
