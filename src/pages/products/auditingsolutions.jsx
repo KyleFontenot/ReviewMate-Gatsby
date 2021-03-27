@@ -69,7 +69,7 @@ const Index = () => {
             <div className="column cascadeBlock__text">
               <h2>{item.node.toolTitle}</h2>
               <p>{item.node.paragraph.paragraph}</p>
-                {!(item.node.bulletPoints === null) ? (
+                {!(item.node.bulletPoints === null || item.node.bulletPoints === undefined) ? (
                   <ul>
                     {item.node.bulletPoints.map(point => {
                       return <li key={Math.random() * 50000}>{point}</li>
