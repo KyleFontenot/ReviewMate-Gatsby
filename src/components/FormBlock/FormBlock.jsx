@@ -45,16 +45,16 @@ function checkForm(e) {
 	        <h2>Contact Us</h2>
 
 	        <form
-	          name="contact"
+	          name="contact v2"
 	          method="post"
 	          data-netlify="true"
 	          data-netlify-honeypot="bot-field"
             formNoValidate
             noValidate
 	        >
-
-	          <input type="hidden" name="contact" value="contact" />
             <input type="hidden" name="bot-field" id="formbotfield" />
+	          <input type="hidden" name="contact" value="contact" />
+
 						<label htmlFor="name">Name:</label>
 	          <input type="text" name="Name" placeholder="Name" id="nameField" required/>
 
