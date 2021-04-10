@@ -24,7 +24,7 @@ const [show, changeState] = useState(false);
 });
 
 	return (
-		<a href="#mainLogo" className={show ? "showbtt" : ''} id="backToTop">
+		<a href="#mainLogo" className={show ? "showbtt" : ''} id="backToTop" onClick={() => {document.scroll = document.scrollTop}}>
 
 		</a>
 	)

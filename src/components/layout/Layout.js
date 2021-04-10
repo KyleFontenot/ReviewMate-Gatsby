@@ -1,14 +1,35 @@
-import * as React from "react"
+import React, {useState, useEffect, useRef} from "react"
 // import { Link } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
 import BackToTop from "./BackToTop"
 
+
 const Layout = ({ location, slug, children }) => {
+  const hiderRef= useRef();
+  const [layoutHider, setLayoutHider] = useState(false);
+
+
+useEffect(() => {
+  if (layoutHider){
+    hiderRef.current.classList.add('showhider');
+  }
+  else {
+    hiderRef.current.classList.remove('showhider');
+  }
+}, [layoutHider]);
 
   return (
     <div className="global-wrapper" >
-      <Header slug={slug}/>
+      <Header slug={slug} setLayoutHider={setLayoutHider} layoutHider={layoutHider}>
+
+
+      </Header>
+
+      <div id="layoutHider" ref={hiderRef} className="" onClick={() => {
+
+        }}/>
+
       <main>
         {children}
       </main>

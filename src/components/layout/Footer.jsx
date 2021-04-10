@@ -7,7 +7,19 @@ const Footer = () => {
 	return (
 		<footer>
 			<div className="footerRow">
-				<div className="footerDiv">
+				<div className="footerDiv" style={{
+						maxWidth:'6rem'
+					}}>
+					<StaticImage
+						src="../../images/reviewMate-whitelogo.svg"
+						alt="ReviewMate's logo of a magnifying glass with the written name."
+						placeholder="tracedSVG"
+						formats={["auto", "webp"]}
+					/>
+				</div>
+				<div className="footerDiv" style={{
+						minWidth:'12rem'
+					}}>
 				<table>
 				  <thead>
 						<tr>
@@ -17,16 +29,17 @@ const Footer = () => {
 					</thead>
 					<tbody>
 						<tr>
-						  <td><Link to="#">Auditing Tools</Link></td>
-							<td>Events</td>
-						</tr>
-						<tr>
-						  <td><Link to="#">Auditing Solutions</Link></td>
+						  <td><Link to="/products/auditingtools">Auditing Tools</Link></td>
 							<td><Link to="/faqs">FAQs</Link></td>
 						</tr>
 						<tr>
-						  <td><Link to="#">Auditing Management</Link></td>
+						  <td><Link to="/products/auditingsolutions">Auditing Solutions</Link></td>
 							<td><Link to="/about">About Us</Link></td>
+						</tr>
+						<tr>
+						  <td><Link to="/products/auditingmanagement">Auditing Management</Link></td>
+							<td><Link to="/contact/">Contact</Link></td>
+
 						</tr>
 					</tbody>
 			</table>
@@ -37,7 +50,6 @@ const Footer = () => {
 					  transformOptions={{fit:"cover"}}
 						alt="LinkedIn icon"
 						className="socialIcon"
-
 					/>
 				<p>ReviewMate</p>
 			</a>
@@ -59,7 +71,7 @@ const Footer = () => {
 	</div>
 </div>
 		<div id="FooterToes">
-			<p style={{marginTop:'0.75rem'}}>&copy;ReviewMate {new Date().getFullYear()}</p>
+			<p style={{marginTop:'0.25rem'}}>&copy; Pickerson LLC  {new Date().getFullYear()}</p>
 		</div>
 		</footer>
 	)

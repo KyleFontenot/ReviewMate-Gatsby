@@ -8,12 +8,16 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "dotenv": "^8.2.0",
     "gatsby": "^3.0.0",
+    "gatsby-plugin-emotion": "^6.2.0",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
     "gatsby-plugin-google-analytics": "^3.0.0",
+    "gatsby-plugin-google-gtag": "^3.2.0",
     "gatsby-plugin-image": "^1.1.2",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-offline": "^4.0.0",
@@ -29,15 +33,18 @@
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^3.0.0",
     "gatsby-transformer-sharp": "^3.1.0",
+    "joi": "^17.4.0",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-number-format": "^4.5.3",
     "sass": "^1.32.8",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.3.0",
     "prettier": "2.2.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

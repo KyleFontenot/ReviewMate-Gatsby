@@ -72,8 +72,8 @@ const Index = () => {
               <p>{item.node.paragraph.paragraph}</p>
                 {!(item.node.bulletPoints === null || item.node.bulletPoints === undefined) ? (
                   <ul>
-                    {item.node.bulletPoints.map(point => {
-                      return <li key={Math.random() * 50000}>{point}</li>
+                    {item.node.bulletPoints.map((point, index) => {
+                      return <li key={index}>{point}</li>
                     })}
                   </ul>
                 ) : null}

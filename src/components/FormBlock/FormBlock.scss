@@ -35,12 +35,12 @@ form {
 		margin:0.5rem auto 0.5rem auto;
 	}
 	& label {
-		margin:0.5rem auto 0 auto;
+		margin:1.5rem auto 0 auto;
 		display:block;
 		width:100%;
 		max-width:30rem;
 	}
-	& input[type='text'],input[type='email'],input[type='textarea'] {
+	& input[type='text'], input[type='tel'], input[type='email'],input[type='textarea'] {
 		display:block;
 		width:100%;
 		margin:0.5rem auto 0.5rem;
@@ -48,8 +48,27 @@ form {
 
 	}
 }
-input[type='submit']{
-	margin:1rem auto 1.5rem auto!important;
+form input[type='submit'], form button{
+	margin:4.3rem auto 1.5rem auto!important;
 	display:block;
 	position:relative;
+}
+button {
+	transform:scale(1.4);
+}
+.error {
+	outline:5px solid $color-Secondary;
+}
+#errorMessage {
+	display:block;
+	margin: 1.5rem auto 0;
+	text-align:center;
+	color:$color-Primary;
+	font-size:1.2rem;
+}
+input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, textarea:focus, select:focus {
+	outline:inherit;
+	&.error {
+		outline:5px solid $color-Secondary;
+	}
 }

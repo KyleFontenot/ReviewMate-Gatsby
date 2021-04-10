@@ -103,7 +103,7 @@ main {
 
 // Refer to the mixins SCSS partial for the logical constructor for nav.
 nav {
-	z-index:800;
+	z-index:300;
 	position:absolute;
 	width:100%;
 	& ul {

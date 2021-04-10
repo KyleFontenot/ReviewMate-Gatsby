@@ -80,7 +80,6 @@ const Index = () => {
           />
           <h3> Security </h3>
           <p className="ta-left">
-
             Our network security standards and procedures give you the
             confidence that your data and analytics are running on a highly
             secure environment.
@@ -90,8 +89,6 @@ const Index = () => {
 
 
       <Block row="row--row" h2="At a glance" style={{borderBottom:'2px solid #9a2a24'}}/>
-
-
         <CascadeBlock>
           <div
             className="column cascadeBlock__img"
@@ -104,6 +101,11 @@ const Index = () => {
               placeholder="tracedSVG"
               layout="constrained"
               alt="Two people discussing statistics."
+              style={{
+                maxWidth:'36rem',
+                margin:'0 auto',
+                width:'100%'
+              }}
             />
           </div>
           <div className="column cascadeBlock__text">
@@ -132,6 +134,11 @@ const Index = () => {
               placeholder="tracedSVG"
               layout="constrained"
               alt="Two people discussing statistics."
+              style={{
+                maxWidth:'36rem',
+                margin:'0 auto',
+                width:'100%'
+              }}
             />
           </div>
           <div className="column cascadeBlock__text">
@@ -160,6 +167,11 @@ const Index = () => {
               placeholder="tracedSVG"
               layout="constrained"
               alt="Two people discussing statistics."
+              style={{
+                maxWidth:'36rem',
+                margin:'0 auto',
+                width:'100%'
+              }}
             />
           </div>
           <div className="column cascadeBlock__text">
@@ -185,6 +197,11 @@ const Index = () => {
               placeholder="tracedSVG"
               layout="constrained"
               alt="Two people discussing statistics."
+              style={{
+                maxWidth:'36rem',
+                margin:'0 auto',
+                width:'100%'
+              }}
             />
           </div>
           <div className="column cascadeBlock__text">
@@ -215,7 +232,7 @@ const Index = () => {
               padding:'1.5rem 2.5rem',
               color:'#444'
 
-            }}>Our services are manicured for your use, so connect with us for   questions or applications. We're excited to hear from you!</p>
+            }}>Our services are manicured for your use, so connect with us for questions or applications. We're excited to hear from you!</p>
           <Link to="/contact" style={{
               margin: '0 auto'
             }}><button className="button button--pert" >Contact us</button></Link>

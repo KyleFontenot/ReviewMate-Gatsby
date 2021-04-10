@@ -52,19 +52,18 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
-
-
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-M7NC8J5NMG`,
+      },
+    },
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `ReviewMate`,
+        short_name: `ReviewMate`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#9a2a24`,
@@ -73,9 +72,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-gatsby-cloud`,
+    // `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: ['/', '*'],
+      },
+
+},
+],
 }

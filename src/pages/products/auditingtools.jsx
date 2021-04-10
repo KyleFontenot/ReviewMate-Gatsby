@@ -40,8 +40,8 @@ const Index = () => {
         <div className="hero__text" style={{
 						backgroundColor: "#9a2a24",
 						color:'white',
-						boxShadow:'-3px 8px 20px -2px #111',
-						background:'linear-gradient(to bottom right, #A43F39, #6B1D19)'
+						background:'linear-gradient(to bottom right, #A43F39, #6B1D19)',
+            transform:'scale(1.2)'
 					}}>
           <p>From Inpatient to Outpatient type coding audits, ReviewMate extends your auditing capabilities.</p>
         </div>
@@ -63,8 +63,8 @@ const Index = () => {
 							<p>{item.node.paragraph.paragraph}</p>
                 {!(item.node.bulletPoints === null || item.node.bulletPoints === undefined) ? (
                   <ul>
-                    {item.node.bulletPoints.map(point => {
-                      return <li key={Math.random() * 50000}>{point}</li>
+                    {item.node.bulletPoints.map((point, index) => {
+                      return <li key={index}>{point}</li>
                     })}
                   </ul>
                 ) : null}
