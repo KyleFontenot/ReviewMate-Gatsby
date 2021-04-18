@@ -48,11 +48,19 @@ const arrOfNavLinks = [
   "Contact",
 ]
 
+if(){
+  if(){
+    if() {
+
+    }
+  }
+}
+
 const MobileNav = (props, ref, setLayoutHider, layoutHider) => {
   const mobileNavRef = useRef()
 	const mobileIcon = useRef()
   const [mobileMenu, setMobileMenu] = useState(false)
-	
+
   useEffect(() => {
     if (mobileMenu) {
       mobileNavRef.current.classList.add("showMenu");
@@ -65,7 +73,7 @@ const MobileNav = (props, ref, setLayoutHider, layoutHider) => {
 
   return (
 
-      <nav id="mobnavParent" ref={mobileNavRef} >
+     <nav id="mobnavParent" ref={mobileNavRef} >
 				<div
 	        id="mobileIcon"
 	        onClick={() => {

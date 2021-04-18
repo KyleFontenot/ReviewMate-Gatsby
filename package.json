@@ -8,11 +8,12 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.13.14",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "dotenv": "^8.2.0",
-    "gatsby": "^3.0.0",
+    "gatsby": "^3.3.0",
     "gatsby-plugin-emotion": "^6.2.0",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
