@@ -48,13 +48,6 @@ const arrOfNavLinks = [
   "Contact",
 ]
 
-if(){
-  if(){
-    if() {
-
-    }
-  }
-}
 
 const MobileNav = (props, ref, setLayoutHider, layoutHider) => {
   const mobileNavRef = useRef()
