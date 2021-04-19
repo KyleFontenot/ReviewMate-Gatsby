@@ -7,24 +7,28 @@ const [show, changeState] = useState(false);
   useEffect(() => {
     setHasMounted(true);
   }, []);
+
   if (!hasMounted) {
     return null;
   }
+	else {
+		window.addEventListener("scroll", () => {
+	    let scroll = window.scrollY;
+			if (scroll > 800){
+				changeState(true);
+			}
+			else {
+				changeState(false);
+			}
+	});
+	}
 
 
 
-	window.addEventListener("scroll", () => {
-    let scroll = window.scrollY;
-		if (scroll > 800){
-			changeState(true);
-		}
-		else {
-			changeState(false);
-		}
-});
+
 
 	return (
-		<a href="#mainLogo" className={show ? "showbtt" : ''} id="backToTop" onClick={() => {document.scroll = document.scrollTop}}>
+		<a href="#header" className={show ? "showbtt" : ''} id="backToTop" onClick={() => {document.scroll = document.scrollTop}}>
 
 		</a>
 	)

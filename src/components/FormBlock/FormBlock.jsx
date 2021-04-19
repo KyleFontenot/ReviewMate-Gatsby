@@ -45,7 +45,7 @@ function checkForm(e) {
 	        <h2>Contact Us</h2>
 
 	        <form
-	          name="contact v2"
+	          name="contact"
 	          method="POST"
 	          data-netlify="true"
 	          data-netlify-honeypot="bot-field"
@@ -54,7 +54,7 @@ function checkForm(e) {
             action="/submitted"
 	        >
             <input type="hidden" name="bot-field" id="formbotfield" />
-	          <input type="hidden" name="form-name" value="contact v2" />
+	          <input type="hidden" name="form-name" value="contact" />
 
 						<label htmlFor="name">Name:</label>
 	          <input type="text" name="Name" placeholder="Name" id="nameField" required/>

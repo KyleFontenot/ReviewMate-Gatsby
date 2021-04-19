@@ -28,7 +28,7 @@ const match = data.allImageSharp.edges.find(edge => edge.node.fluid.originalName
 				alt=" "
 				style={{
 					gridArea: "1/1",
-					maxHeight: maxHeight ? maxHeight : '60rem',
+					maxHeight: maxHeight ? maxHeight : '65rem',
 				}}
 				layout="fullWidth"
 				formats={["auto", "webp"]}

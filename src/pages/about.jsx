@@ -79,8 +79,8 @@ const Index = () => {
         <Card>
           <h2>Values</h2>
           <ul>
-            {data.pageInfo.values.map(val => {
-              return <li>{val}</li>
+            {data.pageInfo.values.map((val, index) => {
+              return <li key={index}>{val}</li>
             })}
           </ul>
         </Card>

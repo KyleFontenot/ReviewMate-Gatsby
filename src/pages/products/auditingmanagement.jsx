@@ -65,6 +65,7 @@ const Index = () => {
                   item.node.imageAssociated.description
                 }
                 layout="constrained"
+                placeholder="tracedSVG"
               ></GatsbyImage>
             </div>
             <div className="column cascadeBlock__text">

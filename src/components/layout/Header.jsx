@@ -9,10 +9,10 @@ const Header = (props, { slug} ) => {
   const dropdownContactsRef = useRef()
 
   const [menuProducts, setMenuProducts] = useState(false)
-  const [menuContacts, setMenuContacts] = useState(false)
+  // const [menuContacts, setMenuContacts] = useState(false)
 
   return (
-    <header>
+    <header id="header">
       <SEO slug={slug} />
       <nav>
         <Link
@@ -74,12 +74,12 @@ const Header = (props, { slug} ) => {
           <li className="navli">
             <Link
               to="/contact"
-              onMouseEnter={() => setMenuContacts(true)}
-              onMouseLeave={() => setMenuContacts(false)}
+              // onMouseEnter={() => setMenuContacts(true)}
+              // onMouseLeave={() => setMenuContacts(false)}
             >
               Contact
             </Link>
-            <ul
+            {/*<ul
               className={`dropdownUl ${menuContacts ? "show" : " "}`}
               onMouseEnter={() => setMenuContacts(true)}
               onMouseLeave={() => setMenuContacts(false)}
@@ -91,7 +91,7 @@ const Header = (props, { slug} ) => {
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
-            </ul>
+            </ul>*/}
           </li>
         </ul>
       </nav>

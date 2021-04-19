@@ -10,7 +10,7 @@ const LandingSpace = () => {
 					transformOptions={{fit:"cover"}}
 					className="LandingSpaceShapes"
 					alt=""
-					loading="lazy"
+					loading="eager"
 					placeholder="tracedSVG"
 					style={{position:'absolute'}}
 					 />
@@ -19,8 +19,8 @@ const LandingSpace = () => {
 					transformOptions={{fit:"cover"}}
 					className="LandingSpaceShapes"
 					alt=""
-					loading="lazy"
-
+					loading="eager"
+					placeholder="tracedSVG"
 					style={{position:'absolute'}}
 					 />
 			 <StaticImage
@@ -28,7 +28,8 @@ const LandingSpace = () => {
 					transformOptions={{fit:"cover"}}
 					className="LandingSpaceShapes"
 					alt=""
-					loading="lazy"
+					loading="eager"
+					placeholder="tracedSVG"
 					style={{position:'absolute'}}
 					 />
 
@@ -38,9 +39,9 @@ const LandingSpace = () => {
 						transformOptions={{fit:"cover"}}
 						formats={["auto","webp"]}
 						id="LandingSpaceImage"
-
 						layout="constrained"
-						loading="lazy"
+						loading="eager"
+						placeholder="tracedSVG"
 						style={{minHeight:'100%',objectFit:'cover',position:'relative',right:'0',overflow:'visible'}}
 						alt="Scene of a man with binoculars and a women analyzing data"
 						 />

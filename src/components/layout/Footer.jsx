@@ -11,7 +11,7 @@ const Footer = () => {
 						maxWidth:'6rem'
 					}}>
 					<StaticImage
-						src="../../images/reviewMate-whitelogo.svg"
+						src={`../../images/reviewMate-whitelogo.svg` || `../../images/reviewMate-whitelogo.png`}
 						alt="ReviewMate's logo of a magnifying glass with the written name."
 						placeholder="tracedSVG"
 						formats={["auto", "webp"]}
@@ -45,7 +45,7 @@ const Footer = () => {
 			</table>
 		</div>
 			<div className="footerDiv footerContactGrid">
-			<a href="http://linkedin.com" target="__blank" rel="noopener">
+			<a href="https://www.linkedin.com/company/reviewmate-powered-by-pickerson-solutions-llc/" target="__blank" rel="noopener">
 				<StaticImage src="../../images/linkedin-brands.svg"
 					  transformOptions={{fit:"cover"}}
 						alt="LinkedIn icon"
