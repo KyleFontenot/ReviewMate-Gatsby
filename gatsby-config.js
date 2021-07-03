@@ -7,17 +7,23 @@ module.exports = {
   siteMetadata: {
     title: `ReviewMate`,
     author: `Kyle Fontenot`,
-    description: `ReviewMate is`,
+    description: `The quintessential tool for medical code auditing. Streamline reviews, data, and communications through a single service.`,
 
   },
   plugins: [
     `gatsby-plugin-image`,
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
       },
     },
     {
@@ -28,13 +34,19 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
+        extensions: ['.mdx', '.md'],
+        // a workaround to solve mdx-remark plugin compat issue
+        // https://github.com/gatsbyjs/gatsby/issues/15486
         plugins: [
+          `gatsby-remark-images`,
+        ],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 590,
             },
           },
           {
@@ -43,8 +55,13 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+          },
+
+          {
+            resolve: `gatsby-remark-smartypants`,
+          },
         ],
       },
     },
