@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/blog
   label: Blog
-  match: "**/*"
 upload_dir: src/images/blog
 public_path: "/src/images"
 front_matter_path: ''
