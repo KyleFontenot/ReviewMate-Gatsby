@@ -5,12 +5,15 @@ import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
 import CascadeBlock from "../components/CascadeBlock"
 import LandingSpace from "../components/LandingSpace"
+// import NetlifyIdentityScript from "../components/NetlifyIdentity"
+// import {NetlifyIdentityScriptSecondary} from "../components/NetlifyIdentitySecondary"
 
 const Index = () => {
   const imagesURL = "../images"
 
   return (
     <Layout>
+
       <LandingSpace />
       <Block row="row--row" h2="Our Core Features">
         <div
@@ -237,6 +240,8 @@ const Index = () => {
               margin: '0 auto'
             }}><button className="button button--pert" >Contact us</button></Link>
       </Block>
+      {/*  */}
+
     </Layout>
   )
 }
