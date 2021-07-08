@@ -1,14 +1,17 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: ''
-webhook_url: 
+admin_path: '/.forestry/'
+webhook_url:
 sections:
 - type: document
   path: src/blog
   label: Blog
-upload_dir: src/images/blog
-public_path: "/src/images"
+- type: document
+  path: src/faqs
+  label: FAQs
+upload_dir: /src/images/blog
+public_path: /src/images
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
