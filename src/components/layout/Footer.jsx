@@ -11,7 +11,7 @@ const Footer = () => {
 						maxWidth:'6rem'
 					}}>
 					<StaticImage
-						src={`../../images/reviewMate-whitelogo.svg` || `../../images/reviewMate-whitelogo.png`}
+						src={`../../images/reviewmate-whitelogo.svg` || `../../images/reviewmate-whitelogo.png`}
 						alt="ReviewMate's logo of a magnifying glass with the written name."
 						placeholder="tracedSVG"
 						formats={["auto", "webp"]}

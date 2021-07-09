@@ -8,7 +8,7 @@ const FormBlock = () => {
   const emailField = useRef();
   const errorRef = useRef();
   const [errorMessage, seterrorMessage] = useState('');
-  let validForm = true;
+  // let validForm = true;
 
 
 function checkForm(e) {
