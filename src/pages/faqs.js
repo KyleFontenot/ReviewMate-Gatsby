@@ -28,9 +28,15 @@ const Index = () => {
     `
   );
 
+
+
+
+
   return (
     <Layout slug="FAQs">
       <h1>FAQs</h1>
+
+
       <Block row="column" className="faqsDiv">
         {datafaq.allContentfulFaq.edges.sort((a, b) => a.node.order - b.node.order).map(edge => {
           return (

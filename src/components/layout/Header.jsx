@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useRef } from "react"
 import SEO from "./seo"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
@@ -6,7 +6,6 @@ import MobileNav from "./MobileNav"
 
 const Header = (props, { slug} ) => {
   const dropdownProductsRef = useRef()
-  const dropdownContactsRef = useRef()
 
   const [menuProducts, setMenuProducts] = useState(false)
   // const [menuContacts, setMenuContacts] = useState(false)
