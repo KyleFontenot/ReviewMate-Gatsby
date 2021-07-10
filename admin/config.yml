@@ -15,13 +15,13 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-    - name: "faqs"
-      label: "FAQs" # Used in the UI
-      folder: "/cms/faqs" # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: "{{fields.title}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields:
-        - {label: "Very short title of the question", name: "title", widget: "string"}
-        - {label: "Order of Appearance(check for duplicates)", name: "order", widget: "number"}
-        - {label: "Question", name: "question", widget: "text"}
-        - {label: "Answer", name: "answer", widget: "markdown"}
+  - name: "faqs"
+    label: "FAQs" # Used in the UI
+    folder: "/cms/faqs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{fields.title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - {label: "Very short title of the question", name: "title", widget: "string"}
+      - {label: "Order of Appearance(check for duplicates)", name: "order", widget: "number"}
+      - {label: "Question", name: "question", widget: "text"}
+      - {label: "Answer", name: "answer", widget: "markdown"}
