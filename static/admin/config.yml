@@ -20,9 +20,9 @@ collections:
     label: "FAQs"
     folder: "/cms/faqs"
     create: true
-    slug: "{{fields.title}}" 
+    slug: "{{fields.title}}"
     fields:
       - {label: "Two-word title of the question", name: "title", widget: "string"}
       - {label: "Order of Appearance(check for duplicates)", name: "order", widget: "number"}
       - {label: "Question", name: "question", widget: "text"}
-      - {label: "Answer", name: "answer", widget: "text"}
+      - {label: "Answer", name: "answer", widget: "markdown"}
