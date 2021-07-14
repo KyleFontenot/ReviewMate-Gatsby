@@ -5,10 +5,11 @@ import { Link } from "gatsby"
 import MobileNav from "./MobileNav"
 
 const Header = (props, { slug} ) => {
-  const dropdownProductsRef = useRef()
+  const dropdownProductsRef = React.useRef(0);
+  const dropdownLi = React.useRef(0);
 
   const [menuProducts, setMenuProducts] = useState(false)
-  // const [menuContacts, setMenuContacts] = useState(false)
+
 
   return (
     <header id="header">
@@ -42,6 +43,7 @@ const Header = (props, { slug} ) => {
               to="#"
               onMouseEnter={() => setMenuProducts(true)}
               onMouseLeave={() => setMenuProducts(false)}
+              ref={dropdownLi}
             >
               Products
             </Link>

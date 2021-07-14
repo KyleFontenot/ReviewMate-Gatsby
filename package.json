@@ -24,6 +24,7 @@
     "gatsby-plugin-netlify-cms": "^5.9.0",
     "gatsby-plugin-offline": "^4.9.0",
     "gatsby-plugin-react-helmet": "^4.9.0",
+    "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sass": "^4.9.0",
     "gatsby-plugin-sharp": "^3.9.0",
     "gatsby-remark-copy-linked-files": "^4.6.0",

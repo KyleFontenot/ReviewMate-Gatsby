@@ -9,22 +9,23 @@ import FAQBlock from "../components/FAQBlock.jsx"
 const Index = () => {
   const datafaq = useStaticQuery(
     graphql`
-      query MyFAQQuery {
-        allContentfulFaq {
-          edges {
-            node {
-
-              question
-              answer {
-                answer
-                id
-              }
-              id
-              order
-            }
-          }
+    query Faqsquery {
+allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
+  edges {
+    node {
+      id
+      childMarkdownRemark {
+        frontmatter {
+          title
+          order
+          question
         }
+        rawMarkdownBody
       }
+    }
+  }
+}
+}
     `
   );
 
@@ -36,12 +37,10 @@ const Index = () => {
     <Layout slug="FAQs">
       <h1>FAQs</h1>
 
-
       <Block row="column" className="faqsDiv">
-        {datafaq.allContentfulFaq.edges.sort((a, b) => a.node.order - b.node.order).map(edge => {
+        {datafaq.allFile.edges.sort((a, b) => a.node.childMarkdownRemark.frontmatter.order - b.node.childMarkdownRemark.frontmatter.order).map(edge => {
           return (
-
-            <FAQBlock key={edge.node.id} questionData={edge.node.question} answerData={edge.node.answer.answer} />
+            <FAQBlock key={edge.node.id} questionData={edge.node.childMarkdownRemark.frontmatter.question} answerData={edge.node.childMarkdownRemark.rawMarkdownBody} />
           )
         })}
       </Block>
@@ -50,15 +49,3 @@ const Index = () => {
 }
 
 export default Index;
-
-
-
-// <div key={edge.node.id} className="faqEntry" onClick={() => {
-//     // console.log(toggles[`${edge.node.id.slice(0, 4)}`]);
-//   changeToggles(toggles[`${edge.node.id.slice(0, 4)}`] = !toggles[`${edge.node.id.slice(0, 4)}`]);
-// }}>
-//   <h3>{edge.node.question}</h3>
-//   <p className={
-//       toggles[`${edge.node.id.slice(0, 4)}`] ? `faqShow` : ''
-//     }>{edge.node.answer.answer}</p>
-// </div>

@@ -5,8 +5,8 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `ReviewMate`,
-    author: `Kyle Fontenot`,
-    description: `ReviewMate is`,
+    author: `Pickerson Solutions LLC.`,
+    description: `The quintessential medical auditing tool. ReviewMate maximizes auditor capabilities by streamlining findings, audits, communications, and reports.`,
 
   },
   plugins: [

@@ -1,7 +1,6 @@
 import React from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
 import {Link} from 'gatsby'
-// import LinkedInIcon from '../images/linkedin-brans.svg'
 
 const Footer = () => {
 	return (

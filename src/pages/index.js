@@ -13,7 +13,6 @@ const Index = () => {
 
   return (
     <Layout>
-
       <LandingSpace />
       <Block row="row--row" h2="Our Core Features">
         <div
