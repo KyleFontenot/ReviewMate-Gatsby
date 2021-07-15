@@ -19,6 +19,7 @@ allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
           title
           order
           question
+          answer
         }
         rawMarkdownBody
       }
@@ -40,7 +41,7 @@ allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
       <Block row="column" className="faqsDiv">
         {datafaq.allFile.edges.sort((a, b) => a.node.childMarkdownRemark.frontmatter.order - b.node.childMarkdownRemark.frontmatter.order).map(edge => {
           return (
-            <FAQBlock key={edge.node.id} questionData={edge.node.childMarkdownRemark.frontmatter.question} answerData={edge.node.childMarkdownRemark.rawMarkdownBody} />
+            <FAQBlock key={edge.node.id} questionData={edge.node.childMarkdownRemark.frontmatter.question} answerData={edge.node.childMarkdownRemark.frontmatter.answer} />
           )
         })}
       </Block>
