@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "ReviewMate",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "ReviewMate website. The quitessential medical auditing tool.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kyle Fontenot <kylewilliamfontenot@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -12,6 +12,7 @@
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "gatsby": "^3.9.1",
     "gatsby-plugin-emotion": "^6.9.0",
@@ -29,7 +30,6 @@
     "gatsby-plugin-sharp": "^3.9.0",
     "gatsby-remark-copy-linked-files": "^4.6.0",
     "gatsby-remark-images": "^5.6.0",
-    "gatsby-remark-prismjs": "^5.6.0",
     "gatsby-remark-responsive-iframe": "^4.6.0",
     "gatsby-remark-smartypants": "^4.6.0",
     "gatsby-source-contentful": "^5.9.0",
@@ -51,7 +51,7 @@
     "@emotion/babel-plugin": "^11.3.0",
     "prettier": "2.3.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://review-mate.com/",
   "keywords": [
     "gatsby"
   ],
@@ -59,13 +59,13 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/KyleFontenot/ReviewMate-Gatsby.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

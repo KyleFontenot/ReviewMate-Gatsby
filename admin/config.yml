@@ -24,4 +24,4 @@ collections:
       - {label: "Very short title of the question", name: "title", widget: "string"}
       - {label: "Order of Appearance(check for duplicates)", name: "order", widget: "number"}
       - {label: "Question", name: "question", widget: "text"}
-      - {label: "Answer", name: "answer", widget: "markdown"}
+      - {label: "Answer", name: "body", widget: "markdown"}

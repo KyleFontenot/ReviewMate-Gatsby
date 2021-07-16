@@ -44,18 +44,18 @@ const Index = () => {
             color: "white",
             boxShadow: "-3px 8px 20px -2px #111",
             background: "linear-gradient(to bottom right, #A43F39, #6B1D19)",
+            transform:'scale(1.1)'
           }}
         >
           <p>
-            From Inpatient to Outpatient type coding audits, ReviewMate extends
-            your auditing capabilities.
+            ReviewMate thrives and adapts alongside any database system you give it. With a centralized foundation for all findings and data, ReviewMate is able to not only adapt to any record system, but provide optimizations and shortcuts to many obstacles.
           </p>
         </div>
       </Hero>
 
       {items.map(item => {
         return (
-          <CascadeBlock plain="true" key={item.node.id}>
+          <CascadeBlock  key={item.node.id}>
             <div className="column cascadeBlock__img">
               <GatsbyImage
                 image={item.node.imageAssociated.gatsbyImageData}
@@ -64,6 +64,7 @@ const Index = () => {
                   item.node.imageAssociated.description
                 }
                 layout="constrained"
+                placeholder="tracedSVG"
               ></GatsbyImage>
             </div>
             <div className="column cascadeBlock__text">

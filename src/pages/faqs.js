@@ -1,10 +1,8 @@
 import React from "react"
-// import { StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
 import FAQBlock from "../components/FAQBlock.jsx"
-// import CascadeBlock from "../components/CascadeBlock"
 
 const Index = () => {
   const datafaq = useStaticQuery(
@@ -19,9 +17,8 @@ allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
           title
           order
           question
-          answer
         }
-        rawMarkdownBody
+        html
       }
     }
   }
@@ -30,10 +27,6 @@ allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
     `
   );
 
-
-
-
-
   return (
     <Layout slug="FAQs">
       <h1>FAQs</h1>
@@ -41,7 +34,9 @@ allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
       <Block row="column" className="faqsDiv">
         {datafaq.allFile.edges.sort((a, b) => a.node.childMarkdownRemark.frontmatter.order - b.node.childMarkdownRemark.frontmatter.order).map(edge => {
           return (
-            <FAQBlock key={edge.node.id} questionData={edge.node.childMarkdownRemark.frontmatter.question} answerData={edge.node.childMarkdownRemark.frontmatter.answer} />
+            <FAQBlock key={edge.node.id} questionData={edge.node.childMarkdownRemark.frontmatter.question}
+            answer={edge.node.childMarkdownRemark.html}>
+            </FAQBlock>
           )
         })}
       </Block>

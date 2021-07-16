@@ -7,7 +7,7 @@ import Hero from "../../components/Hero"
 // import Card from "../components/Card"
 import { GatsbyImage } from "gatsby-plugin-image"
 // import FAQBlock from "../components/FAQBlock.jsx"
-import CascadeBlockPlain from "../../components/CascadeBlockPlain"
+import CascadeBlock from "../../components/CascadeBlock"
 
 const Index = () => {
   const {
@@ -45,18 +45,20 @@ const Index = () => {
             color: "white",
             boxShadow: "-3px 8px 20px -2px #111",
             background: "linear-gradient(to bottom right, #A43F39, #6B1D19)",
+            transform:'scale(1.1)'
           }}
         >
           <p>
-            From Inpatient to Outpatient type coding audits, ReviewMate extends
-            your auditing capabilities.
+            Approach all operations of your team from the top-down with ease. Automatic reporting consolidates results into actionable oportunities immediately. With thorough communication abilities both internal and external, convert your time into better results.
           </p>
         </div>
       </Hero>
 
+
+
       {items.map(item => {
         return (
-          <CascadeBlockPlain key={item.node.id}>
+          <CascadeBlock  key={item.node.id}>
             <div className="column cascadeBlock__img">
               <GatsbyImage
                 image={item.node.imageAssociated.gatsbyImageData}
@@ -79,7 +81,7 @@ const Index = () => {
                   </ul>
                 ) : null}
             </div>
-          </CascadeBlockPlain>
+          </CascadeBlock>
         )
       })}
     </Layout>

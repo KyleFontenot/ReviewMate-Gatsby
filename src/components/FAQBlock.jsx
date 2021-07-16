@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 
-const FAQBlock = ({ questionData, answerData}) => {
+const FAQBlock = ({ questionData, answer}) => {
 	const [showP, setShowP] = useState(false);
 	const toggleShowP = () => {
 		setShowP(!showP);
@@ -9,7 +9,7 @@ const FAQBlock = ({ questionData, answerData}) => {
 	return (
 		<div className="faqEntry" onClick={toggleShowP}>
 			<h3>{questionData}</h3>
-			<p className={showP ? `faqShow` : ''}>{answerData}</p>
+			<div className={showP ? `faqShow` : ''} dangerouslySetInnerHTML={{__html: answer}}></div>
 		</div>
 	)
 }

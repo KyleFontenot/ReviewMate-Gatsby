@@ -41,9 +41,10 @@ const Index = () => {
 						backgroundColor: "#9a2a24",
 						color:'white',
 						background:'linear-gradient(to bottom right, #A43F39, #6B1D19)',
-            transform:'scale(1.2)'
+            transform:'scale(1.1)'
 					}}>
-          <p>From Inpatient to Outpatient type coding audits, ReviewMate extends your auditing capabilities.</p>
+          <p>Simply source your database to have all of the best, simplistic tools to perform audits and congregate findings at a lower level.</p>
+          <p>ReviewMate allows an easy changing of roles and supplies a central location for passing all data. Role privileges scale capabilities with teams.</p>
         </div>
       </Hero>
 

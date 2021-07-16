@@ -40,7 +40,7 @@ const Header = (props, { slug} ) => {
         >
           <li className="navli">
             <Link
-              to="#"
+              to="/products/"
               onMouseEnter={() => setMenuProducts(true)}
               onMouseLeave={() => setMenuProducts(false)}
               ref={dropdownLi}
