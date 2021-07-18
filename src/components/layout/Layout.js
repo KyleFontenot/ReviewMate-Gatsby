@@ -1,11 +1,12 @@
 import React, {useState, useEffect, useRef} from "react"
+import SEO from "./seo"
 // import { Link } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
 import BackToTop from "./BackToTop"
 
 
-const Layout = ({ location, slug, children }) => {
+const Layout = ({ slug, children }) => {
   const hiderRef= useRef();
   const [layoutHider, setLayoutHider] = useState(false);
 
@@ -22,6 +23,7 @@ useEffect(() => {
   return (
     <div className="global-wrapper" >
       <Header slug={slug} setLayoutHider={setLayoutHider} layoutHider={layoutHider}>
+      <SEO slug={slug} />
 
 
       </Header>

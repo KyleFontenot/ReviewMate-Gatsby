@@ -5,16 +5,13 @@ import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
 import CascadeBlock from "../components/CascadeBlock"
 import LandingSpace from "../components/LandingSpace"
-// import NetlifyIdentityScript from "../components/NetlifyIdentity"
-// import {NetlifyIdentityScriptSecondary} from "../components/NetlifyIdentitySecondary"
 
 const Index = () => {
   const imagesURL = "../images"
-
   return (
     <Layout>
       <LandingSpace />
-      <Block row="row--row" h2="Our Core Features">
+      <Block direction="row" h2="Our Core Features">
         <div
           className="column padded ta-center"
           style={{
@@ -220,12 +217,9 @@ const Index = () => {
             </ul>
           </div>
       </CascadeBlock>
-      <Block row="column" style={{
+      <Block direction="column" style={{
           textAlign:'center',
-          flexDirection:'column'
         }}>
-
-
           <p style={{
               margin: '0 auto 2rem',
               maxWidth:'40rem',
@@ -239,8 +233,6 @@ const Index = () => {
               margin: '0 auto'
             }}><button className="button button--pert" >Contact us</button></Link>
       </Block>
-      {/*  */}
-
     </Layout>
   )
 }

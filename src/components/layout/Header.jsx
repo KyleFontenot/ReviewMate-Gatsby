@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react"
-import SEO from "./seo"
+import React, { useState } from "react"
+
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import MobileNav from "./MobileNav"
 
-const Header = (props, { slug} ) => {
+const Header = (props, { slug } ) => {
   const dropdownProductsRef = React.useRef(0);
   const dropdownLi = React.useRef(0);
 
@@ -13,7 +13,7 @@ const Header = (props, { slug} ) => {
 
   return (
     <header id="header">
-      <SEO slug={slug} />
+
       <nav>
         <Link
           to="/"

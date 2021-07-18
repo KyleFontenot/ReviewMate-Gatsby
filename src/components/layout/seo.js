@@ -1,16 +1,9 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, lang, meta, title, slug}) => {
+const SEO = ({ description, lang, meta, title, slug, pathname}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,7 +11,8 @@ const SEO = ({ description, lang, meta, title, slug}) => {
           siteMetadata {
             title
             description
-
+            author
+            keywords
           }
         }
       }
@@ -28,6 +22,8 @@ const SEO = ({ description, lang, meta, title, slug}) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+
   return (
     <Helmet
       htmlAttributes={{
@@ -35,10 +31,24 @@ const SEO = ({ description, lang, meta, title, slug}) => {
       }}
       title={`${defaultTitle ? defaultTitle : "ReviewMate"}`}
       titleTemplate={`${defaultTitle ? defaultTitle : "ReviewMate"} ${slug ? '| ' + slug : ''}`}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
+          : []
+      }
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: "keywords",
+          content: site.siteMetadata.keywords.join(","),
         },
         {
           property: `og:title`,
@@ -60,7 +70,13 @@ const SEO = ({ description, lang, meta, title, slug}) => {
           name: `twitter:title`,
           content: title,
         },
-      ].concat(meta)}
+      ].concat(
+          {
+            name: "twitter:card",
+            content: "summary",
+          }
+        )
+      .concat(meta)}
     />
   )
 }

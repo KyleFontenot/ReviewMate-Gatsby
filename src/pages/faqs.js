@@ -31,7 +31,7 @@ allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
     <Layout slug="FAQs">
       <h1>FAQs</h1>
 
-      <Block row="column" className="faqsDiv">
+      <Block row="column" column className="faqsDiv">
         {datafaq.allFile.edges.sort((a, b) => a.node.childMarkdownRemark.frontmatter.order - b.node.childMarkdownRemark.frontmatter.order).map(edge => {
           return (
             <FAQBlock key={edge.node.id} questionData={edge.node.childMarkdownRemark.frontmatter.question}

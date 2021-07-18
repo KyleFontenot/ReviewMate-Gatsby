@@ -7,7 +7,7 @@ import Hero from "../../components/Hero"
 // import Card from "../components/Card"
 import { GatsbyImage } from "gatsby-plugin-image"
 // import FAQBlock from "../components/FAQBlock.jsx"
-import CascadeBlock from "../../components/CascadeBlock"
+import CascadeBlockPlain from "../../components/CascadeBlockPlain"
 
 const Index = () => {
   const {
@@ -58,7 +58,7 @@ const Index = () => {
 
       {items.map(item => {
         return (
-          <CascadeBlock  key={item.node.id}>
+          <CascadeBlockPlain  key={item.node.id}>
             <div className="column cascadeBlock__img">
               <GatsbyImage
                 image={item.node.imageAssociated.gatsbyImageData}
@@ -81,7 +81,7 @@ const Index = () => {
                   </ul>
                 ) : null}
             </div>
-          </CascadeBlock>
+          </CascadeBlockPlain>
         )
       })}
     </Layout>

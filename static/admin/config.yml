@@ -25,3 +25,24 @@ collections:
       - {label: "Order of Appearance(check for duplicates)", name: "order", widget: "number"}
       - {label: "Question", name: "question", widget: "text"}
       - {label: "Answer", name: "body", widget: "markdown"}
+  - name: "modules"
+    label: "Modules" # Used in the UI
+    folder: "/cms/modules" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{fields.title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - {label: "Name of module", name: "title", widget: "string"}
+      - label: "Module Category"
+        name: "category"
+        widget: "select"
+        options: ["Auditing Tools", "Auditing Solutions", "Auditing Management"]
+      - {label: "Short overview description", name: "overview", widget: "text"}
+      - {label: "Full page description", name: "body", widget: "markdown"}
+      - label: "Main Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        # default: "/uploads/chocolate-dogecoin.jpg"
+        # media_library:
+        #   config:
+            # multiple: true

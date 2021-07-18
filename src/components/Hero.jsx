@@ -2,8 +2,9 @@ import React from 'react'
 // import { StaticImage } from "gatsby-plugin-image"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
+import Card from "./Card"
 
-const Hero = ({ children, bgimgUniqueName, maxHeight, subtle }) => {
+const Hero = ({ children, bgimgUniqueName, maxHeight, subtle, blurred,  }) => {
 	const data = useStaticQuery(graphql`
 	query {
 	  allImageSharp {
@@ -22,7 +23,7 @@ const Hero = ({ children, bgimgUniqueName, maxHeight, subtle }) => {
 const match = data.allImageSharp.edges.find(edge => edge.node.fluid.originalName === bgimgUniqueName);
 
 	return (
-	<div style={{ display: "grid" }} className="hero">
+	<div style={{ display: "grid", }} className="hero">
 		<GatsbyImage
 			  image={match.node.gatsbyImageData}
 				alt=" "
@@ -47,6 +48,7 @@ const match = data.allImageSharp.edges.find(edge => edge.node.fluid.originalName
 		{children}
 
     </div>
+		{/*Bottom border*/}
 		<div style={{
 			width: "100%",
 			height: "10px",

@@ -1,7 +1,7 @@
 
 import React from "react"
 // import { StaticImage } from "gatsby-plugin-image"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout/Layout"
 import Hero from "../components/Hero"
 import Block from "../components/Block"
@@ -9,7 +9,7 @@ import Card from "../components/Card"
 import { StaticImage } from "gatsby-plugin-image"
 
 // for including css prop styling
-import { css, jsx } from '@emotion/react'
+// import { css, jsx } from '@emotion/react'
 import styled from '@emotion/styled'
 
 const GradientParagraph = styled.p`
@@ -42,7 +42,7 @@ const Index = () => {
           </p>
         </div>
       </Hero>
-      <Block row="">
+      <Block>
         <Card>
           <StaticImage
             src="../images/greg.jpg"
