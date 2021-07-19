@@ -34,9 +34,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `modules`,
+        path: `${__dirname}/cms/modules`,
+      },
+    },
+    {
     resolve: `gatsby-plugin-canonical-urls`,
     options: {
-      siteUrl: `https://www.example.com`,
+      siteUrl: `https://www.review-mate.com`,
     },
   },
     {

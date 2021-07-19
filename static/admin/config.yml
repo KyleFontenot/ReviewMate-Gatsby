@@ -39,10 +39,7 @@ collections:
       - {label: "Short overview description", name: "overview", widget: "text"}
       - {label: "Full page description", name: "body", widget: "markdown"}
       - label: "Main Image"
-        name: "thumbnail"
+        name: "image"
         widget: "image"
         choose_url: true
-        # default: "/uploads/chocolate-dogecoin.jpg"
-        # media_library:
-        #   config:
-            # multiple: true
+        media_library: "/src/images/netlify"
