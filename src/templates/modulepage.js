@@ -26,20 +26,20 @@ export default function ModulePage({ data }) {
 
 // /static/uploads/graph-business-financial-investment-risk.webp
 
-export const  query = graphql`
-query module($slug: String!) {
-  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-    html
-    frontmatter {
-      title
-      slug
-      overview
-      category
-      image
-    }
-    rawMarkdownBody
-  }
-}
-
-
-`
+// export const  query = graphql`
+// query module($slug: String!) {
+//   markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+//     html
+//     frontmatter {
+//       title
+//       slug
+//       overview
+//       category
+//       image
+//     }
+//     rawMarkdownBody
+//   }
+// }
+//
+//
+// `

@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "src/images/netlify"
-public_folder: "/static/uploads"
+media_folder: static/img
+public_folder: /img
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
@@ -46,4 +46,3 @@ collections:
         widget: "image"
         choose_url: true
         required: false
-        media_library: "/src/images/netlify"

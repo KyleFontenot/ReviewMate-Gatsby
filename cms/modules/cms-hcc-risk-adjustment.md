@@ -1,7 +1,5 @@
 ---
 title: CMS-HCC (Risk Adjustment)
-slug: cms-hcc
-path: /auditingtools/cms-hcc
 category: Auditing Tools
 ---
 The CMS-HCC (Risk Adjustment) auditing module is part of ReviewMate auditing suite. After uploading coded data, auditing can be accomplished in any of three ways:
