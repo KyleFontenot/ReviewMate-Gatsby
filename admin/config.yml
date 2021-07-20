@@ -30,6 +30,9 @@ collections:
     folder: "/cms/modules" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{fields.title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
     fields:
       - {label: "Name of module", name: "title", widget: "string"}
       - label: "Module Category"
