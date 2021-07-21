@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, lang, meta, title, slug, pathname}) => {
+const SEO = ({ description, lang, meta, title, slug}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -13,16 +13,21 @@ const SEO = ({ description, lang, meta, title, slug, pathname}) => {
             description
             author
             keywords
+            siteUrl
+            lang
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  // const description = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const canonical = site.siteMetadata.siteUrl || null
+  // const title = site.siteMetadata.title;
+  // const lang = site.siteMetadata.lang;
+
 
   return (
     <Helmet
@@ -44,7 +49,7 @@ const SEO = ({ description, lang, meta, title, slug, pathname}) => {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description,
         },
         {
           name: "keywords",
@@ -56,7 +61,7 @@ const SEO = ({ description, lang, meta, title, slug, pathname}) => {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description,
         },
         {
           property: `og:type`,
@@ -77,7 +82,9 @@ const SEO = ({ description, lang, meta, title, slug, pathname}) => {
           }
         )
       .concat(meta)}
-    />
+    >
+      {/*<title>{slug ? `${defaultTitle} | ${slug}` : defaultTitle}</title>*/}
+    </Helmet>
   )
 }
 

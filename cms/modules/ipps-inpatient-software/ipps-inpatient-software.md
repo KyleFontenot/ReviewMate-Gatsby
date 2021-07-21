@@ -6,7 +6,6 @@ overview: >-
   The IPPS (Facility Inpatient) auditing module is part of ReviewMate auditing
   suite and provides:
 
-
   Accuracy rates for all elements including: MS-DRG, APR-DRG, SOI, ROM, Diagnosis, Principal Diagnosis, Secondary Diagnosis, POA, Discharge Disposition, Procedure (PCS), CPT/HCPCS (optional), Procedure Provider, Procedure date, MCC, CC, HCC and HAC.
 
   Both MS-DRG and APR-DRG pricing and grouping
@@ -21,6 +20,7 @@ overview: >-
 
   Identification on the screen of codes with MCC/CC/HAC/HCC value
 image: senior-patient-facing-the-problem-of-vaccination.jpg
+alt: Nurse offering to help patient with injection
 ---
 The IPPS (Facility Inpatient) auditing module is part of ReviewMate auditing suite and provides:
 

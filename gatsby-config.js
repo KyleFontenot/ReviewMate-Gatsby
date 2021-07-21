@@ -7,8 +7,13 @@ module.exports = {
     title: `ReviewMate`,
     author: `Pickerson Solutions LLC.`,
     description: `The quintessential medical auditing tool. ReviewMate maximizes auditor capabilities by streamlining findings, audits, communications, and reports.`,
-    keywords: ['medical coding audit','medical coding auditing', 'medical coding auditor salary', 'medical coding auditor', 'medical coding audit','medical coding audit worksheet','medical coding audit template','reports excel','medical coding audit software','medical coding auditing companies','medical coding auditing workbook','medical coding auditing jobs','medical coding auditing jobs','medical coding audit forms','medical coding audit tool','medical coding audit tool','medical coding auditor','medical coding audit excel','medical coding audit form','medical coding audit sheet','medical coding audit tool','medical coding audit services','medical coding','audit','coding audit','coding auditing','ICD-9','ICD-9-CM','ICD-10','ICD-10-CM','ICD-10-PCS','IPPS','OPPS','CMS-HCC','Profee','ASC','ICD-9-CM','code look-up','MS-DRG','APR-DRG','CPT/HCPCS','AHA','AHA coding','Epic','Cerner','HL7 interfaces','HL7','EDI 837','findings','reporting','audit findings','audit quicker','coding quicker','code quicker','medical code quicker','audit fast','code fast','risk assessment','risk adjustment','tracker','coding excel','excel alternative coding','excel alternative auditing']
-
+    keywords: ['medical coding audit','medical coding auditing', 'medical coding auditor salary', 'medical coding auditor', 'medical coding audit','medical coding audit worksheet','medical coding audit template','reports excel','medical coding audit software','medical coding auditing companies','medical coding auditing workbook','medical coding auditing jobs','medical coding auditing jobs','medical coding audit forms','medical coding audit tool','medical coding audit tool','medical coding auditor','medical coding audit excel','medical coding audit form','medical coding audit sheet','medical coding audit tool','medical coding audit services','medical coding','audit','coding audit','coding auditing','ICD-9','ICD-9-CM','ICD-10','ICD-10-CM','ICD-10-PCS','IPPS','OPPS','CMS-HCC','Profee','ASC','ICD-9-CM','code look-up','MS-DRG','APR-DRG','CPT/HCPCS','AHA','AHA coding','Epic','Cerner','HL7 interfaces','HL7','EDI 837','findings','reporting','audit findings','audit quicker','coding quicker','code quicker','medical code quicker','audit fast','code fast','risk assessment','risk adjustment','tracker','coding excel','excel alternative coding','excel alternative auditing'],
+    siteUrl: 'https://review-mate.com',
+    social: {
+      linkedin: 'https://www.linkedin.com/company/reviewmate-powered-by-pickerson-solutions-llc/',
+      email: 'info@pickerson.com'
+    },
+    lang: 'en'
   },
   plugins: [
     `gatsby-plugin-image`,

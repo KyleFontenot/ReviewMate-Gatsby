@@ -37,6 +37,7 @@ collections:
     fields:
       - {label: "Name of module", name: "title", widget: "string"}
       - {label: "CMSSegment", name: "cmssegment", widget: "hidden", default: "modules"}
+      - {label: "Slug", name: "slug", widget: "hidden", default: "{{fields.title}}"}
       - label: "Module Category"
         name: "category"
         widget: "select"
@@ -48,3 +49,4 @@ collections:
         widget: "image"
         choose_url: true
         required: false
+      - {label: "Short image description", name: "alt", widget: "text"}

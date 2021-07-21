@@ -4,9 +4,9 @@ category: Auditing Tools
 overview: "The Profee auditing module is part of ReviewMate auditing suite and provides:"
 cmssegment: modules
 slug: profee-physicians-office
-image: filling-medical-record_1098-18239-1.webp
+image: filling-medical-record.jpg
+alt: Doctor filling out paper form with patient
 ---
-
 
 The Profee auditing module is part of ReviewMate auditing suite and provides:
 

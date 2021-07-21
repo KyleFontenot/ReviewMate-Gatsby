@@ -9,7 +9,7 @@ import Hero from "../components/Hero"
 
 const ContactPage = () => {
   return (
-    <Layout slug="Contact Us">
+    <Layout slug="Contact">
 
       <Hero bgimgUniqueName="grid4.png">
         <FormBlock />

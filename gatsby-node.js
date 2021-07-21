@@ -26,7 +26,7 @@ const result = await graphql(`
     actions.createPage({
       path: `/${categorypath}/${slug}`,
       component: require.resolve(`./src/templates/modulepage.js`),
-      context: { id: id, prefixPath: categorypath },
+      context: { id: id, prefixPath: categorypath, specialSlug: slug },
     })
   })
 }

@@ -4,6 +4,8 @@ slug: cms-hcc-risk-adjustment
 category: Auditing Tools
 overview: "The CMS-HCC (Risk Adjustment) auditing module is part of ReviewMate auditing suite. After uploading coded data, auditing can be accomplished in any of three ways:"
 cmssegment: modules
+image: graph-business-financial-investment.jpg
+alt: Laptop being used to display lowering risk statistic on line chart.
 ---
 The CMS-HCC (Risk Adjustment) auditing module is part of ReviewMate auditing suite. After uploading coded data, auditing can be accomplished in any of three ways:
 

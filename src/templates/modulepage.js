@@ -10,13 +10,13 @@ import HrDivider from "../components/HrDivider"
 
 
 
-export default function ModulePage({ data, pageContext }) {
+export default function ModulePage({ data, pageContext, specialSlug }) {
 const moduleItem = data.markdownRemark;
 
 const mainImage = getImage(moduleItem.frontmatter.image);
 
   return (
-    <Layout>
+    <Layout slug={moduleItem.frontmatter.title}>
     <h1>{`${moduleItem.frontmatter.title} Module`}</h1>
       <Block justify="center">
       <HrDivider/>
@@ -40,6 +40,7 @@ const mainImage = getImage(moduleItem.frontmatter.image);
 
       </Block>
       <p>{pageContext.prefixPath}</p>
+      <p>{specialSlug}</p>
       <BottomOptions>
         <Link to={`/products/${pageContext.prefixPath}/`}>
           <button className="button button--subtle">

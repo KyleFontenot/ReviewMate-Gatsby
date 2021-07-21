@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import MobileNav from "./MobileNav"
 
-const Header = (props, { slug } ) => {
+const Header = (props ) => {
   const dropdownProductsRef = React.useRef(0);
   const dropdownLi = React.useRef(0);
 

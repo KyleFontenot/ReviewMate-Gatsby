@@ -25,6 +25,7 @@ overview: >-
 
   Identification of line items that were recalculated as a result of another line item revision
 image: nurse-measuring-patient-blood-pressure.jpg
+alt: Nurse taking blood pressure of patient's arm
 ---
 The OPPS (Facility Outpatient) auditing module is part of ReviewMate auditing suite and provides:
 

@@ -10,6 +10,7 @@ overview: ReviewMate automatically calculates the amount of time users are
   are configurable per user role or specific audit. ReviewMate leverages a daily
   activity card to create timesheets.
 image: red-alarm-clock.jpg
+alt: Red alarm clock in the foreground on top of a desk
 ---
 
 

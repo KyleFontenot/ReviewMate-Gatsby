@@ -22,10 +22,8 @@ useEffect(() => {
 
   return (
     <div className="global-wrapper" >
-      <Header slug={slug} setLayoutHider={setLayoutHider} layoutHider={layoutHider}>
       <SEO slug={slug} />
-
-
+      <Header setLayoutHider={setLayoutHider} layoutHider={layoutHider}>
       </Header>
 
       <div id="layoutHider" ref={hiderRef} className="" onClick={() => {
