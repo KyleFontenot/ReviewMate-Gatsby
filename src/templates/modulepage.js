@@ -1,45 +1,77 @@
 
 import React from "react"
-import { graphql } from "gatsby"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage} from "gatsby-plugin-image"
+
 import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
+import BottomOptions from "../components/BottomOptions"
+import HrDivider from "../components/HrDivider"
 
 
-export default function ModulePage({ data }) {
-// const moduleItem = data.markdownRemark
-// // const moduleItem  = data.markdownRemark;
-// const mainImage = getImage(moduleItem.frontmatter.image);
+
+export default function ModulePage({ data, pageContext }) {
+const moduleItem = data.markdownRemark;
+
+const mainImage = getImage(moduleItem.frontmatter.image);
+
   return (
     <Layout>
-    {/*<h1>{moduleItem.frontmatter.title}</h1>
-      <Block>
-        <h4 style={{float:'right'}}>{moduleItem.frontmatter.category}</h4>
-        <GatsbyImage image={moduleItem.frontmatter.image} alt="something" />
-        <div dangerouslySetInnerHTML={{ __html: moduleItem.html }} />
-      </Block>*/}
-    <p> hi</p>
+    <h1>{`${moduleItem.frontmatter.title} Module`}</h1>
+      <Block justify="center">
+      <HrDivider/>
+        <GatsbyImage image={mainImage}
+        alt="something"
+        placeholder="blurred"
+        style={{
+          boxShadow:'-1px 6px 12px -3px #000',
+          marginBottom:'1.4rem',
+          marginTop:'2.8rem',
+        }} />
+
+        <div dangerouslySetInnerHTML={{ __html: moduleItem.html }}
+        style={{
+          padding:'1rem',
+          margin: '0.5rem auto 0',
+          maxWidth:'50rem',
+          background:'linear-gradient(to bottom right, #fff 60%, #eee)',
+          borderRadius: '28px'
+        }} />
+
+      </Block>
+      <p>{pageContext.prefixPath}</p>
+      <BottomOptions>
+        <Link to={`/products/${pageContext.prefixPath}/`}>
+          <button className="button button--subtle">
+            More {moduleItem.frontmatter.category}
+          </button>
+        </Link>
+        <Link to='/contact'>
+          <button className="button button--pert">
+            Schedule a demo!
+          </button>
+        </Link>
+      </BottomOptions>
     </Layout>
   )
 }
 
-// /static/uploads/graph-business-financial-investment-risk.webp
+export const  query = graphql`
+query module($id: String) {
+  markdownRemark(id: {eq: $id}) {
+    frontmatter {
+      category
+      overview
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+    html
+  }
+}
 
-// export const  query = graphql`
-// query module($slug: String!) {
-//   markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-//     html
-//     frontmatter {
-//       title
-//       slug
-//       overview
-//       category
-//       image
-//     }
-//     rawMarkdownBody
-//   }
-// }
-//
-//
-// `
+
+`

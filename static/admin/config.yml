@@ -10,7 +10,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{month}}-{{day}}-{{year}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "CMSSegment", name: "cmssegment", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widget: "text"}
@@ -22,6 +22,7 @@ collections:
     slug: "{{fields.title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - {label: "Very short title of the question", name: "title", widget: "string"}
+      - {label: "CMSSegment", name: "cmssegment", widget: "hidden", default: "faqs"}
       - {label: "Order of Appearance(check for duplicates)", name: "order", widget: "number"}
       - {label: "Question", name: "question", widget: "text"}
       - {label: "Answer", name: "body", widget: "markdown"}
@@ -30,11 +31,12 @@ collections:
     folder: "/cms/modules" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{fields.title}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    path: '{{slug}}/index'
+    path: '{{slug}}/{{slug}}'
     media_folder: ''
     public_folder: ''
     fields:
       - {label: "Name of module", name: "title", widget: "string"}
+      - {label: "CMSSegment", name: "cmssegment", widget: "hidden", default: "modules"}
       - label: "Module Category"
         name: "category"
         widget: "select"

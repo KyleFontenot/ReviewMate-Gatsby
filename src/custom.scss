@@ -31,7 +31,7 @@
 }
 
 body {
-  // height:100%;
+
   font-family: "Overpass";
   overflow-y: auto;
   h1:nth-of-type(1) {
@@ -59,7 +59,8 @@ h3 {
 p {
   letter-spacing: 0;
 }
-li {
+ul li {
+  margin-bottom:0.6rem;
   line-height: 1.5rem;
 }
 main {
@@ -533,6 +534,7 @@ footer {
   background-color: white;
   opacity: 0;
   visibility: hidden;
+  transform:none;
   transition: opacity 0.5s, visibility 0.5s;
   &::after {
     content: "";
@@ -545,6 +547,7 @@ footer {
     height: 10px;
     width: 10px;
     transform: rotate(45deg);
+    border-radius:0;
   }
 }
 .showbtt {
@@ -723,17 +726,36 @@ footer {
 h4 {
   padding-bottom: 0.2rem;
 }
-.button--pert {
+.button {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.button--pert, .button--subtle {
   background: none;
   background-color: $color-Secondary;
   border-radius: 100px;
   color: $color-Primary;
   transform: scale(1.2);
   padding: 1.2rem 3.8rem;
+  position:relative;
   &:hover {
     background-color: $color-Secondary-Dark;
     color: white;
     box-shadow: -1px 3px 12px -3px #333;
+  }
+}
+.button--pert {
+  background-color: $color-Secondary;
+  &:hover {
+    background-color: $color-Secondary-Dark;
+    color: white;
+  }
+}
+.button--subtle {
+  background-color: transparent;
+  border: 1px solid $color-Primary;
+  &:hover {
+    background-color: $color-Primary;
+    color: white;
   }
 }
 

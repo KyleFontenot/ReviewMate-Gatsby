@@ -14,7 +14,7 @@ const Header = (props, { slug } ) => {
   return (
     <header id="header">
 
-      <nav>
+      <nav role="navigation" aria-label="Main">
         <Link
           to="/"
           style={{
@@ -54,13 +54,13 @@ const Header = (props, { slug } ) => {
               ref={dropdownProductsRef}
             >
               <li>
-                <Link to="/products/auditingtools">Auditing Tools</Link>
+                <Link to="/products/auditing-tools">Auditing Tools</Link>
               </li>
               <li>
-                <Link to="/products/auditingsolutions">Auditing Solutions</Link>
+                <Link to="/products/auditing-solutions">Auditing Solutions</Link>
               </li>
               <li>
-                <Link to="/products/auditingmanagement">
+                <Link to="/products/auditing-management">
                   Auditing Management
                 </Link>
               </li>
