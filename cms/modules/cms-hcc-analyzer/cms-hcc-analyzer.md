@@ -1,5 +1,5 @@
 ---
-title: CMS-HCC Analyzer
+title: CMS HCC Analyzer
 cmssegment: modules
 category: Auditing Management
 overview: CMS-HCC Analyzer can parse data from EDI billing files automatically

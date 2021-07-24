@@ -5,13 +5,19 @@ import { Link } from "gatsby"
 import Block from "../components/Block"
 import FormBlock from "../components/FormBlock/FormBlock"
 import Hero from "../components/Hero"
+import santizeSlug from "../components/santizeSlug"
 
+// .pattern-grid-md {
+//   background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(to right, currentColor 1px, transparent 1px);
+//   background-size: 25px 25px;
+// }
 
 const ContactPage = () => {
+  const slug = "Contact";
   return (
-    <Layout slug="Contact">
+    <Layout slug={slug} pathName={`${santizeSlug(slug)}`}>
 
-      <Hero bgimgUniqueName="grid4.png">
+      <Hero>
         <FormBlock />
       </Hero>
       <Block row="column">

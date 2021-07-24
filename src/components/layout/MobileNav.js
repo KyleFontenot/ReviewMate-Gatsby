@@ -67,7 +67,7 @@ const MobileNav = (props, ref, setLayoutHider, layoutHider) => {
   return (
 
      <nav id="mobnavParent" ref={mobileNavRef} >
-				<div
+				<button
 	        id="mobileIcon"
 	        onClick={() => {
 	          setMobileMenu(!mobileMenu);
@@ -76,7 +76,7 @@ const MobileNav = (props, ref, setLayoutHider, layoutHider) => {
 					ref={mobileIcon}
 	      >
 	        <div className="hamburger"  />
-	      </div>
+	      </button>
         <ul>
           {arrOfNavLinks.map((item, index) => {
             return (
@@ -84,7 +84,7 @@ const MobileNav = (props, ref, setLayoutHider, layoutHider) => {
                 <Link
                   to={
                     item.includes("Auditing")
-                      ? `/products/${item.replace(/\s/g, "").toLowerCase()}`
+                      ? `/products/${item.replace(/\s/g, "-").toLowerCase()}`
                       : `/${item.toLowerCase()}`
                   }
                 >

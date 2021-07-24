@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, lang, meta, title, slug}) => {
+const Seo = ({ description, lang, meta, title, slug, pathName}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -23,33 +23,21 @@ const SEO = ({ description, lang, meta, title, slug}) => {
 
   // const description = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-
   const canonical = site.siteMetadata.siteUrl || null
   // const title = site.siteMetadata.title;
+  const descriptionSet = description ||  site.siteMetadata.description;
   // const lang = site.siteMetadata.lang;
 
 
   return (
     <Helmet
       htmlAttributes={{
-        lang, title, meta, description
+        lang, title, meta, descriptionSet
       }}
-      title={`${defaultTitle ? defaultTitle : "ReviewMate"}`}
-      titleTemplate={`${defaultTitle ? defaultTitle : "ReviewMate"} ${slug ? '| ' + slug : ''}`}
-      link={
-        canonical
-          ? [
-              {
-                rel: "canonical",
-                href: canonical,
-              },
-            ]
-          : []
-      }
       meta={[
         {
           name: `description`,
-          content: description,
+          content: descriptionSet,
         },
         {
           name: "keywords",
@@ -61,7 +49,7 @@ const SEO = ({ description, lang, meta, title, slug}) => {
         },
         {
           property: `og:description`,
-          content: description,
+          content: descriptionSet,
         },
         {
           property: `og:type`,
@@ -75,30 +63,34 @@ const SEO = ({ description, lang, meta, title, slug}) => {
           name: `twitter:title`,
           content: title,
         },
-      ].concat(
-          {
-            name: "twitter:card",
-            content: "summary",
-          }
-        )
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata?.author || ``,
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },]
       .concat(meta)}
     >
-      {/*<title>{slug ? `${defaultTitle} | ${slug}` : defaultTitle}</title>*/}
+      <title>{slug ? `${defaultTitle} | ${slug}` : defaultTitle}</title>
+      <meta name="description" content={descriptionSet} />
+      {/*{pathName ? <link rel='canonical' href={`${canonical}${pathName}`}/> : <link rel='canonical' href={`${canonical}`}/>}*/}
     </Helmet>
   )
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 }
 
-SEO.propTypes = {
+Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object)
 
 }
 // title: PropTypes.string.isRequired,
-export default SEO
+export default Seo

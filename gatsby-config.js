@@ -51,13 +51,13 @@ module.exports = {
       siteUrl: `https://www.review-mate.com`,
     },
   },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
+    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    //   },
+    // },
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -91,7 +91,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-
+    'gatsby-plugin-react-svg',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

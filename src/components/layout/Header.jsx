@@ -54,13 +54,13 @@ const Header = (props ) => {
               ref={dropdownProductsRef}
             >
               <li>
-                <Link to="/products/auditing-tools">Auditing Tools</Link>
+                <Link to="/products/auditing-tools/">Auditing Tools</Link>
               </li>
               <li>
-                <Link to="/products/auditing-solutions">Auditing Solutions</Link>
+                <Link to="/products/auditing-solutions/">Auditing Solutions</Link>
               </li>
               <li>
-                <Link to="/products/auditing-management">
+                <Link to="/products/auditing-management/">
                   Auditing Management
                 </Link>
               </li>
@@ -74,7 +74,7 @@ const Header = (props ) => {
           </li>
           <li className="navli">
             <Link
-              to="/contact"
+              to="/contact/"
               // onMouseEnter={() => setMenuContacts(true)}
               // onMouseLeave={() => setMenuContacts(false)}
             >

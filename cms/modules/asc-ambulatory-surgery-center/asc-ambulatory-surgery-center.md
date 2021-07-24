@@ -1,5 +1,5 @@
 ---
-title: "  ASC (Ambulatory Surgery Center)"
+title: "ASC (Ambulatory Surgery Center)"
 cmssegment: modules
 category: Auditing Tools
 overview: >-

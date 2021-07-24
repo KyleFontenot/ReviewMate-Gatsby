@@ -28,15 +28,15 @@ const Footer = () => {
 					</thead>
 					<tbody>
 						<tr>
-						  <td><Link to="/products/auditingtools">Auditing Tools</Link></td>
+						  <td><Link to="/products/auditing-tools/">Auditing Tools</Link></td>
 							<td><Link to="/faqs">FAQs</Link></td>
 						</tr>
 						<tr>
-						  <td><Link to="/products/auditingsolutions">Auditing Solutions</Link></td>
+						  <td><Link to="/products/auditing-solutions/">Auditing Solutions</Link></td>
 							<td><Link to="/about">About Us</Link></td>
 						</tr>
 						<tr>
-						  <td><Link to="/products/auditingmanagement">Auditing Management</Link></td>
+						  <td><Link to="/products/auditing-management/">Auditing Management</Link></td>
 							<td><Link to="/contact/">Contact</Link></td>
 
 						</tr>

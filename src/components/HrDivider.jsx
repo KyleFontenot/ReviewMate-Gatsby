@@ -9,7 +9,7 @@ const StylizedHr = styled.div`
 	width:100%;
 	max-width:60rem;
 	background: linear-gradient(to right, #A43F39, #6B1D09);
-	background-color: #9a2a24;
+	background-color: ${maroon};
 	position:relative;
 	margin: 0.2rem auto 0.2rem;
 `

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
 import FAQBlock from "../components/FAQBlock.jsx"
+import santizeSlug from "../components/santizeSlug"
 
 const Index = () => {
   const datafaq = useStaticQuery(
@@ -26,9 +27,9 @@ allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
 }
     `
   );
-
+const slug = "FAQs"
   return (
-    <Layout slug="FAQs">
+    <Layout slug={slug} pathName={`${santizeSlug(slug)}`}>
       <h1>FAQs</h1>
 
       <Block row="column" column className="faqsDiv">

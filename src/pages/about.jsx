@@ -7,6 +7,7 @@ import Hero from "../components/Hero"
 import Block from "../components/Block"
 import Card from "../components/Card"
 import { StaticImage } from "gatsby-plugin-image"
+import santizeSlug from "../components/santizeSlug"
 
 // for including css prop styling
 // import { css, jsx } from '@emotion/react'
@@ -19,8 +20,9 @@ const GradientParagraph = styled.p`
 `
 
 const Index = () => {
+  const slug = "About";
   return (
-    <Layout slug="About">
+    <Layout slug={slug} pathName={`${santizeSlug(slug)}`}>
       <h1>About Us</h1>
       <Hero bgimgUniqueName="analyzing-graph-growth.jpg">
         <div className="hero__text" style={{ backgroundColor: "white" }}>
@@ -44,16 +46,15 @@ const Index = () => {
       </Hero>
       <Block>
         <Card>
-          <StaticImage
+          <div className="card__image"><StaticImage
             src="../images/greg.jpg"
             placeholder="tracedSVG"
             alt="Photo of Greg Thompson"
             width={150}
             height={150}
             layout="fixed"
-            className="card__image"
             formats={["auto", "webp"]}
-          />
+          /></div>
           <h2>Greg Thompson</h2>
           <h3>CEO</h3>
           <GradientParagraph>

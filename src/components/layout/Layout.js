@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react"
-import SEO from "./seo"
+import Seo from "./seo"
 // import { Link } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
@@ -22,7 +22,7 @@ useEffect(() => {
 
   return (
     <div className="global-wrapper" >
-      <SEO slug={slug} />
+      <Seo slug={slug} />
       <Header setLayoutHider={setLayoutHider} layoutHider={layoutHider}>
       </Header>
 

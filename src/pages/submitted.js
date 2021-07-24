@@ -2,10 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
+import santizeSlug from "../components/santizeSlug"
 
 const Index = () => {
+  const slug = "Submitted";
   return (
-    <Layout slug="Thank you!">
+    <Layout slug={slug} pathName={`${santizeSlug(slug)}`}>
       <h1>Thank you!</h1>
       <Block row="column" style={{
 				flexDirection:"column"

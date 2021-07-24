@@ -79,7 +79,7 @@ body {
   color: #333;
 }
 header {
-  padding: 3rem 3rem 0;
+  padding: 3rem 3rem 0.5rem;
   overflow: visible;
   // z-index:600;
   width: 100%;
@@ -282,7 +282,13 @@ nav {
     animation-iteration-count: infinite;
   }
 }
-
+.modulelink {
+  text-decoration: none;
+  outline: 1px solid transparent;
+  &:hover {
+    outline: 1px solid #ededed;
+  }
+}
 @keyframes layershapes1 {
   0% {
     left: -5%;
@@ -684,7 +690,7 @@ footer {
   border-radius: 28px;
   display: flex;
   flex-flow: column wrap;
-  max-width: 30rem;
+  max-width: 40rem;
   text-decoration: none;
   h2 {
     font-size: 1.4rem;
@@ -710,6 +716,7 @@ footer {
     position: relative;
     // left:calc(50% - 4rem);
     box-shadow: -3px 5px 20px -2px #333;
+    overflow:hidden;
   }
   p,
   ul {
@@ -829,33 +836,35 @@ h4 {
 }
 #mobileIcon {
   position: absolute;
-  left: -5rem;
-  top: 3rem;
-  width: 3.25rem;
-  height: 3.25rem;
+  left: -4rem;
+  top: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   border-radius: 2.5rem;
   z-index: 900;
   content: "";
-  border: 2px solid $color-Primary;
+  border: 1px solid $color-Primary;
   background-color: white;
   z-index: 390;
   padding: 10px;
   transition: background-color;
-  box-shadow: -2px 5px 8px -3px #333;
+  box-shadow: -1px 5px 6px -4px #333;
 
   &.activatedHamburger {
-    background-color: transparent;
-    border: 2px solid white;
+    background-color: transparent!important;
+    background-color: rgba(255,255,255, 0)!important;
+    background-image:none;
+    border: 1px solid white;
   }
   &.activatedHamburger .hamburger::before {
     transform: rotate(45deg);
-    top: 1.4rem;
+    top: 0.9rem;
     background-color: white;
   }
   &.activatedHamburger .hamburger::after {
     transform: rotate(-45deg);
-    top: 1.35rem;
+    top: 0.85rem;
     background-color: white;
   }
   .hamburger {
@@ -866,8 +875,8 @@ h4 {
     &::after {
       position: absolute;
       width: 50%;
-      height: 3px;
-      border-radius: 2px;
+      height: 1px;
+      border-radius: 1px;
       background-color: $color-Primary;
       display: block;
       content: "";
@@ -876,10 +885,10 @@ h4 {
     }
 
     &::before {
-      top: 1.05rem;
+      top: 0.70rem;
     }
     &::after {
-      top: 1.7rem;
+      top: 1.15rem;
     }
   }
 }
@@ -923,6 +932,10 @@ h4 {
 @media (max-width: 768px) {
   #LandingSpaceText {
     transform: scale(0.8);
+  }
+  #backToTop{
+    visibility:hidden;
+    display:none;
   }
   .formColumn {
     padding: 3rem 2rem;
@@ -979,6 +992,9 @@ h4 {
   }
 }
 @media (max-width: 60rem) {
+  header {
+    padding: 3rem 3rem 1.5rem;
+  }
   .cascadeBlock {
     // flex-direction:column;
     & .cascadeBlock__text {
@@ -992,7 +1008,7 @@ h4 {
     }
   }
   .card {
-    width: clamp(12rem, 100%, 40rem);
+    width: clamp(12rem, 100%, 30rem);
     margin: 0.75rem auto;
   }
 }
@@ -1015,6 +1031,10 @@ h4 {
       border-bottom: 4px solid white;
       margin-bottom: 2rem;
     }
+  }
+  .card {
+    width: clamp(12rem, 100%, 40rem);
+    margin: 0.75rem auto;
   }
 }
 
@@ -1047,6 +1067,10 @@ h4 {
     margin-right: auto;
     // width:100%;
 
+  }
+  .card {
+    width: clamp(12rem, 50%, 50rem);
+    margin: 0.75rem auto;
   }
 
   .card__inset {
@@ -1081,5 +1105,11 @@ h4 {
       height: 100%;
     }
 
+  }
+}
+@media (min-width: 70rem){
+  .card {
+    width: clamp(12rem, 30%, 50rem);
+    margin: 0.75rem auto;
   }
 }

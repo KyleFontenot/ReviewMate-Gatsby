@@ -5,13 +5,14 @@ import Layout from "../components/layout/Layout"
 import Block from "../components/Block"
 import CascadeBlock from "../components/CascadeBlock"
 import LandingSpace from "../components/LandingSpace"
+// import santizeSlug from "../../components/santizeSlug"
 
 const Index = () => {
   const imagesURL = "../images"
   return (
     <Layout>
       <LandingSpace />
-      <Block direction="row" h2="Our Core Features">
+      <Block  h2="Our Core Features">
         <div
           className="column padded ta-center"
           style={{
@@ -48,9 +49,7 @@ const Index = () => {
             alt="Icon of a chesspiece and a datasheet"
             layout="fixed"
             height={150}
-            style={{
-              margin: "0 auto 2rem",
-            }}
+            style={{margin: "0 auto 2rem"}}
           />
           <h3> Powerful tools </h3>
           <p className="ta-left">
