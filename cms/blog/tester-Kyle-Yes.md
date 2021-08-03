@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: Kyle's Test Entry
 date: 2021-08-03T17:17:45.086Z
 thumbnail: /static/favicon.ico

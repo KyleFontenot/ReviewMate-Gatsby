@@ -697,6 +697,7 @@ footer {
     padding-bottom: 0.75rem;
     border-bottom: 2px solid $color-Secondary;
     color: $color-Primary;
+    padding-top:1rem;
   }
   h3 {
     font-size: 1.2rem;
@@ -721,6 +722,7 @@ footer {
   p,
   ul {
     padding: 1rem 0rem 1rem;
+    margin-bottom:0.5rem;
   }
   p {
     text-indent: 2rem;
@@ -1069,7 +1071,7 @@ h4 {
 
   }
   .card {
-    width: clamp(12rem, 50%, 50rem);
+    width: clamp(12rem, 100%, 50rem);
     margin: 0.75rem auto;
   }
 
@@ -1109,7 +1111,7 @@ h4 {
 }
 @media (min-width: 70rem){
   .card {
-    width: clamp(12rem, 30%, 50rem);
+    width: clamp(12rem, 100%, 50rem);
     margin: 0.75rem auto;
   }
 }
