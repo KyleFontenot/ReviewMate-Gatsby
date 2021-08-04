@@ -1,5 +1,5 @@
 ---
-title: IPPS (Inpatient Software)
+title: Inpatient (IPPS)
 cmssegment: modules
 category: Auditing Tools
 overview: >-
