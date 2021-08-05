@@ -1,11 +1,14 @@
 ---
 title: Inpatient (IPPS)
 cmssegment: modules
+order: 1
 category: Auditing Tools
-overview: Inpatient (IPPS) Module
+overview: The Inpatient (IPPS) Module in ReviewMate provides accuracy rates for
+  all audited elements, communication between the auditor and coder, a library
+  of available reports that can be customized and exported, and an "Audit the
+  Auditor" option. Click below for more details!
 image: senior-patient-facing-the-problem-of-vaccination.jpg
 alt: Nurse offering to help patient with injection
-order: 3
 ---
 The IPPS (Facility Inpatient) auditing module of ReviewMate provides:
 
