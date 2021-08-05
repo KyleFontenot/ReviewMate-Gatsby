@@ -1,6 +1,7 @@
 ---
-title: "ASC (Ambulatory Surgery Center)"
+title: ASC (Ambulatory Surgery Center)
 cmssegment: modules
+order: 3
 category: Auditing Tools
 overview: >-
   The ASC (Ambulatory Surgery Center) auditing module is part of ReviewMate
@@ -18,7 +19,6 @@ overview: >-
   Full suite of references including Coding Clinic for HCPCS, CPT Assistant, Coding Clinic, Clinotes, Coders' Desk Reference and the AHA Coding Handbook
 image: surgeons-operation-room.jpg
 alt: Surgeons working in operation room
-order: 1
 ---
 
 
