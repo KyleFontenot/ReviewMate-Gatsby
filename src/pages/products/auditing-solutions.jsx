@@ -22,6 +22,7 @@ const Index = () => {
         frontmatter {
           title
           category
+          order
           image {
             childImageSharp {
               gatsbyImageData
@@ -49,11 +50,11 @@ const Index = () => {
 						background:'linear-gradient(to bottom right, #A43F39, #6B1D19)',
             transform:'scale(1.1)'
 					}}>
-          <p>ReviewMate thrives and adapts alongside any database system you give it. With a centralized foundation for all findings and data, ReviewMate is able to not only adapt to any record system, but provide optimizations and shortcuts to many obstacles.</p>
+          <p>In order to manage the medical coding audit process, ReviewMate offers several options for data integration and mining. Data can seamlessly be integrated into the software a variety of ways. With FTP and API options, ReviewMate will pair easily with coding and abstracting systems as well as electronic health records. Wherever coded data resides, ReviewMate can consume the data to make the coding audit process faster and easier.</p>
         </div>
       </Hero>
 
-			{items.map((item) => {
+			{items.sort((a, b) => a.node.frontmatter.order - b.node.frontmatter.order).map((item) => {
 				return (
 					<CascadeBlockPlain key={item.node.id}>
 						<div className="column cascadeBlock__img">
@@ -68,15 +69,14 @@ const Index = () => {
 							<Link to={`/products/${santizeSlug(slug)}/${santizeSlug(item.node.frontmatter.title)}/`}
               className="modulelink"
               ><h2>{item.node.frontmatter.title}<LinkArrow style={{maxHeight:"1rem", maxWidth:"1rem", marginLeft:"0.5rem", fill:"#9a2a24"}} ></LinkArrow></h2></Link>
-           <div dangerouslySetInnerHTML={{ __html: item.node.html }} />
-							{/*<p>{item.node.frontmatter.overview}</p>*/}
-                {!(item.node.bulletPoints === null || item.node.bulletPoints === undefined) ? (
-                  <ul>
-                    {item.node.bulletPoints.map((point, index) => {
-                      return <li key={index}>{point}</li>
-                    })}
-                  </ul>
-                ) : null}
+           <div >
+            {item.node.frontmatter.overview}
+           </div>
+           <Link to={`/products/auditing-solutions/${santizeSlug(item.node.frontmatter.title)}/`} style={{display:"block", margin:"2rem auto", textAlign:"center"}}>
+             <button className="button button--subtle button--small" >
+               See More
+             </button>
+           </Link>
 					  </div>
 
 					</CascadeBlockPlain>

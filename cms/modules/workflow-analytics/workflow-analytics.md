@@ -13,6 +13,7 @@ overview: "Workflow Analytics is a module that helps managers understand the
   future projects. "
 image: discussing-workflow.jpg
 alt: Three team members discussing topics on a whiteboard together
+order: 2
 ---
 Workflow Analytics is a module that helps managers understand the details of their audits and measure the productivity of their staff. Workflow Analytics highlights any bottlenecks that may increase project duration and increase auditing costs. This module displays detailed metrics from the beginning of an audit until the reporting is finalized. It will show staff productivity on monthly, daily, and yearly basis for both reviewers and coders. The system can display and report turnaround times of patient accounts and audits so the user can understand their workflow pattern and forecast future projects. It creates metrics for:
 

@@ -52,6 +52,15 @@ const Footer = () => {
 					/>
 				<p>ReviewMate</p>
 			</a>
+			<a href="https://www.facebook.com/ReviewMat/" target="__blank" rel="noopener">
+				<StaticImage src="../../images/facebook-logo.svg"
+					  transformOptions={{fit:"cover"}}
+						alt="Facebook icon"
+						className="socialIcon"
+						style={{fill:"#ffffff"}}
+					/>
+				<p>@ReviewMat</p>
+			</a>
 		<a href="mailto:info@pickerson.com">
 				<StaticImage src="../../images/envelope-solid.svg"
 				  transformOptions={{fit:"cover"}}

@@ -5,10 +5,11 @@ category: Auditing Tools
 overview: Inpatient (IPPS) Module
 image: senior-patient-facing-the-problem-of-vaccination.jpg
 alt: Nurse offering to help patient with injection
+order: 3
 ---
 The IPPS (Facility Inpatient) auditing module of ReviewMate provides:
 
-* Accuracy rates for all elements including: 
+* Accuracy rates for all elements including:
 
   * MS-DRG (Medicare Severity Diagnosis Related Groups)
   * APR-DRG (All Patients Refined Diagnosis Related Groups - Copyright 3M)

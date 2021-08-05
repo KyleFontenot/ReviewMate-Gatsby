@@ -680,7 +680,6 @@ footer {
   display: none;
 }
 .card {
-
   padding: 1rem;
   margin: 0.2rem auto;
   min-width: 12rem;
@@ -698,11 +697,13 @@ footer {
     border-bottom: 2px solid $color-Secondary;
     color: $color-Primary;
     padding-top:1rem;
+    padding-left:1rem;
   }
   h3 {
     font-size: 1.2rem;
     color: #777;
     margin-left: 1rem;
+    padding-top:0.75rem;
   }
   h4 {
     margin: 0.6rem auto 0.3rem;
@@ -725,7 +726,7 @@ footer {
     margin-bottom:0.5rem;
   }
   p {
-    text-indent: 2rem;
+    // text-indent: 2rem;
     color:#222;
   }
   li {
@@ -751,6 +752,11 @@ h4 {
     color: white;
     box-shadow: -1px 3px 12px -3px #333;
   }
+}
+.button--small {
+  padding: 0.6rem 1.8rem;
+  font-weight:normal;
+  font-size:0.8rem;
 }
 .button--pert {
   background-color: $color-Secondary;
@@ -898,6 +904,10 @@ h4 {
   background-color: white;
   box-shadow: 1px 8px 20px -10px #000;
   position: relative;
+}
+a > div.card{
+  width:100%;
+
 }
 .card.card--shadow {
   background-color: transparent;
@@ -1071,7 +1081,7 @@ h4 {
 
   }
   .card {
-    width: clamp(12rem, 100%, 50rem);
+    width: clamp(12rem, 50%, 50rem);
     margin: 0.75rem auto;
   }
 

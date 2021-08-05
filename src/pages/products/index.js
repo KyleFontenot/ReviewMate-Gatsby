@@ -44,7 +44,7 @@ const ProductsPage = () => {
 		<Link to="/products/auditing-tools/" aria-label="Auditing Tools"
 		style={{textDecoration: "none", marginLeft:'1.5rem', marginRight:'1.5rem'}}
 		>
-			<Card  shadow style={{width:'100%', marginTop: "0.5"}}>
+			<Card shadow style={{width:'100%', marginTop: "0.5"}}>
 				<h2>Auditing Tools →</h2>
 				<h4>Gather data</h4>
 				<ul style={{color: "#555"}}>

@@ -6,6 +6,7 @@ cmssegment: modules
 slug: profee-physicians-office
 image: filling-medical-record.jpg
 alt: Doctor filling out paper form with patient
+order: 5
 ---
 
 The Profee auditing module is part of ReviewMate auditing suite and provides:

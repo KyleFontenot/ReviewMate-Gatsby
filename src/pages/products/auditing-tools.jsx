@@ -22,6 +22,7 @@ const Index = () => {
         frontmatter {
           title
           category
+          order
           image {
             childImageSharp {
               gatsbyImageData
@@ -49,12 +50,11 @@ const Index = () => {
 						background:'linear-gradient(to bottom right, #A43F39, #6B1D19)',
             transform:'scale(1.1)'
 					}}>
-          <p>Simply source your database to have all of the best, simplistic tools to perform audits and congregate findings at a lower level.</p>
-          <p>ReviewMate allows an easy changing of roles and supplies a central location for passing all data. Role privileges scale capabilities with teams.</p>
+          <p>Medical coding audits are a key component to any organization’s compliance plan and assure proper coding, billing and reimbursement for services performed. In the past these audits have been performed on Excel spreadsheets with manual processes to determine accuracy rates and trends. </p>
         </div>
       </Hero>
 
-			{items.map((item) => {
+			{items.sort((a, b) => a.node.frontmatter.order - b.node.frontmatter.order).map((item) => {
 				return (
 					<CascadeBlockPlain key={item.node.id}>
 						<div className="column cascadeBlock__img">
@@ -69,16 +69,15 @@ const Index = () => {
 							<Link to={`/products/${santizeSlug(slug)}/${santizeSlug(item.node.frontmatter.title)}/`}
               className="modulelink"
               ><h2>{item.node.frontmatter.title}<LinkArrow style={{maxHeight:"1rem", maxWidth:"1rem", marginLeft:"0.5rem", fill:"#9a2a24"}} ></LinkArrow></h2></Link>
-           <div dangerouslySetInnerHTML={{ __html: item.node.html }} />
-							{/*<p>{item.node.frontmatter.overview}</p>*/}
-                {!(item.node.bulletPoints === null || item.node.bulletPoints === undefined) ? (
-                  <ul>
-                    {item.node.bulletPoints.map((point, index) => {
-                      return <li key={index}>{point}</li>
-                    })}
-                  </ul>
-                ) : null}
-					  </div>
+           <div>
+            {item.node.frontmatter.overview}
+           </div>
+           <Link to={`/products/auditing-tools/${santizeSlug(item.node.frontmatter.title)}/`} style={{display:"block", margin:"2rem auto", textAlign:"center"}}>
+             <button className="button button--subtle button--small" >
+               See More
+             </button>
+           </Link>
+           </div>
 
 					</CascadeBlockPlain>
 				)

@@ -56,7 +56,7 @@ const Index = () => {
             formats={["auto", "webp"]}
           /></div>
           <h2>Greg Thompson</h2>
-          <h3>CEO</h3>
+          <h3>Chief Executive Officer</h3>
           <GradientParagraph>
             With more than 25 years in the medical software design and
             development, Mr. Thompson has launched and managed several
@@ -81,7 +81,7 @@ const Index = () => {
             formats={["auto", "webp"]}
           />
           <h2>Karen Pickering - RHIT, CCS</h2>
-          <h3>CCO</h3>
+          <h3>Chief Content Officer</h3>
           <GradientParagraph>
             Ms. Pickering received her RHIT (Registered Health Information
             Technician) certificate in 1990 and her CCS (Certified Coding
@@ -110,7 +110,7 @@ const Index = () => {
             formats={["auto", "webp"]}
           />
           <h2>Faris Zuriekat</h2>
-          <h3>CIO</h3>
+          <h3>Chief Information Officer</h3>
           <GradientParagraph>
             Innovative and entrepreneurial technology leader with over fifteen
             years’ experience in Information Technology, Mr. Zuriekat

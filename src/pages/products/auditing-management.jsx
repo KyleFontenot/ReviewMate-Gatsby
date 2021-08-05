@@ -22,6 +22,7 @@ const Index = () => {
         frontmatter {
           title
           category
+          order
           image {
             childImageSharp {
               gatsbyImageData
@@ -53,7 +54,7 @@ const Index = () => {
         </div>
       </Hero>
 
-			{items.map((item) => {
+			{items.sort((a, b) => a.node.frontmatter.order - b.node.frontmatter.order).map((item) => {
 				return (
 					<CascadeBlockPlain key={item.node.id}>
 						<div className="column cascadeBlock__img">
@@ -68,15 +69,14 @@ const Index = () => {
 							<Link to={`/products/${santizeSlug(slug)}/${santizeSlug(item.node.frontmatter.title)}/`}
               className="modulelink"
               ><h2>{item.node.frontmatter.title}<LinkArrow style={{maxHeight:"1rem", maxWidth:"1rem", marginLeft:"0.5rem", fill:"#9a2a24"}} ></LinkArrow></h2></Link>
-           <div dangerouslySetInnerHTML={{ __html: item.node.html }} />
-							{/*<p>{item.node.frontmatter.overview}</p>*/}
-                {!(item.node.bulletPoints === null || item.node.bulletPoints === undefined) ? (
-                  <ul>
-                    {item.node.bulletPoints.map((point, index) => {
-                      return <li key={index}>{point}</li>
-                    })}
-                  </ul>
-                ) : null}
+           <div >
+            {item.node.frontmatter.overview}
+           </div>
+           <Link to={`/products/auditing-management/${santizeSlug(item.node.frontmatter.title)}/`} style={{display:"block", margin:"2rem auto", textAlign:"center"}}>
+             <button className="button button--subtle button--small" >
+               See More
+             </button>
+           </Link>
 					  </div>
 
 					</CascadeBlockPlain>
@@ -84,7 +84,6 @@ const Index = () => {
 			}
 		)
 		}
-
 
     </Layout>
   )
