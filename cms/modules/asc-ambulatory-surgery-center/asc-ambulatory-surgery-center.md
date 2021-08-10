@@ -3,7 +3,7 @@ title: Ambulatory Surgery Center (ASC)
 cmssegment: modules
 order: 4
 category: Auditing Tools
-overview: "The "
+overview: The ASC module (Ambulatory Surgery Center)
 image: surgeons-operation-room.jpg
 alt: Surgeons working in operation room
 ---
