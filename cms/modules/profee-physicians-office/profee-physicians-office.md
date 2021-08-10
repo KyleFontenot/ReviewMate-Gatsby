@@ -4,10 +4,10 @@ cmssegment: modules
 slug: profee-physicians-office
 order: 3
 category: Auditing Tools
-overview: The Profee (physician's office) module in ReviewMate provides accuracy
-  rates for all audited elements, communication between the auditor and coder, a
-  logic-based E&M leveling tool, a library of reports that can be customized and
-  exported, and an "Audit the Auditor" option. Click below for more details!
+overview: "The Profee (physician's office) module in ReviewMate provides
+  accuracy rates for all audited elements, communication between the auditor and
+  coder, a logic-based E&M leveling tool, a library of reports that can be
+  customized and exported, and an \"Audit the Auditor\" option. "
 image: filling-medical-record.jpg
 alt: Doctor filling out paper form with patient
 ---
