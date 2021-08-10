@@ -1,12 +1,12 @@
 ---
 title: Profee (Physician's Office)
-category: Auditing Tools
-overview: "The Profee auditing module is part of ReviewMate auditing suite and provides:"
 cmssegment: modules
 slug: profee-physicians-office
+order: 3
+category: Auditing Tools
+overview: "The Profee auditing module is part of ReviewMate auditing suite and provides:"
 image: filling-medical-record.jpg
 alt: Doctor filling out paper form with patient
-order: 5
 ---
 
 The Profee auditing module is part of ReviewMate auditing suite and provides:
