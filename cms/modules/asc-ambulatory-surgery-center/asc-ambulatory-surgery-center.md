@@ -1,7 +1,7 @@
 ---
 title: ASC (Ambulatory Surgery Center)
 cmssegment: modules
-order: 3
+order: 4
 category: Auditing Tools
 overview: >-
   The ASC (Ambulatory Surgery Center) auditing module is part of ReviewMate
