@@ -715,8 +715,8 @@ footer {
   .card__image {
     border-radius: 100%;
     margin: 0 auto 2rem;
-    width: 8rem;
-    height: 8rem;
+    // width: 8rem;
+    // height: 8rem;
     position: relative;
     // left:calc(50% - 4rem);
     box-shadow: -3px 5px 20px -2px #333;
@@ -1128,7 +1128,7 @@ a > div.card{
 }
 @media (min-width: 70rem){
   .card {
-    width: clamp(12rem, 100%, 50rem);
+    width: clamp(12rem, 30%, 50rem);
     margin: 0.75rem auto;
   }
 }

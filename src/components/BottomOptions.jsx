@@ -19,14 +19,7 @@ const Row = styled.div`
 	@media(min-width:768px){
 		flex-direction:row;
 	}
-	${Column}{
-		margin-bottom: inherit;
-		/* display: block;
-	  flex: 1 1 auto;
-	  margin-left: 0;
-	  max-width: 100%; */
-	}
-`
+	`
 // Column not used below, but just to avoid Gatsby warning
 const Column = styled.div`
   display: block;

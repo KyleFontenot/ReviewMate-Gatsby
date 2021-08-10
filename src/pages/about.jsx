@@ -1,4 +1,3 @@
-
 import React from "react"
 // import { StaticImage } from "gatsby-plugin-image"
 // import { useStaticQuery, graphql } from "gatsby"
@@ -11,16 +10,16 @@ import santizeSlug from "../components/santizeSlug"
 
 // for including css prop styling
 // import { css, jsx } from '@emotion/react'
-import styled from '@emotion/styled'
+import styled from "@emotion/styled"
 
 const GradientParagraph = styled.p`
-  background-image:linear-gradient(to bottom right, #fff 50%, #eee);
+  background-image: linear-gradient(to bottom right, #fff 50%, #eee);
   border-radius: 20px;
-  padding: 1rem 1.8rem 2.5rem!important;
+  padding: 1rem 1.8rem 2.5rem !important;
 `
 
 const Index = () => {
-  const slug = "About";
+  const slug = "About"
   return (
     <Layout slug={slug} pathName={`${santizeSlug(slug)}`}>
       <h1>About Us</h1>
@@ -33,9 +32,11 @@ const Index = () => {
             using spreadsheets?" This question launched the development of
             ReviewMate by medical coding auditors for medical coding auditors.
           </p>
-          <p style={{
-            paddingBottom: "2.2rem"
-          }}>
+          <p
+            style={{
+              paddingBottom: "2.2rem",
+            }}
+          >
             Pickerson Solutions' leadership team, with experience in middle
             revenue cycle management, software programming and development, is
             dedicated to working with our clients to advance quality of life for
@@ -44,17 +45,19 @@ const Index = () => {
           </p>
         </div>
       </Hero>
-      <Block>
+      <Block style={{ alignItems: "flex-end" }}>
         <Card>
-          <div className="card__image"><StaticImage
-            src="../images/greg.jpg"
-            placeholder="tracedSVG"
-            alt="Photo of Greg Thompson"
-            width={150}
-            height={150}
-            layout="fixed"
-            formats={["auto", "webp"]}
-          /></div>
+          <div className="card__image">
+            <StaticImage
+              src="../images/greg.jpg"
+              placeholder="tracedSVG"
+              alt="Photo of Greg Thompson"
+              width={200}
+              height={200}
+              layout="fixed"
+              formats={["auto", "webp"]}
+            />
+          </div>
           <h2>Greg Thompson</h2>
           <h3>Chief Executive Officer</h3>
           <GradientParagraph>
@@ -70,16 +73,18 @@ const Index = () => {
         </Card>
 
         <Card>
-          <StaticImage
-            src="../images/karen.jpg"
-            placeholder="tracedSVG"
-            alt="Photo of Karen Pickering"
-            layout="fixed"
-            width={150}
-            height={150}
-            className="card__image"
-            formats={["auto", "webp"]}
-          />
+          <div className="card__image">
+            <StaticImage
+              src="../images/karen.jpg"
+              placeholder="tracedSVG"
+              alt="Photo of Karen Pickering"
+              layout="fixed"
+              width={200}
+              height={200}
+              objectFit="cover"
+              formats={["auto", "webp"]}
+            />
+          </div>
           <h2>Karen Pickering - RHIT, CCS</h2>
           <h3>Chief Content Officer</h3>
           <GradientParagraph>
@@ -99,16 +104,18 @@ const Index = () => {
         </Card>
 
         <Card>
-          <StaticImage
-            src="../images/faris.jpg"
-            placeholder="tracedSVG"
-            alt="Photo of Faris Zuriekat"
-            layout="fixed"
-            width={150}
-            height={150}
-            className="card__image"
-            formats={["auto", "webp"]}
-          />
+          <div className="card__image">
+            <StaticImage
+              src="../images/faris.jpg"
+              placeholder="tracedSVG"
+              alt="Photo of Faris Zuriekat"
+              layout="fixed"
+              width={200}
+              height={200}
+              objectFit="cover"
+              formats={["auto", "webp"]}
+            />
+          </div>
           <h2>Faris Zuriekat</h2>
           <h3>Chief Information Officer</h3>
           <GradientParagraph>
