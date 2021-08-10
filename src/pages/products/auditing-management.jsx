@@ -43,7 +43,7 @@ const Index = () => {
   return (
     <Layout slug={slug} pathName={`/products/${santizeSlug(slug)}`}>
       <h1>{slug}</h1>
-      <Hero bgimgUniqueName="presentation-and-collaboration.jpg" maxHeight="30rem">
+      <Hero bgimgUniqueName="presentation-and-collaboration.jpg" maxHeight="30rem" style={{marginBottom:"2rem"}}>
         <div className="hero__text" style={{
 						backgroundColor: "#9a2a24",
 						color:'white',

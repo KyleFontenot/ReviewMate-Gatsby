@@ -23,7 +23,7 @@ const Seo = ({ description, lang, meta, title, slug, pathName}) => {
 
   // const description = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const canonical = site.siteMetadata.siteUrl || null
+  // const canonical = site.siteMetadata.siteUrl || null
   // const title = site.siteMetadata.title;
   const descriptionSet = description ||  site.siteMetadata.description;
   // const lang = site.siteMetadata.lang;

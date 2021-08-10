@@ -40,7 +40,9 @@ body {
     color: $color-Primary;
   }
 }
-
+html {
+  max-height:100%;
+}
 h1,
 h2,
 h3 {
@@ -771,6 +773,11 @@ h4 {
   &:hover {
     background-color: $color-Primary;
     color: white;
+  }
+}
+@media (max-width:424px){
+  .button--subtle, .button--pert{
+    transform: scale(1);
   }
 }
 
