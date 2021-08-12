@@ -47,7 +47,7 @@ const LandingSpace = () => {
 						 />
 				 </div>
 			<div id="LandingSpaceText">
-				<h1>The Quintessential Auditing Tool</h1>
+				<h1>The Quintessential Auditing Platform</h1>
 				<p>The complete suite to inspect, organize, and manage medical coding audits, with efficiency. </p>
 			</div>
 		</div>

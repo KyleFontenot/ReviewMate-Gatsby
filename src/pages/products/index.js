@@ -31,22 +31,21 @@ const ProductsPage = () => {
 		<Layout slug={slug} pathName={santizeSlug(slug)}>
 			{/*<h1>Product Categories</h1>*/}
 
-		<Hero bgimgUniqueName="analyzing-graph-growth.jpg" maxHeight="15rem" blurred>
+		<Hero bgimgUniqueName="analyzing-graph-growth.jpg" maxHeight="25rem" blurred>
 			<div className="hero__text hero__text--minimal" style={{ backgroundColor: "rgba(0,0,0,0)", color: "white", minWidth: "70%",
 		boxShadow: "none" }}>
-				<h1 style={{color: "white"}}>Capabilities</h1>
+				<h1 style={{color: "white"}}>Our Products</h1>
+				<p style={{margin:"2rem auto", padding: "0 2rem 0", textIndent:"2rem", maxWidth: "60rem"}}>Our auditing platform provides a centralized, transparent way for coding auditors to perform their audits, share their findings and report results. We also offer tools to assist with selecting samples for audit as well as a robust tool for monitoring the activities through the auditing process. Explore the details below to see how ReviewMate could benefit your organization.</p>
 			</div>
 		</Hero>
-		<p style={{margin:"2rem auto", paddingRight:'2rem', paddingLeft:'2rem', textIndent:"2rem", maxWidth: "60rem"}}>
-			Tackle any audit task at any level. ReviewMate covers every role from coder to manager. "Modules" are parts of the software meant for typical use cases which can scale to match your needs. See how many of these tools within ReviewMate mutually benefit one another being in a consolidated service.
-		</p>
+
 		<Block justify="center" style={{backgroundColor: '#444'}}>
 		<Link to="/products/auditing-tools/" aria-label="Auditing Tools"
 		style={{textDecoration: "none", marginLeft:'1.5rem', marginRight:'1.5rem'}}
 		>
 			<Card shadow style={{width:'100%', marginTop: "0.5"}}>
 				<h2>Auditing Tools →</h2>
-				<h4>Gather data</h4>
+				<h4>Performance</h4>
 				<ul style={{color: "#555"}}>
 				{items.map((item, index) => {
 					return (
@@ -69,7 +68,7 @@ const ProductsPage = () => {
 		>
 			<Card margin="1.5rem" shadow>
 				<h2>Auditing Solutions →</h2>
-				<h4>Refine data</h4>
+				<h4>Sampling</h4>
 				<ul style={{color: "#555"}}>
 				{items.map((item, index) => {
 					return (
@@ -88,7 +87,7 @@ const ProductsPage = () => {
 		<Link to="/products/auditing-management/" aria-label="Auditing Management" style={{textDecoration: "none", marginLeft:'1.5rem', marginRight:'1.5rem'}} >
 			<Card margin="1.5rem" shadow>
 				<h2>Auditing Management →</h2>
-				<h4>Use data</h4>
+				<h4>Analysis</h4>
 				<ul style={{color: "#555"}}>
 				{items.map((item, index) => {
 					return (

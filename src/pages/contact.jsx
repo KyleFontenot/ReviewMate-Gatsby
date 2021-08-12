@@ -28,11 +28,7 @@ const ContactPage = () => {
             maxWidth: "40rem",
             width: "70%",
           }}
-        >
-          One of us will get right back to you. Our software is flexible for
-          many different needs and uses, so the best way to get more of idea of
-          the product is to simply connect with us.
-        </p>
+        >We will get right back to you. Our software is flexible for many different needs and uses, so the best way to get more of an idea of our software’s capabilities is the simply connect with us.</p>
         <Link
           to="/faqs"
           style={{

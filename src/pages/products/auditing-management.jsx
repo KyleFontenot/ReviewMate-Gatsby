@@ -50,7 +50,7 @@ const Index = () => {
 						background:'linear-gradient(to bottom right, #A43F39, #6B1D19)',
             transform:'scale(1.1)'
 					}}>
-          <p>Approach all operations of your team from the top-down with ease. Automatic reporting consolidates results into actionable oportunities immediately. With thorough communication abilities both internal and external, convert your time into better results.</p>
+          <p>In addition to our auditing modules, ReviewMate has tools to assist audit managers with time management, workflow analytics, as well as assistance with data analytics. These tools will assist in analyzing the amount of time your auditor and coders are spending on particular tasks which in turn will allow better forecasting of future projects. It will also assist in identifying bottlenecks of a project to assure a smooth audit project.</p>
         </div>
       </Hero>
 
