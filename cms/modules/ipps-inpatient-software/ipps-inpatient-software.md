@@ -32,7 +32,7 @@ The IPPS (Facility Inpatient) auditing module of ReviewMate provides:
   * CMS-HCC (Heirarchical Condition Category)
   * HAC (Hospital Acquired Condition)
   * Customizable Overall Accuracy Rate
-* Both MS-DRG and APR-DRG grouping and pricing take place within the software eliminating the need for auditor to "toggle" between an encoder and ReviewMate. This also eliminated the need for auditors to re-enter codes and demographics into an encoder/grouper to make resequencing decisions.
+* Both MS-DRG and APR-DRG grouping and pricing take place within the software eliminating the need for auditor to "toggle" between an encoder and ReviewMate. This also eliminates the need for auditors to re-enter codes and demographics into an encoder/grouper to make resequencing decisions.
 * Full suite of references including Coding Clinic, CPT Assistant, Coding Clinic for HCPCS, Clinotes, Principal Diagnosis Analysis, DRG Analysis, AHA Coding Handbook, and code look-up eliminating the need for auditors to access an outside product to perform research
 * Identification on the screen of codes with MCC/CC/HAC and CMS-HCC values.
 * Full suite of edits/warnings including gender and age conflicts, MCE edits, critical error and TruCode warnings.
