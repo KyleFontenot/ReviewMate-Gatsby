@@ -5,7 +5,7 @@ image: ""
 date: 2021-08-12T15:08:51.659Z
 author: Karen Pickering, RHIT, CCS
 ---
-It's that time of year where we are enjoying the last of summer and the Final Rule is available for fun reading! I will go over the highlights of the Final Rule, so this is not a comprehensive guide to all of the rules and guidance changes. I will also try to focus on the coding parts and not the financial changes.
+It's that time of year where we are enjoying the last of summer and the Final Rule is available for fun reading! I will go over the highlights of the Final Rule, so this is not a comprehensive guide to all of the rules and guidance changes. I will also try to focus on the coding parts and not the financial changes. These change go into effect October 1, 2021.
 
 **COVID-19**
 
@@ -38,7 +38,7 @@ The following procedure codes used to route to the above "head and neck" MS-DRGs
 
 **Control of Cranial Bleeding**
 
-The following procedure codes to report control of cranial cavity bleeding were found to be inappropriately routed to MS-DRGs 143, 144, and 145 for "Other Ear,Nose,Mouth and Throat O.R. Procedures". The new MS-DRG for these codes will be 25, 26 and 27 for "Crantiotomy and Endovascular Intracranial Procedures". The new MS-DRG assignments have higher weights, so expect an increased reimbursement for these types of patients. The procedure codes are:
+The following procedure codes to report control of cranial cavity bleeding were found to be inappropriately routed to MS-DRGs 143, 144, and 145 for "Other Ear, Nose, Mouth and Throat O.R. Procedures". The new MS-DRG for these codes will be 25, 26 and 27 for "Craniotomy and Endovascular Intracranial Procedures". The new MS-DRG assignments have higher weights, so expect an increased reimbursement for these types of patients. The procedure codes are:
 
 * 0W310ZZ - Control Bleeding in Cranial Cavity, Open Approach
 * 0W313ZZ - Control Bleeding in Cranial Cavity, Percutaneous Approach
@@ -46,7 +46,7 @@ The following procedure codes to report control of cranial cavity bleeding were 
 
 **Laser Interstitial Thermal Therapy (LITT)**
 
-Thirty one procedures codes to report LITT therapy of various body parts (eg. spinal, esophagus) were inappropriately routing to MS-DRGx 163, 164 and 165 for "Major Chest Procedures". The cooperating parties determined that these 31 procedures should be moved from the "Extensive O.R. Procedure" category to "Non-Extensive O.R. Procedure" which results in these procedures codes routing to various other MS-DRGs in the appropriate body part section.  
+Thirty-one procedures codes to report LITT therapy of various body parts (eg. spinal, esophagus) were inappropriately routing to MS-DRGs 163, 164 and 165 for "Major Chest Procedures". The cooperating parties determined that these 31 procedures should be moved from the "Extensive O.R. Procedure" category to "Non-Extensive O.R. Procedure" which results in these procedures codes routing to various other MS-DRGs in the appropriate body part section.  
 
 **Esophageal Repair**
 
@@ -54,7 +54,7 @@ Three esophageal repair procedure codes were moved from the "Extensive O.R. Proc
 
 **Major Chest Procedures**
 
-Twenty six procedure codes to report major chest procedures (9 for pulmonary and thoracic structures and 17 for sternum and rib procedures) were found to route to MS-DRGs 166, 167 and 168 for "Other Respiratory System O.R. Procedures". These procedures will now route to MS-DRGs 163, 164 and 167 for "Major Chest Procedures". The new MS-DRG assignment is to a higher-weighted category so expect increased reimbursement for these types of patients. 
+Twenty-six procedure codes to report major chest procedures (9 for pulmonary and thoracic structures and 17 for sternum and rib procedures) were found to route to MS-DRGs 166, 167 and 168 for "Other Respiratory System O.R. Procedures". These procedures will now route to MS-DRGs 163, 164 and 167 for "Major Chest Procedures". The new MS-DRG assignment is to a higher-weighted category so expect increased reimbursement for these types of patients. 
 
 **Intraoperative Impella Device**
 
@@ -70,7 +70,11 @@ Viral Cardiomyopathy, code B33.24, was being routed inappropriately to MS-DRGs 8
 
 **Left Atrial Appendage Closure (LAAC)**
 
-Three procedures codes that report LAAC with an open approach were inappropriately being assigned to MS-DRGs 250 and 251 for "Percutaneous Cardiovascular Procedures without coronary artery stent". The new MS-DRG assignment will be to 273 and 274 for "Percutaneous and Other Intracardiac Procedures". The new MS-DRG assignment will result in a higher weight and increased reimbursement for these types of patients. The procedu, and 630.re codes are:
+Three procedures codes that report LAAC with an open approach were inappropriately being assigned to MS-DRGs 250 and 251 for "Percutaneous Cardiovascular Procedures without coronary artery stent". The new MS-DRG assignment will be to 273 and 274 for "Percutaneous and Other Intracardiac Procedures". The new MS-DRG assignment will result in a higher weight and increased reimbursement for these types of patients. The procedure codes are:
+
+* 02L70CK - Occlusion of Left Atrial Appendage with Extraluminal Device, Open Approach
+* 02L70DK - Occlusion of Left Atrial Appendage with Intraluminal Device, Open Approach
+* 02L70ZK - Occlusion of Left Atrial Appendage, Open Approach
 
 **Atrial Fibrillation Ablation**
 
@@ -145,7 +149,7 @@ The following procedure codes were previously not considered to be O.R. procedur
 * 0WC44ZZ - Extirpation of Matter from Upper Jaw, Percutaneous Endoscopic Approach
 * 0WC50ZZ - Extirpation of Matter from Lower Jaw, Open Approach
 * 0WC54ZZ - Extirpation of Matter from Lower Jaw, Percutaneous Endoscopic Approach
-* Twenty two codes from the 0JCXXXX category for reporting extirpation of subcutaneous tissue and fascia, open approach.
+* Twenty-two codes from the 0JCXXXX category for reporting extirpation of subcutaneous tissue and fascia, open approach.
 
 **Major Comorbidity and Complication (MCC) and Comorbidity and Complication (CC) Changes**
 
@@ -177,4 +181,4 @@ CC additions include:
 
 **Unspecified Codes**
 
-The cooperating parties attempted to take MCC/CC status away from all unspecified codes if there were other specific codes available. There was a very spirited debate about doing this. Many commenters pointed out that many times unspecified is used because a laterality is not documented. The commenters felt that laterality is not a critical piece of the puzzle and does not preclude the care given as appropriate. For example, a patient with a decubitus ulcer of the elbow is coded as unspecified laterality due to lack of documentation. The care is still the same for a decubitus ulcer. It was also pointed out that many cancer patients have widespread cancer so the providers will not document laterality as it will not affect the care given. Many commenters stated that they would need time to educate providers and put systems into place to avoid the use of unspecified codes. As a result of all of the comments, the cooperating parties abandoned this idea for FY 2022, but states it will revisit this issue in the future. This is fair warning to start identifying root causes of unspecified codes in your organization in preparation of this potentially sweeping change.
+The cooperating parties attempted to take MCC/CC status away from all unspecified codes if there were other specific codes available. There was a very spirited debate about doing this. Many commenters pointed out that many times unspecified is used because a laterality is not documented. The commenters felt that laterality is not a critical piece of the puzzle and does not preclude the care given as appropriate. For example, a patient with a decubitus ulcer of the elbow is coded as unspecified laterality due to lack of documentation. The care is still the same for a decubitus ulcer. It was also pointed out that many cancer patients have widespread cancer so the providers will not document laterality as it will not affect the care given. Many commenters stated that they would need time to educate providers and put systems into place to avoid the use of unspecified codes. As a result of the comments, the cooperating parties abandoned this idea for FY 2022, but states it will revisit this issue in the future. This is fair warning to start identifying root causes of unspecified codes in your organization in preparation of this potentially sweeping change.
