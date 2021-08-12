@@ -1,19 +1,16 @@
 ---
-title: CMS HCC Analyzer
+title: CMS-HCC Data Parsing Service
 cmssegment: modules
+order: 3
 category: Auditing Management
-overview: CMS-HCC Analyzer can parse data from EDI billing files automatically
-  and convert to an Excel spreadsheet. It can analyze up to 10 million claims in
-  one day and generate an analysis that can help auditors/managers concentrate
-  auditing efforts on the most at-risk patients. It also identifies missing
-  encounters for the current year to assist in identifying patients that need to
-  be seen by a provider. CMS-HCC analyzer can be used for facilities, physician
-  offices and any care provider facility that deals with HCC risk adjustment.
-  CMS-HCC Analyzer will integrate seemingly with ReviewMate CMS-HCC Auditing
-  Module, in which you can convert potential HCC issues to an actual deep dive
-  audit managed by an HCC auditor.
+overview: CMS-HCC Data Parsing Service is offered by Pickerson Solutions, LLC as
+  a way to take a universe of claims data and parse it down to only accounts
+  qualified for the CMS Risk Adjustment program. The result is an Excel
+  spreadsheet that can be loaded into our CMS-HCC module for audit and analysis.
+  Click here for more information!
 image: analysis-data-sheet.jpg
 alt: Papers of statistical charts spread on a table
-order: 3
 ---
-CMS-HCC Analyzer can parse data from EDI billing files automatically and convert to an Excel spreadsheet. It can analyze up to 10 million claims in one day and generate an analysis that can help auditors/managers concentrate auditing efforts on the most at-risk patients. It also identifies missing encounters for the current year to assist in identifying patients that need to be seen by a provider. CMS-HCC analyzer can be used for facilities, physician offices and any care provider facility that deals with HCC risk adjustment. CMS-HCC Analyzer will integrate seemingly with ReviewMate CMS-HCC Auditing Module, in which you can convert potential HCC issues to an actual deep dive audit managed by an HCC auditor.
+CMS-HCC Data Parsing is a service available from Pickerson Solutions that can parse data from EDI billing files automatically and convert to an Excel spreadsheet. It can analyze up to 10 million claims in one day. Our CMS-HCC Data Parsing tool will take a universal billing file and pull out only accounts that would qualify for Risk Adjustment and eliminate those accounts that do not. This can include inpatient, outpatient and profee claims data. 
+
+After the parsing is completed, the Excel spreadsheet can then be loaded into our CMS-HCC module for auditing or analysis allowing users to identify problem accounts, missing HCCs from year to year, and perform a granular, encounter by encounter coding audit.
