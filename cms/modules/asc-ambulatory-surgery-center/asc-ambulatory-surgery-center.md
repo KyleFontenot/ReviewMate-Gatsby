@@ -3,7 +3,10 @@ title: Ambulatory Surgery Center (ASC)
 cmssegment: modules
 order: 4
 category: Auditing Tools
-overview: The ASC module (Ambulatory Surgery Center)
+overview: The ASC module (Ambulatory Surgery Center) provides accuracy rates for
+  all audited elements, communication between the auditor and coder, a library
+  of available reports that can be customized and exported, and an "Audit the
+  Auditor" option. Click below for more details!
 image: surgeons-operation-room.jpg
 alt: Surgeons working in operation room
 ---
