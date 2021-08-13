@@ -7,7 +7,7 @@ author: Karen Pickering, RHIT, CCS
 ---
 It's that time of year where we are enjoying the last of summer and the Final Rule is available for fun reading! I will go over the highlights of the Final Rule, so this is not a comprehensive guide to all of the rules and guidance changes. I will also try to focus on the coding parts and not the financial changes. These change go into effect October 1, 2021.
 
-# **COVID-19**
+# COVID-19
 
 The increase in MS-DRG reimbursement for patients with a Covid-19 diagnosis will remain in place until September 30, 2022. Due to the skewing of 2020 data caused by Covid-19, CMS used the 2019 data set to determine rate setting for FY2022.
 
