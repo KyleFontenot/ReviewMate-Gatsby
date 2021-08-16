@@ -20,15 +20,16 @@ const ContactPage = () => {
       <Hero>
         <FormBlock />
       </Hero>
-      <Block row="column">
+      <Block direction="column" style={{flexDirection: "column"}}>
         <p
           style={{
             marginLeft: "auto",
             marginRight: "auto",
             maxWidth: "40rem",
             width: "70%",
+            textAlign:"center"
           }}
-        >We will get right back to you. Our software is flexible for many different needs and uses, so the best way to get more of an idea of our software’s capabilities is the simply connect with us.</p>
+        >We will get right back to you. Our software is flexible for many different needs and uses, so the best way to get more of an idea of our software’s capabilities is to simply connect with us.</p>
         <Link
           to="/faqs"
           style={{

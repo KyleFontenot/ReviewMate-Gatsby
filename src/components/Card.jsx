@@ -6,7 +6,7 @@ const Card = ({children, white, shadow, margin}) => {
 		return (
 			<div className={`card ${white ? 'card--white': ''}`}
 			style={{
-				margin: `${margin}!important`
+				margin: `${margin}!important`,
 			}}>
 			<div className="card__inset" />
 				{children}
@@ -17,7 +17,7 @@ const Card = ({children, white, shadow, margin}) => {
 		return (
 			<div className='card card--shadow'
 			style={{
-				margin: `${margin}!important`
+				margin: `${margin}!important`,
 			}}>
 
 				{children}
@@ -27,7 +27,7 @@ const Card = ({children, white, shadow, margin}) => {
 	return (
 		<div className={`card ${white ? 'card--white': ''}`}
 		style={{
-			margin: `${margin}!important`
+			margin: `${margin}!important`,
 		}}>
 			{children}
 		</div>

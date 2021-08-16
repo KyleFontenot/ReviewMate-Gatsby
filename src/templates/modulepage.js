@@ -50,6 +50,9 @@ export default function ModulePage({ data, pageContext, slug, id }) {
             boxShadow: "-1px 6px 12px -3px #000",
             marginBottom: "2.4rem",
             marginTop: "2.8rem",
+            margin: "2.4rem auto 2.8rem",
+            maxHeight: "30rem",
+            maxWidth: "90%",
           }}
         />
 
