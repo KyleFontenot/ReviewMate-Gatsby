@@ -401,7 +401,7 @@ footer {
   .footerDiv {
     // width:100%;
     margin-bottom: 1.5rem;
-    // display:flex;
+    display:flex;
     // align-items:center;
   }
   table {
@@ -436,13 +436,15 @@ footer {
   }
   a {
     color: white;
-    min-width: 14rem;
-    display: inline-block;
+    // min-width: 14rem;
+    display: flex;
     text-align: center;
+    align-items:center;
     margin-bottom: 0.3rem;
     padding: 12px 16px;
     border-radius: 10px;
     transition: background-color 0.3s;
+    max-width:14rem;
     &:hover {
       background-color: adjust-color(
         $color-Primary,
@@ -453,6 +455,7 @@ footer {
     p {
       width: calc(80% - 3.5rem);
       margin-bottom: 0;
+      min-width:6rem;
     }
   }
 }
@@ -460,6 +463,7 @@ footer {
   width: 1.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  fill: white;
 }
 .container > h2 {
   color: $color-Primary;
