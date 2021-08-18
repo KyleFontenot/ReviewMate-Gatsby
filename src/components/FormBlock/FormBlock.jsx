@@ -15,7 +15,6 @@ function checkForm(e) {
   e.preventDefault();
   console.log('test');
   let validForm = true;
-  let errorMessage = "";
   try {
     if (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emailField.current.value)){
       emailField.current.classList.add('error');

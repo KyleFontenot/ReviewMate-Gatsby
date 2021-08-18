@@ -3,6 +3,7 @@ layout: blog
 title: Benefit
 order: 2
 question: How will ReviewMate benefit my company?
+cmssegment: faqs
 ---
 ReviewMate provides your company with one centralized platform where
   audits take place and will replace any manual processes your auditing team

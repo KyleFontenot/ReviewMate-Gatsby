@@ -75,7 +75,7 @@ const Footer = () => {
 
 
         <div className="footerDiv footerContactGrid">
-          <div className="row row--row" style={{width: "100%", justifyContent:"space-around", marginBottom: "0"}}><a
+          <div className="row row--row" style={{width: "100%", justifyContent:"center", marginBottom: "0"}}><a
             href="https://www.linkedin.com/company/reviewmate-powered-by-pickerson-solutions-llc/"
             target="__blank"
             rel="noopener"
@@ -119,7 +119,7 @@ const Footer = () => {
 </div>
 
 
-          <div className="row row--row" style={{width: "100%", justifyContent:"space-around", alignItems: "center"}}><a href="mailto:info@pickerson.com">
+          <div className="row row--row" style={{width: "100%", justifyContent:"center", alignItems: "center"}}><a href="mailto:info@pickerson.com">
             <StaticImage
               src="../../images/envelope-solid.svg"
               transformOptions={{ fit: "cover" }}

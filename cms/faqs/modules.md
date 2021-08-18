@@ -2,6 +2,7 @@
 title: Modules
 order: 6
 question: What modules does ReviewMate have?
+cmssegment: faqs
 ---
 We currently have:
 - IPPS (facility inpatient)

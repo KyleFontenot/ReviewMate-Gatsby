@@ -2,6 +2,7 @@
 title: Data
 order: 4
 question: How does my data get incorporated into ReviewMate?
+cmssegment: faqs
 ---
 
   There are multiple ways to get data (demographics and coded data) into

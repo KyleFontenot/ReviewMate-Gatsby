@@ -21,24 +21,24 @@ const Row = styled.div`
 	}
 	`
 // Column not used below, but just to avoid Gatsby warning
-const Column = styled.div`
-  display: block;
-  flex: 1 1 auto;
-  margin-left: 0;
-  max-width: 100%;
-  @media (max-width: 424px) {
-    flex: ${props => (props.smWidth ? `0 0 ${props.smWidth}%` : null)};
-    max-width: ${props => (props.smWidth ? `${props.smWidth}%` : null)};
-  }
-  @media (min-width: 425px) {
-    flex: ${props => (props.mdWidth ? `0 0 ${props.mdWidth}%` : null)};
-    max-width: ${props => (props.mdWidth ? `${props.mdWidth}%` : null)};
-  }
-  @media (min-width: 768px) {
-    flex: ${props => (props.lgWidth ? `0 0 ${props.lgWidth}%` : null)};
-    max-width: ${props => (props.lgWidth ? `${props.lgWidth}%` : null)};
-  }
-`
+// const Column = styled.div`
+//   display: block;
+//   flex: 1 1 auto;
+//   margin-left: 0;
+//   max-width: 100%;
+//   @media (max-width: 424px) {
+//     flex: ${props => (props.smWidth ? `0 0 ${props.smWidth}%` : null)};
+//     max-width: ${props => (props.smWidth ? `${props.smWidth}%` : null)};
+//   }
+//   @media (min-width: 425px) {
+//     flex: ${props => (props.mdWidth ? `0 0 ${props.mdWidth}%` : null)};
+//     max-width: ${props => (props.mdWidth ? `${props.mdWidth}%` : null)};
+//   }
+//   @media (min-width: 768px) {
+//     flex: ${props => (props.lgWidth ? `0 0 ${props.lgWidth}%` : null)};
+//     max-width: ${props => (props.lgWidth ? `${props.lgWidth}%` : null)};
+//   }
+// `
 
 const BottomOptions = ({children, row}) => {
 		return (

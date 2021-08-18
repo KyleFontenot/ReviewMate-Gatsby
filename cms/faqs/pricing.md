@@ -2,6 +2,7 @@
 title: Pricing
 order: 7
 question: How does pricing work?
+cmssegment: faqs
 ---
 Pricing is based on a subscription model and is stratified by how many
 reviewers and managers access the system. Two different models are available:

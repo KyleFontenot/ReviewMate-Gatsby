@@ -1,6 +1,6 @@
 
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql  } from "gatsby"
 import { GatsbyImage, getImage} from "gatsby-plugin-image"
 
 import Layout from "../components/layout/Layout"
@@ -13,13 +13,13 @@ const SubheaderLine = styled.div`
     display:flex;
     margin: 0.75 auto 1rem;
     color: #777;
-justify-content: space-around; 
+justify-content: space-around;
 width: 100%;
 padding: 1.5rem;
 `
 export default function ModulePage({ data, pageContext, slug, id }) {
 const moduleItem = data.markdownRemark;
-const date = new Date(moduleItem.frontmatter.date); 
+const date = new Date(moduleItem.frontmatter.date);
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const formattedDate = date.getDate() + " " + months[date.getMonth()] + ", " + date.getFullYear();
 const mainImage = getImage(moduleItem.frontmatter.image);
@@ -30,20 +30,20 @@ const mainImage = getImage(moduleItem.frontmatter.image);
     <h1 style={{paddingTop:"1rem", paddingBottom:"0"}}>{`${moduleItem.frontmatter.title}`}</h1>
       <Block justify="center">
       <HrDivider style={{width: "100%", display: "block"}}/>
-          <SubheaderLine > 
+          <SubheaderLine >
               {moduleItem.frontmatter.author ?
               <div>
                 {`By:   ${moduleItem.frontmatter.author}`}
-              </div> 
-                      : null 
+              </div>
+                      : null
                       }
               {moduleItem.frontmatter.date?
               <div>
                 {formattedDate}
-                  </div> 
-                      : null 
-                    } 
-          </SubheaderLine> 
+                  </div>
+                      : null
+                    }
+          </SubheaderLine>
           {mainImage ?
               <GatsbyImage image={mainImage}
                   alt="something"
@@ -52,7 +52,7 @@ const mainImage = getImage(moduleItem.frontmatter.image);
                   boxShadow:'-1px 6px 12px -3px #000',
                   marginBottom:'1.4rem',
                   marginTop:'2.8rem',
-                  paddingLeft: "1rem", 
+                  paddingLeft: "1rem",
                   paddingRight: "1rem"
               }} /> : null
           }

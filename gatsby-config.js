@@ -27,6 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `cms`,
+        path: `${__dirname}/cms`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `blog`,
         path: `${__dirname}/cms/blog`,
       },
@@ -45,6 +52,7 @@ module.exports = {
         path: `${__dirname}/cms/modules`,
       },
     },
+
     {
     resolve: `gatsby-plugin-canonical-urls`,
     options: {

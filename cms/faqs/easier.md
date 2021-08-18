@@ -2,6 +2,7 @@
 title: Easier
 order: 3
 question: How will ReviewMate make my life as an auditor easier?
+cmssegment: faqs
 ---
 Auditors will find that their processes will take less time by
   automation of reporting, reconciliation, and communication. Auditors can

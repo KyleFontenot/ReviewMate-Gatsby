@@ -9,21 +9,24 @@ const Index = () => {
   const datafaq = useStaticQuery(
     graphql`
     query Faqsquery {
-allFile(filter: {sourceInstanceName: {eq: "faqs"}}) {
-  edges {
-    node {
-      id
-      childMarkdownRemark {
-        frontmatter {
-          title
-          order
-          question
+  allFile(
+    filter: {childMarkdownRemark: {frontmatter: {cmssegment: {eq: "faqs"}}}}
+  ) {
+    edges {
+      node {
+        id
+        childMarkdownRemark {
+          frontmatter {
+            title
+            order
+            question
+          }
+          html
         }
-        html
+        sourceInstanceName
       }
     }
   }
-}
 }
     `
   );

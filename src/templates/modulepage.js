@@ -38,7 +38,7 @@ export default function ModulePage({ data, pageContext, slug, id }) {
       pathName={`/products/${pageContext.prefixPath}/${pageContext.slug}`}
     >
       <h1
-        style={{ paddingTop: "1rem", paddingBottom: "0" }}
+        style={{ paddingTop: "1rem", paddingBottom: "0", paddingLeft: "1rem", paddingRight: "1rem" }}
       >{`${moduleItem.frontmatter.title} Module`}</h1>
       <Block justify="center">
         <HrDivider />
