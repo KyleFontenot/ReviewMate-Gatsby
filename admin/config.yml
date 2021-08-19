@@ -41,6 +41,8 @@ collections:
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     path: '{{slug}}/{{slug}}'
     preview_path: "products/{{fields.cmssegment}}/{{slug}}"
+    media_folder: '/static/img'
+    public_folder: '/img'
     fields:
       - {label: "Name of module", name: "title", widget: "string"}
       - {label: "CMSSegment", name: "cmssegment", widget: "hidden", default: "modules"}
