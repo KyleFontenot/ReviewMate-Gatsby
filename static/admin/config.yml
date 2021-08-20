@@ -2,8 +2,13 @@ backend:
   name: git-gateway
   branch: main
 publish_mode: editorial_workflow
+# To run locally, have aterminal run:
+#     npx netlify-cms-proxy-server
+# and then start gatsby develop
+local_backend: true
 media_folder: "static/img"
-public_folder: "/img"
+# public_folder: "/img"
+site_url: 'https://review-mate.com/'
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
@@ -42,7 +47,7 @@ collections:
     path: '{{slug}}/{{slug}}'
     preview_path: "products/{{fields.cmssegment}}/{{slug}}"
     media_folder: '/static/img'
-    public_folder: '/img'
+    # public_folder: ''
     fields:
       - {label: "Name of module", name: "title", widget: "string"}
       - {label: "CMSSegment", name: "cmssegment", widget: "hidden", default: "modules"}
