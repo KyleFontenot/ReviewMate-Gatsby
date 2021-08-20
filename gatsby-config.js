@@ -106,6 +106,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-remark-normalize-paths",
+      options: {
+          pathFields: ["image", "cover"],
+      },
+  },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `static`,
