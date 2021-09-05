@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="footerDiv footerContactGrid">
           <div className="row row--row" style={{width: "100%", justifyContent:"center", marginBottom: "0"}}><a
-            href="https://www.linkedin.com/company/reviewmate-powered-by-pickerson-solutions-llc/"
+            href="https://www.linkedin.com/company/reviewmate1"
             target="__blank"
             rel="noopener"
           >
