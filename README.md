@@ -1,5 +1,7 @@
 <div style="background-color:white;width:100%;">
-  <img src="https://review-mate.com/static/56538559ccac019bc3eaef3b88c385a5/5cef6/ReviewMate-main.webp" alt="ReviweMate's logo" />
+  <!--<img src="https://review-mate.com/static/56538559ccac019bc3eaef3b88c385a5/5cef6/ReviewMate-main.webp" alt="ReviweMate's logo" /> -->
+  ![reviewmate-logo](https://user-images.githubusercontent.com/68924836/133939445-ce7e365b-cddd-4035-bd7c-54b018d7e02f.png)
+
 </div>
 
 
