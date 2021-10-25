@@ -3,31 +3,37 @@
 
 @font-face {
   font-family: "Overpass";
-  src: url("./fonts/Overpass/Overpass-Regular.ttf");
+  src: local("./fonts/Overpass/Overpass-Regular.ttf"), url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap'), sans-serif;
+  font-display: swap;
 }
 @font-face {
   font-family: "Overpass";
-  src: url("./fonts/Overpass/Overpass-Bold.ttf");
+  src: local("./fonts/Overpass/Overpass-Bold.ttf"), url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap'), sans-serif;
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: "Overpass";
-  src: url("./fonts/Overpass/Overpass-Italic.ttf");
+  src: local("./fonts/Overpass/Overpass-Italic.ttf"), url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap'), sans-serif;
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: "Arvo";
-  src: url("./fonts/Arvo/Arvo-Regular.ttf");
+  src: local("./fonts/Arvo/Arvo-Regular.ttf"), url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap'), serif;
+  font-display: swap;
 }
 @font-face {
   font-family: "Arvo";
-  src: url("./fonts/Arvo/Arvo-Bold.ttf");
+  src: local("./fonts/Arvo/Arvo-Bold.ttf"), url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap'), serif;
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: "Arvo";
-  src: url("./fonts/Arvo/Arvo-Italic.ttf");
+  src: local("./fonts/Arvo/Arvo-Italic.ttf"), url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap'), serif;
   font-style: italic;
+  font-display: swap;
 }
 
 body {
