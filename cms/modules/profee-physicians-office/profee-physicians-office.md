@@ -15,9 +15,9 @@ The Profee (physician's office) auditing module of ReviewMate provides:
 
 * Accuracy rates for all elements including:
 
-  * CPT/HCPCS (Current Procedural Terminology/Healthcare Common Procedure Coding System).
-  * E&M (CPT codes in the Evaluation and Management chapter).
-  * Non-E&M (CPT codes not in the Evaluation and Management chapter).
+  * CPT/HCPCS (Current Procedural Terminology/Healthcare Common Procedure Coding System)
+  * E&M (CPT codes in the Evaluation and Management chapter)
+  * Non-E&M (CPT codes not in the Evaluation and Management chapter)
   * Modifier
   * Service Units
   * Diagnosis (ICD-10-CM and ICD-9-CM)
