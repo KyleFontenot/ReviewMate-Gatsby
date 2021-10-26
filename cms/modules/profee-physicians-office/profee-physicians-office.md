@@ -21,9 +21,9 @@ The Profee (physician's office) auditing module of ReviewMate provides:
   * Modifier
   * Service Units
   * Diagnosis (ICD-10-CM and ICD-9-CM)
-  * First-listed diagnosis
-  * Secondary diagnosis
-  * Procedure provider
+  * First-listed Diagnosis
+  * Secondary Diagnosis
+  * Procedure Provider
   * Procedure Date
   * CMS-HCC (Hierarchal Condition Category)
 * Locality fee schedule pricing takes place within the software eliminating the need for auditors to "toggle" between other products and ReviewMate.
