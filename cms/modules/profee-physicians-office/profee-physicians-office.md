@@ -28,7 +28,7 @@ The Profee (physician's office) auditing module of ReviewMate provides:
   * CMS-HCC (Hierarchal Condition Category)
 * Locality fee schedule pricing takes place within the software eliminating the need for auditors to "toggle" between other products and ReviewMate.
 * Optional logic-based E&M Form tool allows auditors to analyze the provider note and determine the correct E&M level. The tool contains 1995 and 1997 criteria for encounters before 2021. The E&M Form is exportable for easy reporting and training.
-* Full suite of references including Coding Clinic, CPT Assistant, Coding Clinic for HCPCS, AHA Coding Handbook, Coders' Desk Reference, Clinotes and code look-up eliminating the need for an outside product toe perform research.
+* Full suite of references including Coding Clinic, CPT Assistant, Coding Clinic for HCPCS, AHA Coding Handbook, Coders' Desk Reference, Clinotes and code look-up eliminating the need for an outside product to perform research.
 * Identification on the screen of codes with CMS-HCC value.
 * Full communication between auditors and coders within the software to discuss findings and recommendations.
 * Reconciliation of rebuttals occurs inside of ReviewMate.
