@@ -19,7 +19,7 @@ The ASC (standalone Ambulatory Surgery Center) auditing module of ReviewMate pro
   * Service Units
   * Diagnosis (ICD-10-CM or ICD-9-CM)
   * First-Listed Diagnosis
-  * Secondary diagnosis
+  * Secondary Diagnosis
   * Procedure Provider
   * CMS-HCC (Hierarchal Condition Category)
 * Pricing takes place within the software eliminating the need for auditors to "toggle" between an encoder and ReviewMate. This also eliminates the need for auditors to re-enter codes and demographics into an encoder/grouper in order to make sequencing decisions.
