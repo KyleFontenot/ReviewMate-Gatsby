@@ -19,15 +19,15 @@ The OPPS auditing module of ReviewMate provides:
   * E&M (CPT codes in the Evaluation and Management chapter)
   * Non-E&M (CPT codes not in the Evaluation and Management chapter)
   * Modifier(s)
-  * Revenue odes
-  * Service units
+  * Revenue Codes
+  * Service Units
   * Diagnosis (ICD-10-CM or ICD-9-CM)
-  * First-listed diagnosis
+  * First-listed Diagnosis
   * Secondary Diagnosis
   * Procedure (ICD-10-PCS - optional)
-  * Discharge disposition (optional)
-  * Procedure provider
-  * Procedure date
+  * Discharge Disposition (optional)
+  * Procedure Provider
+  * Procedure Date
   * CMS-HCC ( Hierarchal Condition Category)
 * APC and fee schedule grouping and pricing take place within the software eliminating the need for auditors to "toggle" between an encoder and ReviewMate. This also eliminates the need for auditors to re-enter codes and demographics into an encoder/grouper in order to make sequencing decisions.
 * Full suite of references including Coding Clinic, CPT Assistant, Coding Clinic for HCPCS, AHA Coding Handbook, Coders' Desk Reference, Clinotes and code look-up eliminating the need for an outside product to perform research.
