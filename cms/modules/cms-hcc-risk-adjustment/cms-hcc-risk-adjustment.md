@@ -11,7 +11,7 @@ overview: The CMS-HCC (Risk Adjustment) module of ReviewMate provides multiple
 image: graph-business-financial-investment.jpg
 alt: Laptop being used to display lowering risk statistic on line chart.
 ---
-The CMS-HCC (Risk Adjustment) module of ReviewMate offers three different ways to audit for Risk Adjustment:
+The CMS-HCC (Risk Adjustment) Module of ReviewMate offers three different ways to audit for Risk Adjustment:
 
 1. Reviewers can audit each patients’ diagnosis codes on an encounter-by-encounter basis, or,
 2. Reviewers can access a listing of each patient’s missing HCCs and add them, if appropriate, or,
