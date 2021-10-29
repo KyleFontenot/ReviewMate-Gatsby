@@ -17,4 +17,4 @@ Workflow Analytics is a module that helps managers understand the flow of their 
 * Number of diagnosis, procedure and CPT/HCPCS codes reviewed
 * Number of assigned records vs. number of completed records
 * Timeline of every single event taking place from creation of an audit to completion
-* Productivity between two auditors taking in consideration many aspects of audit complexity
+* Productivity between two auditors taking into consideration many aspects of audit complexity
