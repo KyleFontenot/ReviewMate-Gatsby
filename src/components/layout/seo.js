@@ -76,6 +76,21 @@ const Seo = ({ description, lang, meta, title, slug, pathName}) => {
       <title>{slug ? `${defaultTitle} | ${slug}` : defaultTitle}</title>
       <meta name="description" content={descriptionSet} />
       {/*{pathName ? <link rel='canonical' href={`${canonical}${pathName}`}/> : <link rel='canonical' href={`${canonical}`}/>}*/}
+      {/*Preloading fonts*/}
+      <link
+        rel="preload"
+        href="/fonts/Overpass-Regular.ttf"
+        as="font"
+        crossorigin="anonymous"
+        type="font/ttf"
+      />
+      <link
+        rel="preload"
+        href="/fonts/Arvo-Regular.ttf"
+        as="font"
+        crossorigin="anonymous"
+        type="font/ttf"
+      />
     </Helmet>
   )
 }

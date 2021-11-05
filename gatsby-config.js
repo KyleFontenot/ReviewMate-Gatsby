@@ -147,8 +147,19 @@ module.exports = {
     // },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
-
-    `gatsby-plugin-netlify`,
+    `gatsby-plugin-preact`,
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          '/fonts/*': [
+            'Cache-Control: public',
+            'Cache-Control: max-age=365000000',
+            'Cache-Control: immutable',
+          ],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
