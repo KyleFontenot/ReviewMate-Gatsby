@@ -3,41 +3,52 @@
 
 @font-face {
   font-family: "Overpass";
-  src: local("./fonts/Overpass/Overpass-Regular.ttf"), url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap'), sans-serif;
+  src: local("./fonts/Overpass/Overpass-Regular.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap"),
+    sans-serif;
   font-display: swap;
 }
 @font-face {
   font-family: "Overpass";
-  src: local("./fonts/Overpass/Overpass-Bold.ttf"), url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap'), sans-serif;
+  src: local("./fonts/Overpass/Overpass-Bold.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap"),
+    sans-serif;
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: "Overpass";
-  src: local("./fonts/Overpass/Overpass-Italic.ttf"), url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap'), sans-serif;
+  src: local("./fonts/Overpass/Overpass-Italic.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap"),
+    sans-serif;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Arvo";
-  src: local("./fonts/Arvo/Arvo-Regular.ttf"), url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap'), serif;
+  src: local("./fonts/Arvo/Arvo-Regular.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap"),
+    serif;
   font-display: swap;
 }
 @font-face {
   font-family: "Arvo";
-  src: local("./fonts/Arvo/Arvo-Bold.ttf"), url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap'), serif;
+  src: local("./fonts/Arvo/Arvo-Bold.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap"),
+    serif;
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: "Arvo";
-  src: local("./fonts/Arvo/Arvo-Italic.ttf"), url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap'), serif;
+  src: local("./fonts/Arvo/Arvo-Italic.ttf"),
+    url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap"),
+    serif;
   font-style: italic;
   font-display: swap;
 }
 
 body {
-
   font-family: "Overpass";
   overflow-y: auto;
   h1:nth-of-type(1) {
@@ -47,7 +58,7 @@ body {
   }
 }
 html {
-  max-height:100%;
+  max-height: 100%;
 }
 h1,
 h2,
@@ -68,7 +79,7 @@ p {
   letter-spacing: 0;
 }
 ul li {
-  margin-bottom:0.6rem;
+  margin-bottom: 0.6rem;
   line-height: 1.5rem;
 }
 main {
@@ -79,7 +90,7 @@ main {
   color: black;
 }
 strong {
-  font-weight:bold;
+  font-weight: bold;
 }
 #mainLogo {
   width: 70%;
@@ -123,7 +134,7 @@ nav {
     letter-spacing: 0 !important;
     color: $color-Primary;
     border-radius: 80px;
-    padding: 0.65rem 1.3rem !important;
+    padding: 0.65rem 1.3rem 0.65rem !important;
     margin-right: 0.2rem !important;
     transition: background-color 0.5s, color 0.5s;
     display: inline-block;
@@ -407,7 +418,7 @@ footer {
   .footerDiv {
     // width:100%;
     margin-bottom: 1.5rem;
-    display:flex;
+    display: flex;
     // align-items:center;
   }
   table {
@@ -445,12 +456,12 @@ footer {
     // min-width: 14rem;
     display: flex;
     text-align: center;
-    align-items:center;
+    align-items: center;
     margin-bottom: 0.3rem;
     padding: 12px 16px;
     border-radius: 10px;
     transition: background-color 0.3s;
-    max-width:14rem;
+    max-width: 14rem;
     &:hover {
       background-color: adjust-color(
         $color-Primary,
@@ -461,7 +472,7 @@ footer {
     p {
       width: calc(80% - 3.5rem);
       margin-bottom: 0;
-      min-width:6rem;
+      min-width: 6rem;
     }
   }
 }
@@ -555,7 +566,7 @@ footer {
   background-color: white;
   opacity: 0;
   visibility: hidden;
-  transform:none;
+  transform: none;
   transition: opacity 0.5s, visibility 0.5s;
   &::after {
     content: "";
@@ -568,7 +579,7 @@ footer {
     height: 10px;
     width: 10px;
     transform: rotate(45deg);
-    border-radius:0;
+    border-radius: 0;
   }
 }
 .showbtt {
@@ -696,8 +707,10 @@ footer {
 }
 .card {
   padding: 1rem;
-  margin: 0.2rem auto;
+  margin: 0.2rem 0;
   min-width: 12rem;
+  align-content: center;
+  height: 100%;
   // width: clamp(12rem, 30%, 40rem);
   // width: clamp(12rem, 100%, 40rem);
   // box-shadow: -1px 8px 15px -10px #555;
@@ -705,20 +718,21 @@ footer {
   display: flex;
   flex-flow: column wrap;
   max-width: 40rem;
+  flex: 3 1 100%;
   text-decoration: none;
   h2 {
     font-size: 1.4rem;
     padding-bottom: 0.75rem;
     border-bottom: 2px solid $color-Secondary;
     color: $color-Primary;
-    padding-top:1rem;
-    padding-left:1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
   }
   h3 {
     font-size: 1.2rem;
     color: #777;
     margin-left: 1rem;
-    padding-top:0.75rem;
+    padding-top: 0.75rem;
   }
   h4 {
     margin: 0.6rem auto 0.3rem;
@@ -733,16 +747,16 @@ footer {
     position: relative;
     // left:calc(50% - 4rem);
     box-shadow: -3px 5px 20px -2px #333;
-    overflow:hidden;
+    overflow: hidden;
   }
   p,
   ul {
     padding: 1rem 0rem 1rem;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
   }
   p {
     // text-indent: 2rem;
-    color:#222;
+    color: #222;
   }
   li {
     margin-bottom: 0.2rem;
@@ -752,16 +766,18 @@ h4 {
   padding-bottom: 0.2rem;
 }
 .button {
-  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 }
-.button--pert, .button--subtle {
+.button--pert,
+.button--subtle {
   background: none;
   background-color: $color-Secondary;
   border-radius: 100px;
   color: $color-Primary;
   transform: scale(1.2);
   padding: 1.2rem 3.8rem;
-  position:relative;
+  position: relative;
   &:hover {
     background-color: $color-Secondary-Dark;
     color: white;
@@ -770,8 +786,8 @@ h4 {
 }
 .button--small {
   padding: 0.6rem 1.8rem;
-  font-weight:normal;
-  font-size:0.8rem;
+  font-weight: normal;
+  font-size: 0.8rem;
 }
 .button--pert {
   background-color: $color-Secondary;
@@ -788,8 +804,9 @@ h4 {
     color: white;
   }
 }
-@media (max-width:424px){
-  .button--subtle, .button--pert{
+@media (max-width: 424px) {
+  .button--subtle,
+  .button--pert {
     transform: scale(1);
   }
 }
@@ -880,9 +897,9 @@ h4 {
   box-shadow: -1px 5px 6px -4px #333;
 
   &.activatedHamburger {
-    background-color: transparent!important;
-    background-color: rgba(255,255,255, 0)!important;
-    background-image:none;
+    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    background-image: none;
     border: 1px solid white;
   }
   &.activatedHamburger .hamburger::before {
@@ -913,7 +930,7 @@ h4 {
     }
 
     &::before {
-      top: 0.70rem;
+      top: 0.7rem;
     }
     &::after {
       top: 1.15rem;
@@ -925,9 +942,8 @@ h4 {
   box-shadow: 1px 8px 20px -10px #000;
   position: relative;
 }
-a > div.card{
-  width:100%;
-
+a > div.card {
+  width: 100%;
 }
 .card.card--shadow {
   background-color: transparent;
@@ -965,9 +981,9 @@ a > div.card{
   #LandingSpaceText {
     transform: scale(0.8);
   }
-  #backToTop{
-    visibility:hidden;
-    display:none;
+  #backToTop {
+    visibility: hidden;
+    display: none;
   }
   .formColumn {
     padding: 3rem 2rem;
@@ -1040,7 +1056,9 @@ a > div.card{
     }
   }
   .card {
-    width: clamp(12rem, 100%, 30rem);
+    // width: clamp(12rem, 100%, 30rem);
+    max-width: 30rem;
+    flex: 3 1 30%;
     margin: 0.75rem auto;
   }
 }
@@ -1065,7 +1083,9 @@ a > div.card{
     }
   }
   .card {
-    width: clamp(12rem, 100%, 40rem);
+    // width: clamp(12rem, 100%, 40rem);
+    max-width: 40rem;
+    flex: 3 1 30%;
     margin: 0.75rem auto;
   }
 }
@@ -1098,7 +1118,6 @@ a > div.card{
     margin-left: auto;
     margin-right: auto;
     // width:100%;
-
   }
   .card {
     width: clamp(12rem, 50%, 50rem);
@@ -1116,7 +1135,7 @@ a > div.card{
     box-shadow: 3px -6px 15px -5px #000 inset;
   }
   .cascadeBlock:nth-of-type(even) .cascadeBlock__img {
-    order: 3!important;
+    order: 3 !important;
   }
   .cascadeBlock {
     & .row {
@@ -1136,10 +1155,9 @@ a > div.card{
       // max-width:90%;
       height: 100%;
     }
-
   }
 }
-@media (min-width: 70rem){
+@media (min-width: 70rem) {
   .card {
     width: clamp(12rem, 30%, 50rem);
     margin: 0.75rem auto;

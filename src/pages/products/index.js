@@ -32,7 +32,6 @@ const ProductsPage = () => {
 
   return (
     <Layout slug={slug} pathName={santizeSlug(slug)}>
-
       <Hero
         bgimgUniqueName="analyzing-graph-growth.jpg"
         maxHeight="25rem"
@@ -54,7 +53,7 @@ const ProductsPage = () => {
               padding: "0 2rem 0",
               textIndent: "2rem",
               maxWidth: "60rem",
-							letterSpacing: "0.75px"
+              letterSpacing: "0.75px",
             }}
           >
             Our auditing platform provides a centralized, transparent way for
@@ -67,7 +66,7 @@ const ProductsPage = () => {
         </div>
       </Hero>
 
-      <Block justify="center" alignItems="stretch" style={{ backgroundColor: "#444", alignItems: "stretch" }}>
+      <Block justify="center" style={{ marginBottom: "3rem" }}>
         <Link
           to="/products/auditing-tools/"
           aria-label="Auditing Tools"
@@ -77,7 +76,7 @@ const ProductsPage = () => {
             marginRight: "1.5rem",
           }}
         >
-          <Card shadow style={{ width: "100%",  marginTop: "0.5", height:"100%" }}>
+          <Card shadow style={{ width: "100%", marginTop: "0.5" }}>
             <h2>Auditing Tools →</h2>
             <h4>Performance</h4>
             <ul style={{ color: "#555" }}>
@@ -96,10 +95,9 @@ const ProductsPage = () => {
             textDecoration: "none",
             marginLeft: "1.5rem",
             marginRight: "1.5rem",
-						height:"100%"
           }}
         >
-          <Card margin="1.5rem" shadow style={{height:"100%"}}>
+          <Card margin="1.5rem" shadow>
             <h2>Auditing Solutions →</h2>
             <h4>Sampling</h4>
             <ul style={{ color: "#555" }}>

@@ -1,35 +1,27 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import MobileNav from "./MobileNav"
+import MainLogoSVG from "../../images/reviewmate-mainlogo.svg"
 
-const Header = (props ) => {
-  const dropdownProductsRef = React.useRef(0);
-  const dropdownLi = React.useRef(0);
+const Header = props => {
+  const dropdownProductsRef = React.useRef(0)
+  const dropdownLi = React.useRef(0)
 
   const [menuProducts, setMenuProducts] = useState(false)
 
-
   return (
     <header id="header">
-
       <nav role="navigation" aria-label="Main">
         <Link
           to="/"
           style={{
-            alignSelf: "flex-start"
+            alignSelf: "flex-start",
           }}
           id="mainLogo"
         >
-          <StaticImage
-            src="../../images/ReviewMate-main.png"
-            alt="ReviewMate's logo of a magnifying glass with the written name."
-            placeholder="tracedSVG"
-            formats={["auto", "webp"]}
-            transformOptions={{ fit: "cover" }}
-
-          />
+          <MainLogoSVG></MainLogoSVG>
         </Link>
         <ul
           style={{
@@ -43,6 +35,8 @@ const Header = (props ) => {
               to="/products/"
               onMouseEnter={() => setMenuProducts(true)}
               onMouseLeave={() => setMenuProducts(false)}
+              onFocus={() => setMenuProducts(true)}
+              onBlur={() => setMenuProducts(false)}
               ref={dropdownLi}
             >
               Products
@@ -51,13 +45,17 @@ const Header = (props ) => {
               className={`dropdownUl ${menuProducts ? "show" : " "}`}
               onMouseEnter={() => setMenuProducts(true)}
               onMouseLeave={() => setMenuProducts(false)}
+              onFocus={() => setTimeout(() => setMenuProducts(true), 100)}
+              onBlur={() => setTimeout(() => setMenuProducts(true), 100)}
               ref={dropdownProductsRef}
             >
               <li>
                 <Link to="/products/auditing-tools/">Auditing Tools</Link>
               </li>
               <li>
-                <Link to="/products/auditing-solutions/">Auditing Solutions</Link>
+                <Link to="/products/auditing-solutions/">
+                  Auditing Solutions
+                </Link>
               </li>
               <li>
                 <Link to="/products/auditing-management/">
@@ -96,8 +94,11 @@ const Header = (props ) => {
           </li>
         </ul>
       </nav>
-      <MobileNav {...props} setLayoutHider={props.setLayoutHider} layoutHider={props.layoutHider} />
-
+      <MobileNav
+        {...props}
+        setLayoutHider={props.setLayoutHider}
+        layoutHider={props.layoutHider}
+      />
     </header>
   )
 }
