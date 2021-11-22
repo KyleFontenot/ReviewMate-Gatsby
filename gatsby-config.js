@@ -85,6 +85,41 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Overpass",
+              variants: ["400", "700"],
+              //subsets: ['latin']
+              //text: 'Hello'
+              fontDisplay: "swap",
+              //strategy: 'selfHosted' // 'base64' || 'cdn'
+            },
+            {
+              family: "Arvo",
+              variants: ["400", "700"],
+              //subsets: ['latin']
+              //text: 'Hello'
+              fontDisplay: "swap",
+              //strategy: 'selfHosted' // 'base64' || 'cdn'
+            },
+          ],
+        },
+        // formatAgents: {
+        //   eot: `Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)`,
+        //   ttf: `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.8 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.8`,
+        //   woff: `Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; rv:11.0) like Gecko`,
+        //   woff2: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; ServiceUI 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393`,
+        // },
+        formats: ["woff2", "woff"],
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: false,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -106,11 +141,18 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        devMode: true,
+        disable: true,
+      },
+    },
+    {
       resolve: "gatsby-remark-normalize-paths",
       options: {
-          pathFields: ["image", "cover"],
+        pathFields: ["image", "cover"],
       },
-  },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -149,13 +191,13 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-preact`,
     {
-      resolve: 'gatsby-plugin-netlify',
+      resolve: "gatsby-plugin-netlify",
       options: {
         headers: {
-          '/fonts/*': [
-            'Cache-Control: public',
-            'Cache-Control: max-age=365000000',
-            'Cache-Control: immutable',
+          "/fonts/*": [
+            "Cache-Control: public",
+            "Cache-Control: max-age=365000000",
+            "Cache-Control: immutable",
           ],
         },
       },

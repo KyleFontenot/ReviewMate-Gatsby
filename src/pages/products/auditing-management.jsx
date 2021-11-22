@@ -5,6 +5,8 @@ import Hero from "../../components/Hero"
 import { GatsbyImage } from "gatsby-plugin-image"
 import CascadeBlockPlain from "../../components/CascadeBlockPlain"
 import santizeSlug from "../../components/santizeSlug"
+
+// const LinkArrow = React.lazy(() => import("../../images/diagonal-arrow.svg"))
 import LinkArrow from "../../images/diagonal-arrow.svg"
 // import ModuleQuery from '../../components/ModuleQuery'
 

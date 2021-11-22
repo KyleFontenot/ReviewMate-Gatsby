@@ -93,7 +93,7 @@ const Footer = () => {
               alt="LinkedIn icon"
               className="socialIcon"
             /> */}
-              <SocialLinkedInSVG className="socialIcon" />
+              <SocialLinkedInSVG className="socialIcon" alt="LinkedIn icon" />
             </a>
             <a
               href="https://www.facebook.com/ReviewMate1/"
@@ -107,7 +107,7 @@ const Footer = () => {
               className="socialIcon"
               style={{ fill: "#ffffff" }}
             />*/}
-              <SocialFacebookSVG className="socialIcon" />
+              <SocialFacebookSVG className="socialIcon" alt="LinkedIn icon" />
             </a>
             <a
               href="https://www.twitter.com/ReviewMatee/"
@@ -124,6 +124,7 @@ const Footer = () => {
               <SocialTwitterSVG
                 className="socialIcon"
                 style={{ fill: "white" }}
+                alt="LinkedIn icon"
               />
             </a>
           </div>
@@ -149,7 +150,7 @@ const Footer = () => {
               <StaticImage
                 src="../../images/phone-solid.svg"
                 transformOptions={{ fit: "cover" }}
-                alt="Email icon"
+                alt="Phone icon"
                 className="socialIcon"
               />
               <p style={{ minWidth: "6rem" }}>(702)723-7227</p>

@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react"
-
-import { StaticImage } from "gatsby-plugin-image"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import MobileNav from "./MobileNav"
 import MainLogoSVG from "../../images/reviewmate-mainlogo.svg"

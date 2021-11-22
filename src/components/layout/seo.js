@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description, lang, meta, title, slug, pathName}) => {
+const Seo = ({ description, lang, meta, title, slug, pathName }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -23,16 +23,18 @@ const Seo = ({ description, lang, meta, title, slug, pathName}) => {
 
   // const description = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  // const canonical = site.siteMetadata.siteUrl || null
+  const canonical = site.siteMetadata.siteUrl || null
   // const title = site.siteMetadata.title;
-  const descriptionSet = description ||  site.siteMetadata.description;
+  const descriptionSet = description || site.siteMetadata.description
   // const lang = site.siteMetadata.lang;
-
 
   return (
     <Helmet
       htmlAttributes={{
-        lang, title, meta, descriptionSet
+        lang,
+        title,
+        meta,
+        descriptionSet,
       }}
       meta={[
         {
@@ -70,14 +72,18 @@ const Seo = ({ description, lang, meta, title, slug, pathName}) => {
         {
           name: "twitter:card",
           content: "summary",
-        },]
-      .concat(meta)}
+        },
+      ].concat(meta)}
     >
       <title>{slug ? `${defaultTitle} | ${slug}` : defaultTitle}</title>
       <meta name="description" content={descriptionSet} />
-      {/*{pathName ? <link rel='canonical' href={`${canonical}${pathName}`}/> : <link rel='canonical' href={`${canonical}`}/>}*/}
+      {pathName ? (
+        <link rel="canonical" href={`${canonical}${pathName}`} />
+      ) : (
+        <link rel="canonical" href={`${canonical}`} />
+      )}
       {/*Preloading fonts*/}
-      <link
+      {/*<link
         rel="preload"
         href="/fonts/Overpass-Regular.ttf"
         as="font"
@@ -90,7 +96,7 @@ const Seo = ({ description, lang, meta, title, slug, pathName}) => {
         as="font"
         crossorigin="anonymous"
         type="font/ttf"
-      />
+      />*/}
     </Helmet>
   )
 }
@@ -104,8 +110,7 @@ Seo.defaultProps = {
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object)
-
+  meta: PropTypes.arrayOf(PropTypes.object),
 }
 // title: PropTypes.string.isRequired,
 export default Seo

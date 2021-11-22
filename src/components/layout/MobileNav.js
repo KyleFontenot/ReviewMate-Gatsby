@@ -48,53 +48,52 @@ const arrOfNavLinks = [
   "Contact",
 ]
 
-
 const MobileNav = (props, ref, setLayoutHider, layoutHider) => {
   const mobileNavRef = useRef()
-	const mobileIcon = useRef()
+  const mobileIcon = useRef()
   const [mobileMenu, setMobileMenu] = useState(false)
 
   useEffect(() => {
     if (mobileMenu) {
-      mobileNavRef.current.classList.add("showMenu");
-			mobileIcon.current.classList.add("activatedHamburger");
+      mobileNavRef.current.classList.add("showMenu")
+      mobileIcon.current.classList.add("activatedHamburger")
     } else {
-      mobileNavRef.current.classList.remove("showMenu");
-			mobileIcon.current.classList.remove("activatedHamburger");
+      mobileNavRef.current.classList.remove("showMenu")
+      mobileIcon.current.classList.remove("activatedHamburger")
     }
-  }, [mobileMenu]);
+  }, [mobileMenu])
 
   return (
-
-     <nav id="mobnavParent" ref={mobileNavRef} >
-				<button
-	        id="mobileIcon"
-	        onClick={() => {
-	          setMobileMenu(!mobileMenu);
-						props.setLayoutHider(!props.layoutHider);
-	        }}
-					ref={mobileIcon}
-	      >
-	        <div className="hamburger"  />
-	      </button>
-        <ul>
-          {arrOfNavLinks.map((item, index) => {
-            return (
-              <li className="mobnavli" key={index}>
-                <Link
-                  to={
-                    item.includes("Auditing")
-                      ? `/products/${item.replace(/\s/g, "-").toLowerCase()}`
-                      : `/${item.toLowerCase()}`
-                  }
-                >
-                  {item}
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
-      </nav>
+    <nav id="mobnavParent" ref={mobileNavRef}>
+      <button
+        id="mobileIcon"
+        aria-label="mobile hamburger navigation menu"
+        onClick={() => {
+          setMobileMenu(!mobileMenu)
+          props.setLayoutHider(!props.layoutHider)
+        }}
+        ref={mobileIcon}
+      >
+        <div className="hamburger" />
+      </button>
+      <ul>
+        {arrOfNavLinks.map((item, index) => {
+          return (
+            <li className="mobnavli" key={index}>
+              <Link
+                to={
+                  item.includes("Auditing")
+                    ? `/products/${item.replace(/\s/g, "-").toLowerCase()}`
+                    : `/${item.toLowerCase()}`
+                }
+              >
+                {item}
+              </Link>
+            </li>
+          )
+        })}
+      </ul>
+    </nav>
   )
 }
 
