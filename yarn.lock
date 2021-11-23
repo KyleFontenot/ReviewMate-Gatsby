@@ -6133,7 +6133,7 @@ gatsby-cli@^4.2.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.2.0:
+gatsby-core-utils@^3.0.0-next.0, gatsby-core-utils@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.2.0.tgz#4dbf67f016c27345fc4a8f3c140ef9fcd9d2918b"
   integrity sha512-gPz02QD1kOGQmu49TZL8Fdo9rX8QBsA7XID0oXyIkZqkK80Tm1Uq1pOOfPE3cWSMEkzc71M79iKISCntk/wNuw==
@@ -6288,13 +6288,14 @@ gatsby-plugin-netlify-cms@^6.2.0:
     mini-css-extract-plugin "1.6.2"
     netlify-identity-widget "^1.9.2"
 
-gatsby-plugin-netlify@^3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-3.14.0.tgz#fa1b2441531d958a26b378c76753c5d24bd428d5"
-  integrity sha512-+lv5i0IhtIHFecP3uL6u/vF0DzDBGlkGzPyPIhgM1krZqlLy2LzKos1nyCMoi7aHm54/B8DENl4J+hMCkC0wjQ==
+gatsby-plugin-netlify@^4.0.0-next.0:
+  version "4.0.0-next.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-4.0.0-next.0.tgz#515c38ef6094f55efe8f46837137647a7d46a442"
+  integrity sha512-v8L1/9vnKDpKj1wGMwFlWa1al2nZm8+u/emxMjaevS8AIQqgFNarjGtDdDLyVSu9oN6Vk29ah77rJDcfycadjg==
   dependencies:
     "@babel/runtime" "^7.14.8"
     fs-extra "^10.0.0"
+    gatsby-core-utils "^3.0.0-next.0"
     kebab-hash "^0.1.2"
     lodash "^4.17.21"
     webpack-assets-manifest "^5.0.6"
