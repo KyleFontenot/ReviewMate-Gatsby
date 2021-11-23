@@ -32,9 +32,10 @@ const Index = () => {
           />
           <h3> Centralized Platform </h3>
           <p className="ta-left">
-            ReviewMate provides a robust and innovative one - stop - shop where
-            coding audits are performed and stored in a transparent
-            manner.Because ReviewMate is web - based, it can be accessed 24/7
+            ReviewMate<span class="reg">&reg;</span> provides a robust and
+            innovative one-stop-shop where coding audits are performed and
+            stored in a transparent manner. Because ReviewMate
+            <span class="reg">&reg;</span> is web-based, it can be accessed 24/7
             year - round.
           </p>
         </div>
@@ -56,8 +57,8 @@ const Index = () => {
           <p className="ta-left">
             Features include integration of data, sample selection,
             randomization, scheduling, audit management, communication options,
-            and multiple robust reporting tools.ReviewMate was created by
-            auditors for auditors.
+            and multiple robust reporting tools.ReviewMate
+            <span class="reg">&reg;</span> was created by auditors for auditors.
           </p>
         </div>
         <div

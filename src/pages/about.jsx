@@ -30,7 +30,8 @@ const Index = () => {
             Pickerson Solutions LLC was formed in 2013 when a question was
             asked, "In this day and age of technology, why is our industry still
             using spreadsheets?" This question launched the development of
-            ReviewMate by medical coding auditors for medical coding auditors.
+            ReviewMate<span class="reg">&reg;</span> by medical coding auditors
+            for medical coding auditors.
           </p>
           <p
             style={{
@@ -65,10 +66,11 @@ const Index = () => {
             development, Mr. Thompson has launched and managed several
             businesses over the years. With a degree in business management and
             computer information systems, he is a key contributor to the
-            technology and design of the ReviewMate application. Mr. Thompson
-            has worked with many large hospitals and healthcare systems over the
-            years and is a key contributor in working with potential clients,
-            product demonstrations, and contract negotiations.
+            technology and design of the ReviewMate
+            <span class="reg">&reg;</span> application. Mr. Thompson has worked
+            with many large hospitals and healthcare systems over the years and
+            is a key contributor in working with potential clients, product
+            demonstrations, and contract negotiations.
           </GradientParagraph>
         </Card>
 
@@ -98,8 +100,8 @@ const Index = () => {
             practices in a multitude of healthcare settings including acute
             inpatient and outpatient, rehabilitation, partial hospitalization
             and risk adjustment. Karen also helped create, and is the content
-            expert for, the auditing software program ReviewMate by Pickerson
-            Solutions, LLC.
+            expert for, the auditing software program ReviewMate
+            <span class="reg">&reg;</span> by Pickerson Solutions, LLC.
           </GradientParagraph>
         </Card>
 
@@ -123,12 +125,13 @@ const Index = () => {
             years’ experience in Information Technology, Mr. Zuriekat
             specializes in software development, security, and architecture, and
             has undertaken critical responsibilities, such as, establishing
-            ReviewMate's technical vision and leading all aspects of software
-            development according to strategic direction and growth objectives.
-            Faris's knowledge in computer science allows him to perform complex
-            analyses and designs of software applications and architecture.
-            Prior to joining Pickerson Solutions, he held various software
-            development leadership roles in healthcare and global GIA.
+            ReviewMate<span class="reg">&reg;</span>'s technical vision and
+            leading all aspects of software development according to strategic
+            direction and growth objectives. Faris's knowledge in computer
+            science allows him to perform complex analyses and designs of
+            software applications and architecture. Prior to joining Pickerson
+            Solutions, he held various software development leadership roles in
+            healthcare and global GIA.
           </GradientParagraph>
         </Card>
       </Block>

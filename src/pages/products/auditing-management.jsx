@@ -64,13 +64,14 @@ const AuditingManagement = () => {
           }}
         >
           <p>
-            In addition to our auditing modules, ReviewMate has tools to assist
-            audit managers with time management, workflow analytics, as well as
-            assistance with data analytics. These tools will assist in analyzing
-            the amount of time your auditor and coders are spending on
-            particular tasks which in turn will allow better forecasting of
-            future projects. It will also assist in identifying bottlenecks of a
-            project to assure a smooth audit project.
+            In addition to our auditing modules, ReviewMate
+            <span class="reg">&reg;</span> has tools to assist audit managers
+            with time management, workflow analytics, as well as assistance with
+            data analytics. These tools will assist in analyzing the amount of
+            time your auditor and coders are spending on particular tasks which
+            in turn will allow better forecasting of future projects. It will
+            also assist in identifying bottlenecks of a project to assure a
+            smooth audit project.
           </p>
         </div>
       </Hero>

@@ -57,6 +57,7 @@ body {
     color: $color-Primary;
   }
 }
+
 html {
   max-height: 100%;
 }
@@ -114,7 +115,9 @@ header {
   visibility: visible !important;
   opacity: 1 !important;
 }
-
+.reg {
+  font-size: 0.7rem;
+}
 nav {
   display: flex;
   flex-direction: row;

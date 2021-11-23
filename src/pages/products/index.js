@@ -61,7 +61,8 @@ const ProductsPage = () => {
             report results. We also offer tools to assist with selecting samples
             for audit as well as a robust tool for monitoring the activities
             through the auditing process. Explore the details below to see how
-            ReviewMate could benefit your organization.
+            ReviewMate<span class="reg">&reg;</span> could benefit your
+            organization.
           </p>
         </div>
       </Hero>
